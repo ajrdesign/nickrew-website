@@ -1,0 +1,126 @@
+/* 
+======= IMPORTANT INFORMATION ABOUT THIS FONT =======
+Calendas Plus is the beautiful font used for this theme. If you would 
+like to use this font you can buy it for a measly $3 here:
+http://www.calendasplus.com/ 
+*/
+
+@font-face {
+    font-family: 'calendas-plus-bold';
+    src: url('../media/fonts/calendas_plus_bold-webfont.eot');
+    src: url('../media/fonts/calendas_plus_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/fonts/calendas_plus_bold-webfont.woff') format('woff'),
+         url('../media/fonts/calendas_plus_bold-webfont.ttf') format('truetype'),
+         url('../media/fonts/calendas_plus_bold-webfont.svg#calendas_plusbold') format('svg');
+    font-weight: 700;
+    font-style: bold;
+
+}
+
+@font-face {
+    font-family: 'calendas-plus-italic';
+    src: url('../media/fonts/calendas_plus_italic-webfont.eot');
+    src: url('../media/fonts/calendas_plus_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/fonts/calendas_plus_italic-webfont.woff') format('woff'),
+         url('../media/fonts/calendas_plus_italic-webfont.ttf') format('truetype'),
+         url('../media/fonts/calendas_plus_italic-webfont.svg#calendas_plusitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'calendas-plus';
+    src: url('../media/fonts/calendas_plus-webfont.eot');
+    src: url('../media/fonts/calendas_plus-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/fonts/calendas_plus-webfont.woff') format('woff'),
+         url('../media/fonts/calendas_plus-webfont.ttf') format('truetype'),
+         url('../media/fonts/calendas_plus-webfont.svg#calendas_plusregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 
+======= TYPOGRAPHY STYLES =======
+Tightly tuned typography, adjusted for maximum readability across all devices and platforms.
+*/ 
+
+body {
+    color: $darkgrey;
+    @include media-query(portable) {
+        font-size: $base-font-size - 2px;
+        line-height: $base-line-height - 4px;
+    }
+    @include media-query(palm) {
+        font-size: $base-font-size - 3px;
+        line-height: $base-line-height - 6px;
+    }
+}
+
+h1, h2{
+    font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+    @include media-query(portable) {
+        font-size: $h1-size - 4px;
+    }
+    @include media-query(palm) {
+        font-size: $h1-size - 8px;
+    }
+}
+h2 {
+    font-weight: normal;
+    @include media-query(portable) {
+        font-size: $h2-size - 4px;
+    }
+    @include media-query(palm) {
+        font-size: $h2-size - 8px;
+    }
+}
+h3 {
+    font-weight: normal;
+    font-style: italic;
+    font-family: $base-italic-family;
+    @include media-query(portable) {
+        font-size: $h3-size - 4px;
+    }
+    @include media-query(palm) {
+        font-size: $h3-size - 8px;
+    }
+}
+
+h4, h5, h6 {
+    font-family: $base-bold-family;
+    font-weight: 700;
+}
+
+p {
+ 	font-weight: 400;
+
+ }
+
+ em, cite {
+ 	font-family: $base-italic-family;
+    font-weight: normal;
+    font-style: italic;
+ }
+
+ strong {
+ 	font-family: $base-bold-family;
+ 	font-weight: 700;
+ }
+
+ a {
+ 	color: $purple;
+ }
+
+ ul.clean {
+    list-style: none;
+    margin: 0;
+ }
+
+ .rule {
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+ }

@@ -5,14 +5,41 @@
  * This is where any sort of theme related SCSS goes.
  */
 
- body {
- 	background: url(../media/background-piggy-back.jpg) top center;
- }
+.background {
+	background: url(../media/background-piggy-back.jpg) right -70px no-repeat;
+	position: fixed;
+  	width: 100%;
+	height: 300%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	  @include media-query(palm) {
+		background: url(../media/background-piggy-back-palm.jpg) right top no-repeat;
+		}
 
- p {
- 	color: $darkblue;
- 	font-weight: 100;
- 	letter-spacing: -1px;
+}
+
+ .brand-logo {
+ 	background: rgba(255,255,255, 0.8);
+ 	@include border-radius(50%);
+	height: 350px;
+	width: 350px;
+	margin: 4rem auto 0;
+	text-align: center;
+	@include media-query(palm) {
+		margin: 1rem auto 0;
+		height: 160px;
+		width: 160px;
+		}
+
+	img {
+		width: 175px;
+		margin: 40px auto;
+		@include media-query(palm) {
+			width: 80px;
+			margin: 20px auto;
+		}
+	}
  }
 
  .main-container,
@@ -30,11 +57,29 @@
  	border-left: 1px solid $lightgrey;
  	border-right: 1px solid $lightgrey;
  	padding: 0;
- 	margin: 10rem 0 0 0;
+ 	margin: 5rem 0 0 0;
+ 	@include media-query(palm) {
+ 		margin: 2rem 0 0 0;
+ 	}
  }
 
 .nav-effect {
 	margin: 0 0 6px;
+	@include media-query(palm) {
+		height: 0;
+		margin: 0;
+		-webkit-transition: height 500ms;
+		  -o-transition: height 500ms;
+		  transition: height 500ms;
+	}
+}
+
+.nav-effect.active {
+	@include media-query(palm) {
+		height: inherit;
+		
+
+	}
 }
 
 .nav-effect a {
@@ -42,14 +87,20 @@
 	padding: 12px 14px 0;
 	width: 16%;
 	display: inline-block;
-	font-family: 'Grand Hotel', serif;
-	font-size: 1.6em;
+	font-family: 'Amatic SC', cursive;
+	font-size: 1.7em;
 	text-decoration: none;
-	@media (min-width: 768px) and (max-width: 979px) {
-		font-size: 1.2em;
-	}
-	@media (max-width: 768px) {
-		font-size: 1em;
+	white-space: nowrap;
+	text-align: center;
+	@include media-query (palm) {
+		font-size: 1.5em;
+		line-height: 1.5em;
+		margin: 6px 28px 6px 0;
+		padding: 2px 0;
+		display: block;
+		width: inherit;
+		background: $purple;
+		color: white;
 	}
 }
 
@@ -92,7 +143,10 @@
 	z-index: 2;
 	display: block;
 	font-weight: 300;
-	margin: 6px 0 -6px 0;
+	margin: 10px 0 -10px 0;
+	@include media-query (palm) {
+		margin: inherit;
+	}
 }
 
 .nav-effect a span:last-child {
@@ -126,4 +180,172 @@
 	-webkit-transform: translateY(0%);
 	-moz-transform: translateY(0%);
 	transform: translateY(0%);
+}
+figure {
+  margin:0;
+  color:white;
+}
+
+.story-element {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  background:#ccc;
+}
+
+.story-element:nth-child(2n) {
+  margin-right: 0;
+}
+
+.story-element img {
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.story-element figcaption {
+  position: absolute;
+  margin: auto;
+  top:0; right:0; left:0; bottom:0;
+  height: 75%;
+  width: 80%;
+  background: rgba(112,108,135, 0.8);
+  -webkit-transition: 750ms;
+  -o-transition: 750ms;
+  transition: 750ms;  
+  @include media-query(portable) {
+  	position: static;
+	background: rgba(112,108,135, 1);
+	width: 100%;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none; 
+	height: inherit;
+  }
+}
+
+.story-element[data-effeckt-type~="story-element"] figcaption {
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 20px;
+  -webkit-transform: translateX(120%);
+  -ms-transform: translateX(120%);
+  -o-transform: translateX(120%);
+  transform: translateX(120%);
+  @include media-query(portable) {
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+  }
+}
+
+.story-element[data-effeckt-type~="story-element"] img {
+  display: block;
+  position: relative;
+}
+
+
+.story-element[data-effeckt-type~="story-element"]:hover figcaption,
+.story-element[data-effeckt-type~="story-element"]:active figcaption {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.hidden-content {
+  max-width:100px;
+}
+
+.story-element h1,
+.story-element h2,
+.story-element h3,
+.story-element h4,
+.story-element h5,
+.story-element h6 {
+	margin: 0;
+}
+
+.visible-content {
+  position: absolute;
+  top: 0;
+  left:0;
+  padding: 20px;
+  margin: 20px 0 20px 20px;
+  background: rgba(112,108,135, 0.8);
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  @include media-query(palm) {
+	padding: 10px;
+  	margin: 4px;
+  	h4 {
+  		font-size: 16px;
+  	}
+  	small {
+  		font-size: 12px;
+  	}
+  }
+
+}
+
+.story-element[data-effeckt-type~="story-element"]:hover .visible-content,
+.story-element[data-effeckt-type~="story-element"]:active .visible-content {
+	-webkit-transform: translateX(-120%);
+  -ms-transform: translateX(-120%);
+  -o-transform: translateX(-120%);
+  transform: translateX(-120%);
+  @include media-query(portable) {
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+  }
+}
+
+.header,
+.row {
+  width: 100%;
+  clear: both;
+  padding: 2em 0;
+  position: relative;
+  min-height: 25em;
+}
+.header {
+  margin-bottom: 12em;
+}
+.third {
+  width: 100%;
+  margin: 0 1.5%;
+  position: absolute;
+  top: 8em;
+  opacity: 1;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.one-third {
+	left: 0;
+}
+.two-third {
+  left:0;
+}
+.three-third {
+	left: 66%;
+}
+.offscreen {
+	opacity: 0;
+}
+.one-third.offscreen {
+	left: -50%;
+}
+.two-third.offscreen {
+	left: 50%;
+}
+.three-third.offscreen {
+	left: 133%;
 }
