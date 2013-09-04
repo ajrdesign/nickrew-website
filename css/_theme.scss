@@ -76,9 +76,12 @@
 
 .nav-effect.active {
 	@include media-query(palm) {
-		height: inherit;
-		
-
+		height: 300px;
+		-webkit-transition: height 500ms;
+		-moz-transition: height 500ms;
+		-ms-transition: height 500ms;
+		-o-transition: height 500ms;
+		transition: height 500ms;
 	}
 }
 
@@ -191,10 +194,10 @@ figure {
   float: left;
   overflow: hidden;
   background:#ccc;
-}
-
-.story-element:nth-child(2n) {
-  margin-right: 0;
+  @include media-query(portable) {
+  	float:none;
+  	overflow: inherit;
+  }
 }
 
 .story-element img {
@@ -214,7 +217,8 @@ figure {
   -o-transition: 750ms;
   transition: 750ms;  
   @include media-query(portable) {
-  	position: static;
+  	position: relative;
+  	display: block;
 	background: rgba(112,108,135, 1);
 	width: 100%;
 	-webkit-transition: none;
@@ -305,22 +309,24 @@ figure {
   }
 }
 
-.header,
-.row {
+.slideIn {
   width: 100%;
   clear: both;
   padding: 2em 0;
   position: relative;
-  min-height: 25em;
+  min-height: 20em;
+  @include media-query(portable) {
+	min-height: 28em;
+  }
+  @include media-query(palm) {
+	min-height: 26em;
+  }
 }
-.header {
-  margin-bottom: 12em;
-}
-.third {
+
+.slideIn-container {
   width: 100%;
-  margin: 0 1.5%;
+  margin: 0;
   position: absolute;
-  top: 8em;
   opacity: 1;
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
