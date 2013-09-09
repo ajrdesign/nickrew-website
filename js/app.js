@@ -13,17 +13,17 @@ $menulink.click(function() {
 var thing1 = $('.one-third'),
           thing2 = $('.two-third'),
           thing3 = $('.three-third'),
-          row = $('.slideIn'),
+          row = $('.row'),
           pageHeight = $(window).height();
         $(thing1,thing2,thing3).addClass('offscreen');
         $(window).scroll(function() {
           var scrollDistance = $(this).scrollTop();
           $.each(row, function() {
-            var rowScroll = $(this).offset().top - pageHeight*0.5;
+            var rowScroll = $(this).offset().top - pageHeight*.4;
           if( scrollDistance > rowScroll ) {
-          $(this).children('.slideIn-container').removeClass('offscreen');
+          $(this).children('.third').removeClass('offscreen');
           } else {
-            $(this).children('.slideIn-container').addClass('offscreen');
+            $(this).children('.third').addClass('offscreen');
           };
         });
          });
