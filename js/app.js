@@ -10,20 +10,19 @@ $menulink.click(function() {
   $menu.toggleClass('active');
   return false;
 });
-var thing1 = $('.one-third'),
-          thing2 = $('.two-third'),
-          thing3 = $('.three-third'),
-          row = $('.row'),
+      var thing1 = $('.slide-from-left'),
+          thing2 = $('.slide-from-right'),
+          row = $('.slide-in'),
           pageHeight = $(window).height();
-        $(thing1,thing2,thing3).addClass('offscreen');
+        $(thing1,thing2).addClass('offscreen');
         $(window).scroll(function() {
           var scrollDistance = $(this).scrollTop();
           $.each(row, function() {
             var rowScroll = $(this).offset().top - pageHeight*.4;
           if( scrollDistance > rowScroll ) {
-          $(this).children('.third').removeClass('offscreen');
+          $(this).children('.slide').removeClass('offscreen');
           } else {
-            $(this).children('.third').addClass('offscreen');
+            $(this).children('.slide').addClass('offscreen');
           };
         });
          });
@@ -36,7 +35,7 @@ You can also change the speed at which is scrolls by changing the X value in (sc
 */
 	function parallax(){
 	var scrolled=$(window).scrollTop();
-	$('.background').css('top',-(scrolled*0.3)+'px');
+	$('.background').css('top',-(scrolled*0.9)+'px');
 	}
   $(window).scroll(function(){
   parallax();

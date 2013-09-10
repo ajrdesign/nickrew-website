@@ -68,6 +68,7 @@
 	@include media-query(palm) {
 		height: 0;
 		margin: 0;
+		overflow: hidden;
 		-webkit-transition: height 500ms;
 		  -o-transition: height 500ms;
 		  transition: height 500ms;
@@ -92,6 +93,9 @@
 	text-decoration: none;
 	white-space: nowrap;
 	text-align: center;
+	@include media-query (portable) {
+		margin: 0 0 $base-spacing-unit 0;
+	}
 	@include media-query (palm) {
 		font-size: 1.5em;
 		line-height: 1.5em;
@@ -181,16 +185,39 @@
 	-moz-transform: translateY(0%);
 	transform: translateY(0%);
 }
-figure {
-  margin:0;
-  color:white;
-}
+
+
+/* 
+Effect for story element on mouse hover
+the HTML markup looks like this:
+
+<figure class="story-element" data-effeckt-type="story-element">
+	
+Background image goes below.
+  <img src="..." alt="">
+
+      <span class="visible-content text--center">            
+        Content that is visible when loaded.              
+      </span>
+
+  <figcaption>
+    <div class="story-element-wrap">
+      
+      <span class="hidden-content">
+        Content that is visible after mouse hover
+      </span>
+      
+    </div>
+  </figcaption>
+</figure>
+*/
 
 .story-element {
   position: relative;
   float: left;
   overflow: hidden;
   background:#ccc;
+  margin-top: $base-spacing-unit;
 }
 
 .story-element:nth-child(2n) {
@@ -240,6 +267,20 @@ figure {
 	transform: none;
   }
 }
+
+.story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
+	-webkit-transform: translateX(-120%);
+  -ms-transform: translateX(-120%);
+  -o-transform: translateX(-120%);
+  transform: translateX(-120%);
+  @include media-query(portable) {
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+  }
+}
+
 
 .story-element[data-effeckt-type~="story-element"] img {
   display: block;
@@ -291,6 +332,11 @@ figure {
 
 }
 
+.story-element-reversed .visible-content {
+	right: 0;
+	left: auto;
+}
+
 .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
 .story-element[data-effeckt-type~="story-element"]:active .visible-content {
 	-webkit-transform: translateX(-120%);
@@ -305,22 +351,45 @@ figure {
   }
 }
 
-.header,
-.row {
+.story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
+.story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
+	-webkit-transform: translateX(120%);
+  -ms-transform: translateX(120%);
+  -o-transform: translateX(120%);
+  transform: translateX(120%);
+  @include media-query(portable) {
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+  }
+
+}
+
+/* 
+Animation effect that slides elements in as you scroll down the page
+the HTML markup looks like this:
+
+<div class="slide-in">
+	<div class="slide slide-from-left">
+	...
+	</div>
+</div>
+*/
+.slide-in {
   width: 100%;
   clear: both;
-  padding: 2em 0;
+  padding: 0;
   position: relative;
-  min-height: 25em;
+  min-height: 16em;
+  @include media-query (portable) {
+  	min-height: 25em;
+  }
 }
-.header {
-  margin-bottom: 12em;
-}
-.third {
+
+.slide {
   width: 100%;
-  margin: 0 1.5%;
   position: absolute;
-  top: 8em;
   opacity: 1;
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
@@ -328,24 +397,25 @@ figure {
   -ms-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
-.one-third {
+.slide-from-left {
 	left: 0;
 }
-.two-third {
-  left:0;
-}
-.three-third {
-	left: 66%;
+.slide-from-right {
+	left:0;
 }
 .offscreen {
 	opacity: 0;
 }
-.one-third.offscreen {
+.slide-from-left.offscreen {
 	left: -50%;
 }
-.two-third.offscreen {
+.slide-from-right.offscreen {
 	left: 50%;
 }
-.three-third.offscreen {
-	left: 133%;
+
+.margin-quarter {
+	margin-left: 25%;
+	@include media-query (portable) {
+		margin-left: 0;
+	}
 }
