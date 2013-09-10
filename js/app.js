@@ -18,7 +18,7 @@ $menulink.click(function() {
         $(window).scroll(function() {
           var scrollDistance = $(this).scrollTop();
           $.each(row, function() {
-            var rowScroll = $(this).offset().top - pageHeight*.4;
+            var rowScroll = $(this).offset().top - pageHeight*0.6;
           if( scrollDistance > rowScroll ) {
           $(this).children('.slide').removeClass('offscreen');
           } else {
@@ -35,7 +35,7 @@ You can also change the speed at which is scrolls by changing the X value in (sc
 */
 	function parallax(){
 	var scrolled=$(window).scrollTop();
-	$('.background').css('top',-(scrolled*0.9)+'px');
+	$('.background').css('top',-(scrolled*0.5)+'px');
 	}
   $(window).scroll(function(){
   parallax();

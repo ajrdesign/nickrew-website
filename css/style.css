@@ -4391,17 +4391,28 @@ html.flexbox {
         width: 80px;
         margin: 20px auto; } }
 
-/* line 46, _theme.scss */
+/* line 45, _theme.scss */
+.icon-rounded {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #b4b2c1;
+  color: #706c87;
+  padding: 10px 16px;
+  font-size: 32px;
+  line-height: 32px; }
+
+/* line 57, _theme.scss */
 .main-container,
 .nav-top-wrapper {
   background: #fff;
   padding: 1.5rem 1.5rem 0 1.5rem; }
 
-/* line 51, _theme.scss */
+/* line 62, _theme.scss */
 .main-container {
   border: 1px solid #d4d8dd; }
 
-/* line 55, _theme.scss */
+/* line 66, _theme.scss */
 .nav-top-wrapper {
   border-top: 1px solid #d4d8dd;
   border-left: 1px solid #d4d8dd;
@@ -4409,15 +4420,15 @@ html.flexbox {
   padding: 0;
   margin: 5rem 0 0 0; }
   @media only screen and (max-width: 480px) {
-    /* line 55, _theme.scss */
+    /* line 66, _theme.scss */
     .nav-top-wrapper {
       margin: 2rem 0 0 0; } }
 
-/* line 66, _theme.scss */
+/* line 77, _theme.scss */
 .nav-effect {
   margin: 0 0 6px; }
   @media only screen and (max-width: 480px) {
-    /* line 66, _theme.scss */
+    /* line 77, _theme.scss */
     .nav-effect {
       height: 0;
       margin: 0;
@@ -4427,11 +4438,11 @@ html.flexbox {
       transition: height 500ms; } }
 
 @media only screen and (max-width: 480px) {
-  /* line 78, _theme.scss */
+  /* line 89, _theme.scss */
   .nav-effect.active {
     height: inherit; } }
 
-/* line 86, _theme.scss */
+/* line 95, _theme.scss */
 .nav-effect a {
   margin: 0 10px;
   padding: 12px 14px 0;
@@ -4443,11 +4454,11 @@ html.flexbox {
   white-space: nowrap;
   text-align: center; }
   @media only screen and (max-width: 1023px) {
-    /* line 86, _theme.scss */
+    /* line 95, _theme.scss */
     .nav-effect a {
       margin: 0 0 28px 0; } }
   @media only screen and (max-width: 480px) {
-    /* line 86, _theme.scss */
+    /* line 95, _theme.scss */
     .nav-effect a {
       font-size: 1.5em;
       line-height: 1.5em;
@@ -4458,7 +4469,7 @@ html.flexbox {
       background: #706c87;
       color: white; } }
 
-/* line 111, _theme.scss */
+/* line 120, _theme.scss */
 .nav-effect a:hover {
   -webkit-box-shadow: inset 0 6px 0 #706c87;
   -moz-box-shadow: inset 0 6px 0 #706c87;
@@ -4467,7 +4478,13 @@ html.flexbox {
   -moz-transition: box-shadow 0.3s, height 0.3s;
   transition: box-shadow 0.3s, height 0.3s; }
 
-/* line 121, _theme.scss */
+/* line 129, _theme.scss */
+.nav-effect .active {
+  -webkit-box-shadow: inset 0 6px 0 #706c87;
+  -moz-box-shadow: inset 0 6px 0 #706c87;
+  box-shadow: inset 0 6px 0 #706c87; }
+
+/* line 136, _theme.scss */
 .nav-effect a::before,
 .nav-effect a::after {
   position: absolute;
@@ -4482,7 +4499,7 @@ html.flexbox {
   -moz-transition: opacity 0.3s, height 0.3s;
   transition: opacity 0.3s, height 0.3s; }
 
-/* line 135, _theme.scss */
+/* line 150, _theme.scss */
 .nav-effect a::after {
   top: 100%;
   opacity: 0;
@@ -4493,18 +4510,18 @@ html.flexbox {
   -moz-transform: translateY(-10px);
   transform: translateY(-10px); }
 
-/* line 146, _theme.scss */
+/* line 161, _theme.scss */
 .nav-effect a span:first-child {
   z-index: 2;
   display: block;
   font-weight: 300;
   margin: 10px 0 -10px 0; }
   @media only screen and (max-width: 480px) {
-    /* line 146, _theme.scss */
+    /* line 161, _theme.scss */
     .nav-effect a span:first-child {
       margin: inherit; } }
 
-/* line 156, _theme.scss */
+/* line 171, _theme.scss */
 .nav-effect a span:last-child {
   z-index: 1;
   display: block;
@@ -4522,12 +4539,12 @@ html.flexbox {
   -moz-transform: translateY(-100%);
   transform: translateY(-100%); }
 
-/* line 175, _theme.scss */
+/* line 190, _theme.scss */
 .nav-effect a:hover::before,
 .nav-effect a:focus::before {
   height: 6px; }
 
-/* line 182, _theme.scss */
+/* line 197, _theme.scss */
 .nav-effect a:hover span:last-child,
 .nav-effect a:focus span:last-child {
   opacity: 1;
@@ -4559,7 +4576,7 @@ Background image goes below.
   </figcaption>
 </figure>
 */
-/* line 215, _theme.scss */
+/* line 230, _theme.scss */
 .story-element {
   position: relative;
   float: left;
@@ -4567,17 +4584,17 @@ Background image goes below.
   background: #ccc;
   margin-top: 28px; }
 
-/* line 223, _theme.scss */
+/* line 238, _theme.scss */
 .story-element:nth-child(2n) {
   margin-right: 0; }
 
-/* line 227, _theme.scss */
+/* line 242, _theme.scss */
 .story-element img {
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms; }
 
-/* line 233, _theme.scss */
+/* line 248, _theme.scss */
 .story-element figcaption {
   position: absolute;
   margin: auto;
@@ -4592,7 +4609,7 @@ Background image goes below.
   -o-transition: 750ms;
   transition: 750ms; }
   @media only screen and (max-width: 1023px) {
-    /* line 233, _theme.scss */
+    /* line 248, _theme.scss */
     .story-element figcaption {
       position: static;
       background: #706c87;
@@ -4602,7 +4619,7 @@ Background image goes below.
       transition: none;
       height: inherit; } }
 
-/* line 254, _theme.scss */
+/* line 269, _theme.scss */
 .story-element[data-effeckt-type~="story-element"] figcaption {
   top: 0;
   left: 0;
@@ -4613,33 +4630,33 @@ Background image goes below.
   -o-transform: translateX(120%);
   transform: translateX(120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 254, _theme.scss */
+    /* line 269, _theme.scss */
     .story-element[data-effeckt-type~="story-element"] figcaption {
       -webkit-transform: none;
       -ms-transform: none;
       -o-transform: none;
       transform: none; } }
 
-/* line 271, _theme.scss */
+/* line 286, _theme.scss */
 .story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
   -webkit-transform: translateX(-120%);
   -ms-transform: translateX(-120%);
   -o-transform: translateX(-120%);
   transform: translateX(-120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 271, _theme.scss */
+    /* line 286, _theme.scss */
     .story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
       -webkit-transform: none;
       -ms-transform: none;
       -o-transform: none;
       transform: none; } }
 
-/* line 285, _theme.scss */
+/* line 300, _theme.scss */
 .story-element[data-effeckt-type~="story-element"] img {
   display: block;
   position: relative; }
 
-/* line 292, _theme.scss */
+/* line 307, _theme.scss */
 .story-element[data-effeckt-type~="story-element"]:hover figcaption,
 .story-element[data-effeckt-type~="story-element"]:active figcaption {
   -webkit-transform: translateX(0);
@@ -4647,11 +4664,11 @@ Background image goes below.
   -o-transform: translateX(0);
   transform: translateX(0); }
 
-/* line 299, _theme.scss */
+/* line 314, _theme.scss */
 .hidden-content {
   max-width: 100px; }
 
-/* line 308, _theme.scss */
+/* line 323, _theme.scss */
 .story-element h1,
 .story-element h2,
 .story-element h3,
@@ -4660,7 +4677,7 @@ Background image goes below.
 .story-element h6 {
   margin: 0; }
 
-/* line 312, _theme.scss */
+/* line 327, _theme.scss */
 .visible-content {
   position: absolute;
   top: 0;
@@ -4672,23 +4689,23 @@ Background image goes below.
   -o-transition: 500ms;
   transition: 500ms; }
   @media only screen and (max-width: 480px) {
-    /* line 312, _theme.scss */
+    /* line 327, _theme.scss */
     .visible-content {
       padding: 10px;
       margin: 4px; }
-      /* line 325, _theme.scss */
+      /* line 340, _theme.scss */
       .visible-content h4 {
         font-size: 16px; }
-      /* line 328, _theme.scss */
+      /* line 343, _theme.scss */
       .visible-content small {
         font-size: 12px; } }
 
-/* line 335, _theme.scss */
+/* line 350, _theme.scss */
 .story-element-reversed .visible-content {
   right: 0;
   left: auto; }
 
-/* line 341, _theme.scss */
+/* line 356, _theme.scss */
 .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
 .story-element[data-effeckt-type~="story-element"]:active .visible-content {
   -webkit-transform: translateX(-120%);
@@ -4696,7 +4713,7 @@ Background image goes below.
   -o-transform: translateX(-120%);
   transform: translateX(-120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 341, _theme.scss */
+    /* line 356, _theme.scss */
     .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
     .story-element[data-effeckt-type~="story-element"]:active .visible-content {
       -webkit-transform: none;
@@ -4704,7 +4721,7 @@ Background image goes below.
       -o-transform: none;
       transform: none; } }
 
-/* line 355, _theme.scss */
+/* line 370, _theme.scss */
 .story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
 .story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
   -webkit-transform: translateX(120%);
@@ -4712,7 +4729,7 @@ Background image goes below.
   -o-transform: translateX(120%);
   transform: translateX(120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 355, _theme.scss */
+    /* line 370, _theme.scss */
     .story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
     .story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
       -webkit-transform: none;
@@ -4730,7 +4747,7 @@ the HTML markup looks like this:
 	</div>
 </div>
 */
-/* line 379, _theme.scss */
+/* line 394, _theme.scss */
 .slide-in {
   width: 100%;
   clear: both;
@@ -4738,11 +4755,11 @@ the HTML markup looks like this:
   position: relative;
   min-height: 16em; }
   @media only screen and (max-width: 1023px) {
-    /* line 379, _theme.scss */
+    /* line 394, _theme.scss */
     .slide-in {
       min-height: 25em; } }
 
-/* line 390, _theme.scss */
+/* line 405, _theme.scss */
 .slide {
   width: 100%;
   position: absolute;
@@ -4753,31 +4770,31 @@ the HTML markup looks like this:
   -ms-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out; }
 
-/* line 400, _theme.scss */
+/* line 415, _theme.scss */
 .slide-from-left {
   left: 0; }
 
-/* line 403, _theme.scss */
+/* line 418, _theme.scss */
 .slide-from-right {
   left: 0; }
 
-/* line 406, _theme.scss */
+/* line 421, _theme.scss */
 .offscreen {
   opacity: 0; }
 
-/* line 409, _theme.scss */
+/* line 424, _theme.scss */
 .slide-from-left.offscreen {
   left: -50%; }
 
-/* line 412, _theme.scss */
+/* line 427, _theme.scss */
 .slide-from-right.offscreen {
   left: 50%; }
 
-/* line 416, _theme.scss */
+/* line 431, _theme.scss */
 .margin-quarter {
   margin-left: 25%; }
   @media only screen and (max-width: 1023px) {
-    /* line 416, _theme.scss */
+    /* line 431, _theme.scss */
     .margin-quarter {
       margin-left: 0; } }
 
@@ -4923,3 +4940,16 @@ ul.clean {
 figure {
   margin: 0;
   color: white; }
+
+/* Color changes */
+/* line 135, _typography.scss */
+.purple {
+  color: #706c87; }
+
+/* line 139, _typography.scss */
+.blue {
+  color: #8babc9; }
+
+/* line 142, _typography.scss */
+.orange {
+  color: #deb738; }
