@@ -1,4 +1,4 @@
-/* Responsive menu toggling*/
+/* Responsive menu toggling as well as sliding element javascript*/
 
   $(document).ready(function() {
   $('body').addClass('js');

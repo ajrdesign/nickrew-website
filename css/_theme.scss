@@ -4,6 +4,12 @@
 /**
  * This is where any sort of theme related SCSS goes.
  */
+body {
+	@include media-query(palm) {
+		background: url(../media/background-piggy-back-palm.jpg) right top no-repeat;
+		position: static;
+		}
+}
 
 .background {
 	background: url(../media/background-piggy-back.jpg) right -70px no-repeat;
@@ -15,6 +21,7 @@
 	z-index: -1;
 	  @include media-query(palm) {
 		background: url(../media/background-piggy-back-palm.jpg) right top no-repeat;
+		position: static;
 		}
 
 }
@@ -232,6 +239,7 @@ Background image goes below.
   float: left;
   overflow: hidden;
   background:#ccc;
+  cursor: pointer;
   margin-top: $base-spacing-unit;
 }
 
@@ -240,9 +248,9 @@ Background image goes below.
 }
 
 .story-element img {
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: 500ms 300ms;
+  -o-transition: 500ms 300ms;
+  transition: 500ms 300ms;
 }
 
 .story-element figcaption {
@@ -252,9 +260,9 @@ Background image goes below.
   height: 75%;
   width: 80%;
   background: rgba(112,108,135, 0.8);
-  -webkit-transition: 750ms;
-  -o-transition: 750ms;
-  transition: 750ms;  
+  -webkit-transition: 750ms 300ms;
+  -o-transition: 750ms 300ms;
+  transition: 750ms 300ms;  
   @include media-query(portable) {
   	position: static;
 	background: rgba(112,108,135, 1);
@@ -331,9 +339,9 @@ Background image goes below.
   padding: 20px;
   margin: 20px 0 20px 20px;
   background: rgba(112,108,135, 0.8);
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: 500ms 300ms;
+  -o-transition: 500ms 300ms;
+  transition: 500ms 300ms;
   @include media-query(palm) {
 	padding: 10px;
   	margin: 4px;
@@ -349,6 +357,7 @@ Background image goes below.
 
 .story-element-reversed .visible-content {
 	right: 0;
+	margin: 20px 20px 20px 0;
 	left: auto;
 }
 

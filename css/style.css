@@ -933,27 +933,27 @@ html {
  */
 /* line 11, inuit.css/base/_headings.scss */
 h1, .alpha {
-  font-size: 50px;
-  font-size: 2.77778rem;
-  line-height: 1.12; }
+  font-size: 48px;
+  font-size: 2.66667rem;
+  line-height: 1.16667; }
 
 /* line 14, inuit.css/base/_headings.scss */
 h2, .beta {
-  font-size: 42px;
-  font-size: 2.33333rem;
-  line-height: 1.33333; }
+  font-size: 36px;
+  font-size: 2rem;
+  line-height: 1.55556; }
 
 /* line 17, inuit.css/base/_headings.scss */
 h3, .gamma {
-  font-size: 28px;
-  font-size: 1.55556rem;
-  line-height: 1; }
+  font-size: 24px;
+  font-size: 1.33333rem;
+  line-height: 1.16667; }
 
 /* line 20, inuit.css/base/_headings.scss */
 h4, .delta {
-  font-size: 22px;
-  font-size: 1.22222rem;
-  line-height: 1.27273; }
+  font-size: 21px;
+  font-size: 1.16667rem;
+  line-height: 1.33333; }
 
 /* line 23, inuit.css/base/_headings.scss */
 h5, .epsilon {
@@ -1759,58 +1759,6 @@ label,
   vertical-align: top; }
 
 /*------------------------------------*\
-    $FLEXBOX
-\*------------------------------------*/
-/**
- * Until we can utilise flexbox natively we can kinda, sorta, attempt to emulate
- * it, in a way... e.g.:
- *
-   <header class=flexbox>
-
-       <div class=flexbox__item>
-           <b>Welcome to</b>
-       </div>
-
-       <div class=flexbox__item>
-           <img src="//csswizardry.com/inuitcss/img/logo.jpg" alt="inuit.css">
-       </div>
-
-   </header>
- *
- * We can also combine our grid system classes with `.flexbox__item` classes,
- * e.g.:
- *
-   <div class=flexbox>
-       <div class="flexbox__item  one-quarter">
-       </div>
-       <div class="flexbox__item  three-quarters">
-       </div>
-   </div>
- *
- * It’s pretty poorly named I’m afraid, but it works...
- *
- * Demo: jsfiddle.net/inuitcss/ufUh2
- *
- */
-/* line 37, inuit.css/objects/_flexbox.scss */
-.flexbox {
-  display: table;
-  width: 100%; }
-
-/**
- * Nasty hack to circumvent Modernizr conflicts.
- */
-/* line 45, inuit.css/objects/_flexbox.scss */
-html.flexbox {
-  display: block;
-  width: auto; }
-
-/* line 50, inuit.css/objects/_flexbox.scss */
-.flexbox__item {
-  display: table-cell;
-  vertical-align: middle; }
-
-/*------------------------------------*\
     $COLUMNS
 \*------------------------------------*/
 /**
@@ -1935,7 +1883,7 @@ html.flexbox {
  *
  */
 /* line 88, inuit.css/objects/_nav.scss */
-.nav--block, .options {
+.nav--block {
   line-height: 1;
   /**
    * Remove whitespace caused by `inline-block`.
@@ -1944,11 +1892,11 @@ html.flexbox {
   word-spacing: -0.43em;
   white-space: nowrap; }
   /* line 97, inuit.css/objects/_nav.scss */
-  .nav--block > li, .options > li {
+  .nav--block > li {
     letter-spacing: normal;
     word-spacing: normal; }
     /* line 101, inuit.css/objects/_nav.scss */
-    .nav--block > li > a, .options > li > a {
+    .nav--block > li > a {
       padding: 14px; }
 
 /**
@@ -1987,147 +1935,6 @@ html.flexbox {
 /* line 149, inuit.css/objects/_nav.scss */
 .nav--keywords > li:last-child:after {
   display: none; }
-
-/*------------------------------------*\
-    $OPTIONS
-\*------------------------------------*/
-/**
- * Link-group nav, used for displaying related options. Extends `.nav--block`
- * but could also extend `.nav--fit`. Extend with colours and ‘current states’
- * in your theme stylesheet.
- *
-  <ul class="nav  options">
-      <li><a></a></li>
-      <li><a></a></li>
-      <li><a></a></li>
-      <li><a></a></li>
-   </ul>
- *
- * Demo: jsfiddle.net/inuitcss/vwfaf
- *
- */
-/* line 26, inuit.css/objects/_options.scss */
-.options > li > a {
-  border: 0 solid #cccccc;
-  border-width: 1px;
-  border-left-width: 0; }
-/* line 32, inuit.css/objects/_options.scss */
-.options > li:first-child > a {
-  border-left-width: 1px;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px; }
-/* line 38, inuit.css/objects/_options.scss */
-.options > li:last-child > a {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px; }
-
-/*------------------------------------*\
-    $PAGINATION
-\*------------------------------------*/
-/**
- * Basic pagination object, extends `.nav`.
- * Requires some funky commenting to collapse any white-space caused by the
- * `display:inline-block;` rules.
- *
-   <ol class="nav  pagination">
-       <li class=pagination__first>First</li>
-       <li class=pagination__prev>Previous</li>
-       <li><a href=/page/1>1</a></li>
-       <li><a href=/page/2>2</a></li>
-       <li class=current><a href=/page/3>3</a></li>
-       <li><a href=/page/4>4</a></li>
-       <li><a href=/page/5>5</a></li>
-       <li class=pagination__next><a href=/page/next>Next</a></li>
-       <li class=pagination__last><a href=/page/last>Last</a></li>
-   </ol>
- *
- * Demo: jsfiddle.net/inuitcss/9Y6PU
- *
- */
-/* line 26, inuit.css/objects/_pagination.scss */
-.pagination {
-  text-align: center;
-  /**
-   * Remove whitespace caused by `inline-block`.
-   */
-  letter-spacing: -0.31em;
-  word-spacing: -0.43em; }
-
-/* line 34, inuit.css/objects/_pagination.scss */
-.pagination > li {
-  padding: 14px;
-  letter-spacing: normal;
-  word-spacing: normal; }
-
-/* line 39, inuit.css/objects/_pagination.scss */
-.pagination > li > a {
-  padding: 14px;
-  margin: -14px; }
-
-/* line 43, inuit.css/objects/_pagination.scss */
-.pagination__first a:before {
-  content: "\00AB" "\00A0"; }
-
-/* line 46, inuit.css/objects/_pagination.scss */
-.pagination__last a:after {
-  content: "\00A0" "\00BB"; }
-
-/*------------------------------------*\
-    $BREADCRUMB
-\*------------------------------------*/
-/**
- * Simple breadcrumb styling to apply to (ordered) lists. Extends `.nav`, e.g.:
- *
-   <ol class="nav  breadcrumb">
-       <li><a href=#>Home</a></li>
-       <li><a href=#>About</a></li>
-       <li><a href=#>The Board</a></li>
-       <li class=current><a href=#>Directors</a></li>
-   </ol>
- *
- * Demo: jsfiddle.net/inuitcss/rkAY9
- *
- */
-/* line 19, inuit.css/objects/_breadcrumb.scss */
-.breadcrumb > li + li:before {
-  content: "\00BB" "\00A0"; }
-
-/**
- * For denoting a path-like structure, GitHub style, e.g.:
- *
-   <ol class="nav  breadcrumb--path">
-       <li class=breadcrumb__root><a href=#>inuit.css</a></li>
-       <li><a href=#>inuit.css</a></li>
-       <li><a href=#>partials</a></li>
-       <li class=current><a href=#>objects</a></li>
-   </ol>
- *
- */
-/* line 35, inuit.css/objects/_breadcrumb.scss */
-.breadcrumb--path > li + li:before {
-  content: "\002F" "\00A0"; }
-
-/**
- * Assign a delimiter on the fly through a data attribute, e.g.:
- *
-   <ol class="nav  breadcrumb">
-       <li><a href=#>Home</a></li>
-       <li data-breadcrumb="|"><a href=#>About</a></li>
-       <li data-breadcrumb="|"><a href=#>The Board</a></li>
-       <li data-breadcrumb="|" class=current><a href=#>Directors</a></li>
-   </ol>
- *
- */
-/* line 51, inuit.css/objects/_breadcrumb.scss */
-.breadcrumb > li + li[data-breadcrumb]:before {
-  content: attr(data-breadcrumb) "\00A0"; }
-
-/**
- * Denote the root of the tree.
- */
-/* line 59, inuit.css/objects/_breadcrumb.scss */
-.breadcrumb__root {
-  font-weight: bold; }
 
 /*------------------------------------*\
     $MEDIA
@@ -2427,248 +2234,6 @@ html.flexbox {
   text-align: left;
   float: left;
   clear: left; }
-
-/*------------------------------------*\
-    $THIS-OR-THIS
-\*------------------------------------*/
-/**
- * Simple options object to provide multiple choices, e.g.:
- *
-   <h1 class=this-or-this>
-       <a href=# class="this-or-this__this  two-fifths">
-           Free
-       </a>
-       <span class="this-or-this__or  one-fifth">
-           or
-       </span>
-       <a href=# class="this-or-this__this  two-fifths">
-           Pro
-       </a>
-   </h1>
- *
- * The `.this-or-this__this` and `.this-or-this__or` objects can be sized using
- * the grid-system classes.
- *
- * Demo: jsfiddle.net/inuitcss/R3sks
- *
- */
-/* line 27, inuit.css/objects/_this-or-this.scss */
-.this-or-this {
-  display: table;
-  width: 100%;
-  text-align: center; }
-
-/* line 33, inuit.css/objects/_this-or-this.scss */
-.this-or-this__this,
-.this-or-this__or {
-  display: table-cell;
-  vertical-align: middle; }
-
-/*------------------------------------*\
-    $LINK-COMPLEX
-\*------------------------------------*/
-/**
- * As inspired by @necolas:
- * github.com/necolas/suit-utils/blob/master/link.css#L18
- *
- * Add hover behaviour to only selected items within links, e.g.:
- *
-   <a href=log-in class=link-complex>
-       <i class="s  s--user"></i>
-       <span class=link-complex__target>Log in</span>
-   </a>
- *
- * Demo: jsfiddle.net/inuitcss/rt9M3
- *
- */
-/* line 23, inuit.css/objects/_link-complex.scss */
-.link-complex,
-.link-complex:hover,
-.link-complex:active,
-.link-complex:focus {
-  text-decoration: none; }
-
-/* line 28, inuit.css/objects/_link-complex.scss */
-.link-complex:hover .link-complex__target,
-.link-complex:active .link-complex__target,
-.link-complex:focus .link-complex__target {
-  text-decoration: underline; }
-
-/*------------------------------------*\
-    $FLYOUT
-\*------------------------------------*/
-/**
- * Flyouts are pieces of content that fly out of a parent when said parent is
- * hovered. They typically appear bottom-left of the parent.
- *
-   <div class=flyout>
-       Foo
-       <div class=flyout__content>
-           <h1>Lorem</h1>
-           <p>Ipsum</p>
-       </div>
-   </div>
- *
- * Extend these objects in your theme stylesheet.
- *
- * Demo: jsfiddle.net/inuitcss/B52HG
- *
- */
-/* line 24, inuit.css/objects/_flyout.scss */
-.flyout,
-.flyout--alt {
-  position: relative;
-  overflow: hidden; }
-
-/* line 28, inuit.css/objects/_flyout.scss */
-.flyout__content {
-  /**
-   * Position the flyouts off-screen. This is typically better than
-   * `display:none;`.
-   */
-  position: absolute;
-  top: 100%;
-  left: -99999px; }
-
-/**
- * Bring the flyouts into view when you hover their parents.
- * Two different types of flyout; ‘regular’ (`.flyout`) and ‘alternative’
- * (`.flyout--alt`).
- */
-/* line 44, inuit.css/objects/_flyout.scss */
-.flyout:hover,
-.flyout--alt:hover {
-  overflow: visible; }
-
-/**
- * Regular flyouts sit all the way from the top, flush left.
- */
-/* line 51, inuit.css/objects/_flyout.scss */
-.flyout:hover > .flyout__content {
-  left: 0; }
-
-/**
- * Alternative flyouts sit all the way from the left, flush top.
- */
-/* line 58, inuit.css/objects/_flyout.scss */
-.flyout--alt:hover > .flyout__content {
-  top: 0;
-  left: 100%; }
-
-/*------------------------------------*\
-    $ARROWS
-\*------------------------------------*/
-/**
- * It is a common design treatment to give an element a triangular points-out
- * arrow, we typically build these with CSS. These following classes allow us to
- * generate these arbitrarily with a mixin, `@arrow()`.
- */
-/**
- * Forms the basis for any/all CSS arrows.
- */
-/**
- * Define individual edges so we can combine what we need, when we need.
- */
-/*------------------------------------*\
-    $SPRITE
-\*------------------------------------*/
-/**
- * Giving an element a class of `.sprite` will throw it into ‘sprite’ mode and apply
- * a background image e.g.:
- *
-   <a class="sprite  sprite--question-mark">More info&hellip;</a>
- *
- * or
- *
-   <a href=#><i class="sprite  sprite--question-mark"></i> Help and FAQ</a>
- *
- * Giving an element a class of `.icon` will throw it into ‘icon’ mode and will
- * not add a background, but should be used for icon fonts and is populated
- * through a `data-icon` attribute and the `:after` pseudo-element, e.g.:
- *
-   <a href=#><i class=icon data-icon="&#xF000;"></i> View your favourites</a>
- *
- * Where ‘&#xF000;’ might map to a star in your particular icon font.
- *
- * These all require extension in your theme stylesheet, e.g. in your own CSS:
- *
-   .sprite{
-       background-image:url(path/to/your/sprite.png);
-   }
-   .sprite--link{ background-position:0   0  ; }
-   .sprite--star{ background-position:0 -16px; }
- *
- * Demo: jsfiddle.net/inuitcss/6TKuS
- *
- */
-/* line 36, inuit.css/objects/_sprite.scss */
-.sprite,
-.icon {
-  display: inline-block;
-  line-height: 1;
-  position: relative;
-  vertical-align: middle;
-  zoom: 1;
-  /**
-   * So using `.icon` on certain elements doesn’t make a visual difference.
-   */
-  font-style: normal;
-  font-weight: normal;
-  /**
-   * So icons added using `.icon` sit in the centre of the element.
-   */
-  text-align: center; }
-
-/* line 52, inuit.css/objects/_sprite.scss */
-.sprite {
-  /**
-   * The typical size of most icons. Override in your theme stylesheet.
-   */
-  width: 16px;
-  height: 16px;
-  top: -1px;
-  /*
-   * H5BP method image replacement:
-   * github.com/h5bp/html5-boilerplate/commit/adecc5da035d6d76b77e3fa95c6abde841073da2
-   */
-  overflow: hidden;
-  *text-indent: -9999px; }
-  /* line 67, inuit.css/objects/_sprite.scss */
-  .sprite:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%; }
-
-/**
- * Set up icon font
- */
-/* line 78, inuit.css/objects/_sprite.scss */
-.icon {
-  font-size: 16px;
-  /**
-   * Place the icon in a box the exact same dimensions as the icon itself.
-   */
-  width: 1em;
-  height: 1em; }
-  /* line 86, inuit.css/objects/_sprite.scss */
-  .icon:before {
-    content: attr(data-icon); }
-
-/**
- * Icon size modifiers.
- */
-/* line 94, inuit.css/objects/_sprite.scss */
-.icon--large {
-  font-size: 32px; }
-
-/* line 95, inuit.css/objects/_sprite.scss */
-.icon--huge {
-  font-size: 64px; }
-
-/* line 96, inuit.css/objects/_sprite.scss */
-.icon--natural {
-  font-size: inherit; }
 
 /*------------------------------------*\
     $ICON-TEXT
@@ -4349,7 +3914,13 @@ html.flexbox {
 /**
  * This is where any sort of theme related SCSS goes.
  */
-/* line 8, _theme.scss */
+@media only screen and (max-width: 480px) {
+  /* line 7, _theme.scss */
+  body {
+    background: url(../media/background-piggy-back-palm.jpg) right top no-repeat;
+    position: static; } }
+
+/* line 14, _theme.scss */
 .background {
   background: url(../media/background-piggy-back.jpg) right -70px no-repeat;
   position: fixed;
@@ -4359,11 +3930,12 @@ html.flexbox {
   left: 0;
   z-index: -1; }
   @media only screen and (max-width: 480px) {
-    /* line 8, _theme.scss */
+    /* line 14, _theme.scss */
     .background {
-      background: url(../media/background-piggy-back-palm.jpg) right top no-repeat; } }
+      background: url(../media/background-piggy-back-palm.jpg) right top no-repeat;
+      position: static; } }
 
-/* line 22, _theme.scss */
+/* line 29, _theme.scss */
 .brand-logo {
   background: rgba(255, 255, 255, 0.8);
   -webkit-border-radius: 50%;
@@ -4376,22 +3948,22 @@ html.flexbox {
   margin: 4rem auto 0;
   text-align: center; }
   @media only screen and (max-width: 480px) {
-    /* line 22, _theme.scss */
+    /* line 29, _theme.scss */
     .brand-logo {
       margin: 1rem auto 0;
       height: 160px;
       width: 160px; } }
-  /* line 35, _theme.scss */
+  /* line 42, _theme.scss */
   .brand-logo img {
     width: 175px;
     margin: 40px auto; }
     @media only screen and (max-width: 480px) {
-      /* line 35, _theme.scss */
+      /* line 42, _theme.scss */
       .brand-logo img {
         width: 80px;
         margin: 20px auto; } }
 
-/* line 45, _theme.scss */
+/* line 52, _theme.scss */
 .icon-rounded {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -4402,17 +3974,17 @@ html.flexbox {
   font-size: 32px;
   line-height: 32px; }
 
-/* line 57, _theme.scss */
+/* line 64, _theme.scss */
 .main-container,
 .nav-top-wrapper {
   background: #fff;
   padding: 1.5rem 1.5rem 0 1.5rem; }
 
-/* line 62, _theme.scss */
+/* line 69, _theme.scss */
 .main-container {
   border: 1px solid #d4d8dd; }
 
-/* line 66, _theme.scss */
+/* line 73, _theme.scss */
 .nav-top-wrapper {
   border-top: 1px solid #d4d8dd;
   border-left: 1px solid #d4d8dd;
@@ -4420,15 +3992,15 @@ html.flexbox {
   padding: 0;
   margin: 5rem 0 0 0; }
   @media only screen and (max-width: 480px) {
-    /* line 66, _theme.scss */
+    /* line 73, _theme.scss */
     .nav-top-wrapper {
       margin: 2rem 0 0 0; } }
 
-/* line 77, _theme.scss */
+/* line 84, _theme.scss */
 .nav-effect {
   margin: 0 0 6px; }
   @media only screen and (max-width: 480px) {
-    /* line 77, _theme.scss */
+    /* line 84, _theme.scss */
     .nav-effect {
       height: 0;
       margin: 0;
@@ -4438,11 +4010,11 @@ html.flexbox {
       transition: height 500ms; } }
 
 @media only screen and (max-width: 480px) {
-  /* line 89, _theme.scss */
+  /* line 96, _theme.scss */
   .nav-effect.active {
     height: inherit; } }
 
-/* line 95, _theme.scss */
+/* line 102, _theme.scss */
 .nav-effect a {
   margin: 0 10px;
   padding: 12px 14px 0;
@@ -4454,11 +4026,11 @@ html.flexbox {
   white-space: nowrap;
   text-align: center; }
   @media only screen and (max-width: 1023px) {
-    /* line 95, _theme.scss */
+    /* line 102, _theme.scss */
     .nav-effect a {
       margin: 0 0 28px 0; } }
   @media only screen and (max-width: 480px) {
-    /* line 95, _theme.scss */
+    /* line 102, _theme.scss */
     .nav-effect a {
       font-size: 1.5em;
       line-height: 1.5em;
@@ -4469,7 +4041,7 @@ html.flexbox {
       background: #706c87;
       color: white; } }
 
-/* line 120, _theme.scss */
+/* line 127, _theme.scss */
 .nav-effect a:hover {
   -webkit-box-shadow: inset 0 6px 0 #706c87;
   -moz-box-shadow: inset 0 6px 0 #706c87;
@@ -4478,13 +4050,13 @@ html.flexbox {
   -moz-transition: box-shadow 0.3s, height 0.3s;
   transition: box-shadow 0.3s, height 0.3s; }
 
-/* line 129, _theme.scss */
+/* line 136, _theme.scss */
 .nav-effect .active {
   -webkit-box-shadow: inset 0 6px 0 #706c87;
   -moz-box-shadow: inset 0 6px 0 #706c87;
   box-shadow: inset 0 6px 0 #706c87; }
 
-/* line 136, _theme.scss */
+/* line 143, _theme.scss */
 .nav-effect a::before,
 .nav-effect a::after {
   position: absolute;
@@ -4499,7 +4071,7 @@ html.flexbox {
   -moz-transition: opacity 0.3s, height 0.3s;
   transition: opacity 0.3s, height 0.3s; }
 
-/* line 150, _theme.scss */
+/* line 157, _theme.scss */
 .nav-effect a::after {
   top: 100%;
   opacity: 0;
@@ -4510,18 +4082,18 @@ html.flexbox {
   -moz-transform: translateY(-10px);
   transform: translateY(-10px); }
 
-/* line 161, _theme.scss */
+/* line 168, _theme.scss */
 .nav-effect a span:first-child {
   z-index: 2;
   display: block;
   font-weight: 300;
   margin: 10px 0 -10px 0; }
   @media only screen and (max-width: 480px) {
-    /* line 161, _theme.scss */
+    /* line 168, _theme.scss */
     .nav-effect a span:first-child {
       margin: inherit; } }
 
-/* line 171, _theme.scss */
+/* line 178, _theme.scss */
 .nav-effect a span:last-child {
   z-index: 1;
   display: block;
@@ -4539,12 +4111,12 @@ html.flexbox {
   -moz-transform: translateY(-100%);
   transform: translateY(-100%); }
 
-/* line 190, _theme.scss */
+/* line 197, _theme.scss */
 .nav-effect a:hover::before,
 .nav-effect a:focus::before {
   height: 6px; }
 
-/* line 197, _theme.scss */
+/* line 204, _theme.scss */
 .nav-effect a:hover span:last-child,
 .nav-effect a:focus span:last-child {
   opacity: 1;
@@ -4576,25 +4148,26 @@ Background image goes below.
   </figcaption>
 </figure>
 */
-/* line 230, _theme.scss */
+/* line 237, _theme.scss */
 .story-element {
   position: relative;
   float: left;
   overflow: hidden;
   background: #ccc;
+  cursor: pointer;
   margin-top: 28px; }
 
-/* line 238, _theme.scss */
+/* line 246, _theme.scss */
 .story-element:nth-child(2n) {
   margin-right: 0; }
 
-/* line 242, _theme.scss */
+/* line 250, _theme.scss */
 .story-element img {
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms; }
+  -webkit-transition: 500ms 300ms;
+  -o-transition: 500ms 300ms;
+  transition: 500ms 300ms; }
 
-/* line 248, _theme.scss */
+/* line 256, _theme.scss */
 .story-element figcaption {
   position: absolute;
   margin: auto;
@@ -4605,11 +4178,11 @@ Background image goes below.
   height: 75%;
   width: 80%;
   background: rgba(112, 108, 135, 0.8);
-  -webkit-transition: 750ms;
-  -o-transition: 750ms;
-  transition: 750ms; }
+  -webkit-transition: 750ms 300ms;
+  -o-transition: 750ms 300ms;
+  transition: 750ms 300ms; }
   @media only screen and (max-width: 1023px) {
-    /* line 248, _theme.scss */
+    /* line 256, _theme.scss */
     .story-element figcaption {
       position: static;
       background: #706c87;
@@ -4619,7 +4192,7 @@ Background image goes below.
       transition: none;
       height: inherit; } }
 
-/* line 269, _theme.scss */
+/* line 277, _theme.scss */
 .story-element[data-effeckt-type~="story-element"] figcaption {
   top: 0;
   left: 0;
@@ -4630,33 +4203,33 @@ Background image goes below.
   -o-transform: translateX(120%);
   transform: translateX(120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 269, _theme.scss */
+    /* line 277, _theme.scss */
     .story-element[data-effeckt-type~="story-element"] figcaption {
       -webkit-transform: none;
       -ms-transform: none;
       -o-transform: none;
       transform: none; } }
 
-/* line 286, _theme.scss */
+/* line 294, _theme.scss */
 .story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
   -webkit-transform: translateX(-120%);
   -ms-transform: translateX(-120%);
   -o-transform: translateX(-120%);
   transform: translateX(-120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 286, _theme.scss */
+    /* line 294, _theme.scss */
     .story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
       -webkit-transform: none;
       -ms-transform: none;
       -o-transform: none;
       transform: none; } }
 
-/* line 300, _theme.scss */
+/* line 308, _theme.scss */
 .story-element[data-effeckt-type~="story-element"] img {
   display: block;
   position: relative; }
 
-/* line 307, _theme.scss */
+/* line 315, _theme.scss */
 .story-element[data-effeckt-type~="story-element"]:hover figcaption,
 .story-element[data-effeckt-type~="story-element"]:active figcaption {
   -webkit-transform: translateX(0);
@@ -4664,11 +4237,11 @@ Background image goes below.
   -o-transform: translateX(0);
   transform: translateX(0); }
 
-/* line 314, _theme.scss */
+/* line 322, _theme.scss */
 .hidden-content {
   max-width: 100px; }
 
-/* line 323, _theme.scss */
+/* line 331, _theme.scss */
 .story-element h1,
 .story-element h2,
 .story-element h3,
@@ -4677,7 +4250,7 @@ Background image goes below.
 .story-element h6 {
   margin: 0; }
 
-/* line 327, _theme.scss */
+/* line 335, _theme.scss */
 .visible-content {
   position: absolute;
   top: 0;
@@ -4685,27 +4258,28 @@ Background image goes below.
   padding: 20px;
   margin: 20px 0 20px 20px;
   background: rgba(112, 108, 135, 0.8);
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms; }
+  -webkit-transition: 500ms 300ms;
+  -o-transition: 500ms 300ms;
+  transition: 500ms 300ms; }
   @media only screen and (max-width: 480px) {
-    /* line 327, _theme.scss */
+    /* line 335, _theme.scss */
     .visible-content {
       padding: 10px;
       margin: 4px; }
-      /* line 340, _theme.scss */
+      /* line 348, _theme.scss */
       .visible-content h4 {
         font-size: 16px; }
-      /* line 343, _theme.scss */
+      /* line 351, _theme.scss */
       .visible-content small {
         font-size: 12px; } }
 
-/* line 350, _theme.scss */
+/* line 358, _theme.scss */
 .story-element-reversed .visible-content {
   right: 0;
+  margin: 20px 20px 20px 0;
   left: auto; }
 
-/* line 356, _theme.scss */
+/* line 365, _theme.scss */
 .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
 .story-element[data-effeckt-type~="story-element"]:active .visible-content {
   -webkit-transform: translateX(-120%);
@@ -4713,7 +4287,7 @@ Background image goes below.
   -o-transform: translateX(-120%);
   transform: translateX(-120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 356, _theme.scss */
+    /* line 365, _theme.scss */
     .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
     .story-element[data-effeckt-type~="story-element"]:active .visible-content {
       -webkit-transform: none;
@@ -4721,7 +4295,7 @@ Background image goes below.
       -o-transform: none;
       transform: none; } }
 
-/* line 370, _theme.scss */
+/* line 379, _theme.scss */
 .story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
 .story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
   -webkit-transform: translateX(120%);
@@ -4729,7 +4303,7 @@ Background image goes below.
   -o-transform: translateX(120%);
   transform: translateX(120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 370, _theme.scss */
+    /* line 379, _theme.scss */
     .story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
     .story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
       -webkit-transform: none;
@@ -4747,7 +4321,7 @@ the HTML markup looks like this:
 	</div>
 </div>
 */
-/* line 394, _theme.scss */
+/* line 403, _theme.scss */
 .slide-in {
   width: 100%;
   clear: both;
@@ -4755,11 +4329,11 @@ the HTML markup looks like this:
   position: relative;
   min-height: 16em; }
   @media only screen and (max-width: 1023px) {
-    /* line 394, _theme.scss */
+    /* line 403, _theme.scss */
     .slide-in {
       min-height: 25em; } }
 
-/* line 405, _theme.scss */
+/* line 414, _theme.scss */
 .slide {
   width: 100%;
   position: absolute;
@@ -4770,31 +4344,31 @@ the HTML markup looks like this:
   -ms-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out; }
 
-/* line 415, _theme.scss */
+/* line 424, _theme.scss */
 .slide-from-left {
   left: 0; }
 
-/* line 418, _theme.scss */
+/* line 427, _theme.scss */
 .slide-from-right {
   left: 0; }
 
-/* line 421, _theme.scss */
+/* line 430, _theme.scss */
 .offscreen {
   opacity: 0; }
 
-/* line 424, _theme.scss */
+/* line 433, _theme.scss */
 .slide-from-left.offscreen {
   left: -50%; }
 
-/* line 427, _theme.scss */
+/* line 436, _theme.scss */
 .slide-from-right.offscreen {
   left: 50%; }
 
-/* line 431, _theme.scss */
+/* line 440, _theme.scss */
 .margin-quarter {
   margin-left: 25%; }
   @media only screen and (max-width: 1023px) {
-    /* line 431, _theme.scss */
+    /* line 440, _theme.scss */
     .margin-quarter {
       margin-left: 0; } }
 
@@ -4863,93 +4437,136 @@ body {
       font-size: 15px;
       line-height: 22px; } }
 
-/* line 60, _typography.scss */
-h1, h2 {
-  font-family: 'Amatic SC', cursive; }
+@media only screen and (max-width: 1023px) {
+  /* line 60, _typography.scss */
+  h1 {
+    font-size: 44px; } }
+@media only screen and (max-width: 480px) {
+  /* line 60, _typography.scss */
+  h1 {
+    font-size: 40px; } }
 
 @media only screen and (max-width: 1023px) {
-  /* line 64, _typography.scss */
-  h1 {
-    font-size: 46px; } }
+  /* line 68, _typography.scss */
+  h2 {
+    font-size: 32px; } }
 @media only screen and (max-width: 480px) {
-  /* line 64, _typography.scss */
-  h1 {
-    font-size: 42px; } }
+  /* line 68, _typography.scss */
+  h2 {
+    font-size: 28px; } }
 
-/* line 72, _typography.scss */
-h2 {
-  font-weight: normal; }
-  @media only screen and (max-width: 1023px) {
-    /* line 72, _typography.scss */
-    h2 {
-      font-size: 38px; } }
-  @media only screen and (max-width: 480px) {
-    /* line 72, _typography.scss */
-    h2 {
-      font-size: 34px; } }
-
-/* line 81, _typography.scss */
+/* line 76, _typography.scss */
 h3 {
-  font-weight: normal;
-  font-style: italic;
-  font-family: "calendas-plus-italic", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif; }
+  line-height: 38px; }
   @media only screen and (max-width: 1023px) {
-    /* line 81, _typography.scss */
-    h3 {
-      font-size: 24px; } }
-  @media only screen and (max-width: 480px) {
-    /* line 81, _typography.scss */
+    /* line 76, _typography.scss */
     h3 {
       font-size: 20px; } }
+  @media only screen and (max-width: 480px) {
+    /* line 76, _typography.scss */
+    h3 {
+      font-size: 16px; } }
 
-/* line 93, _typography.scss */
+/* line 86, _typography.scss */
 h4, h5, h6 {
   font-family: "calendas-plus-bold", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
   font-weight: 700; }
 
-/* line 98, _typography.scss */
+/* line 91, _typography.scss */
+.subheading {
+  font-weight: normal;
+  font-style: italic;
+  font-family: "calendas-plus-italic", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif; }
+
+/* line 97, _typography.scss */
 p {
   font-weight: 400; }
 
-/* line 103, _typography.scss */
-em, cite {
+/* line 101, _typography.scss */
+article p:first-child:first-letter {
+  float: left;
+  color: #706c87;
+  font-size: 98px;
+  line-height: 75px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px; }
+  @media only screen and (max-width: 480px) {
+    /* line 101, _typography.scss */
+    article p:first-child:first-letter {
+      font-size: 72px;
+      line-height: 60px; } }
+
+/* line 115, _typography.scss */
+em, blockquote, dt {
   font-family: "calendas-plus-italic", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
   font-weight: normal;
   font-style: italic; }
 
-/* line 109, _typography.scss */
+/* line 121, _typography.scss */
 strong {
   font-family: "calendas-plus-bold", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
   font-weight: 700; }
 
-/* line 114, _typography.scss */
+/* line 126, _typography.scss */
 a {
   color: #706c87; }
 
-/* line 118, _typography.scss */
+/* line 130, _typography.scss */
 ul.clean {
   list-style: none;
   margin: 0; }
 
-/* line 123, _typography.scss */
+/* line 135, _typography.scss */
 .rule {
   margin-top: 0.6em;
   margin-bottom: 0.6em; }
 
-/* line 128, _typography.scss */
+/* line 140, _typography.scss */
 figure {
   margin: 0;
   color: white; }
 
-/* Color changes */
-/* line 135, _typography.scss */
+/* line 145, _typography.scss */
+blockquote {
+  text-indent: -0.2em;
+  margin-top: 2.4em;
+  padding: 0 2em 0 4.2em;
+  margin-bottom: 8px;
+  position: relative; }
+
+/* line 153, _typography.scss */
+blockquote:before {
+  content: "“";
+  color: #706c87;
+  font-size: 80px;
+  position: absolute;
+  top: -0.35em;
+  left: 0.35em; }
+
+/* line 162, _typography.scss */
+cite {
+  font-size: 0.8em;
+  margin-top: 0;
+  line-height: 1;
+  font-style: normal; }
+
+/* line 169, _typography.scss */
+blockquote ~ cite {
+  display: block;
+  text-align: right;
+  clear: both;
+  margin-bottom: 2.4em; }
+
+/* COPY COLOR CHANGING HELPER CLASSES */
+/* line 178, _typography.scss */
 .purple {
   color: #706c87; }
 
-/* line 139, _typography.scss */
+/* line 182, _typography.scss */
 .blue {
   color: #8babc9; }
 
-/* line 142, _typography.scss */
+/* line 185, _typography.scss */
 .orange {
   color: #deb738; }
