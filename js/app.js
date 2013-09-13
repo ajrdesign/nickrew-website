@@ -1,6 +1,8 @@
-/* Responsive menu toggling*/
+/* Responsive menu toggling as well as sliding element javascript*/
 
   $(document).ready(function() {
+
+
   $('body').addClass('js');
   var $menu = $('#menu'),
     $menulink = $('.menu-link');
@@ -10,24 +12,26 @@ $menulink.click(function() {
   $menu.toggleClass('active');
   return false;
 });
-var thing1 = $('.one-third'),
-          thing2 = $('.two-third'),
-          thing3 = $('.three-third'),
-          row = $('.slideIn'),
+      var thing1 = $('.slide-from-left'),
+          thing2 = $('.slide-from-right'),
+          row = $('.slide-in'),
           pageHeight = $(window).height();
-        $(thing1,thing2,thing3).addClass('offscreen');
+        $(thing1,thing2).addClass('offscreen');
         $(window).scroll(function() {
           var scrollDistance = $(this).scrollTop();
           $.each(row, function() {
-            var rowScroll = $(this).offset().top - pageHeight*0.5;
+            var rowScroll = $(this).offset().top - pageHeight*0.6;
           if( scrollDistance > rowScroll ) {
-          $(this).children('.slideIn-container').removeClass('offscreen');
+          $(this).children('.slide').removeClass('offscreen');
           } else {
-            $(this).children('.slideIn-container').addClass('offscreen');
+            $(this).children('.slide').addClass('offscreen');
           };
         });
          });
+    $(".boxer").boxer();
+
 });
+
 
 /* Parallax scrolling plugin */
 /*
@@ -36,7 +40,7 @@ You can also change the speed at which is scrolls by changing the X value in (sc
 */
 	function parallax(){
 	var scrolled=$(window).scrollTop();
-	$('.background').css('top',-(scrolled*0.3)+'px');
+	$('.background').css('top',-(scrolled*0.5)+'px');
 	}
   $(window).scroll(function(){
   parallax();

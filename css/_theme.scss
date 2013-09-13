@@ -4,6 +4,12 @@
 /**
  * This is where any sort of theme related SCSS goes.
  */
+body {
+	@include media-query(palm) {
+		background: url(../media/background-piggy-back-palm.jpg) right top no-repeat;
+		position: static;
+		}
+}
 
 .background {
 	background: url(../media/background-piggy-back.jpg) right -70px no-repeat;
@@ -15,6 +21,7 @@
 	z-index: -1;
 	  @include media-query(palm) {
 		background: url(../media/background-piggy-back-palm.jpg) right top no-repeat;
+		position: static;
 		}
 
 }
@@ -40,6 +47,17 @@
 			margin: 20px auto;
 		}
 	}
+ }
+
+ .icon-rounded {
+ 	-webkit-border-radius: 50%;
+ 	-moz-border-radius: 50%;
+ 	border-radius: 50%;
+ 	background: lighten($purple, 25%);
+ 	color: $purple;
+ 	padding: 10px 16px;
+ 	font-size: 32px;
+ 	line-height: 32px;
  }
 
  .main-container,
@@ -68,6 +86,7 @@
 	@include media-query(palm) {
 		height: 0;
 		margin: 0;
+		overflow: hidden;
 		-webkit-transition: height 500ms;
 		  -o-transition: height 500ms;
 		  transition: height 500ms;
@@ -76,12 +95,7 @@
 
 .nav-effect.active {
 	@include media-query(palm) {
-		height: 300px;
-		-webkit-transition: height 500ms;
-		-moz-transition: height 500ms;
-		-ms-transition: height 500ms;
-		-o-transition: height 500ms;
-		transition: height 500ms;
+		height: inherit;
 	}
 }
 
@@ -95,6 +109,9 @@
 	text-decoration: none;
 	white-space: nowrap;
 	text-align: center;
+	@include media-query (portable) {
+		margin: 0 0 $base-spacing-unit 0;
+	}
 	@include media-query (palm) {
 		font-size: 1.5em;
 		line-height: 1.5em;
@@ -114,6 +131,12 @@
 	-webkit-transition: box-shadow 0.3s, height 0.3s;
 	-moz-transition: box-shadow 0.3s, height 0.3s;
 	transition: box-shadow 0.3s, height 0.3s;
+}
+
+.nav-effect .active {
+	-webkit-box-shadow: inset 0 6px 0 $purple;
+	-moz-box-shadow: inset 0 6px 0 $purple;
+	box-shadow: inset 0 6px 0 $purple;
 }
 
 .nav-effect a::before,
@@ -184,26 +207,50 @@
 	-moz-transform: translateY(0%);
 	transform: translateY(0%);
 }
-figure {
-  margin:0;
-  color:white;
-}
+
+
+/* 
+Effect for story element on mouse hover
+the HTML markup looks like this:
+
+<figure class="story-element" data-effeckt-type="story-element">
+	
+Background image goes below.
+  <img src="..." alt="">
+
+      <span class="visible-content text--center">            
+        Content that is visible when loaded.              
+      </span>
+
+  <figcaption>
+    <div class="story-element-wrap">
+      
+      <span class="hidden-content">
+        Content that is visible after mouse hover
+      </span>
+      
+    </div>
+  </figcaption>
+</figure>
+*/
 
 .story-element {
   position: relative;
   float: left;
   overflow: hidden;
   background:#ccc;
-  @include media-query(portable) {
-  	float:none;
-  	overflow: inherit;
-  }
+  cursor: pointer;
+  margin-top: $base-spacing-unit;
+}
+
+.story-element:nth-child(2n) {
+  margin-right: 0;
 }
 
 .story-element img {
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: 500ms 300ms;
+  -o-transition: 500ms 300ms;
+  transition: 500ms 300ms;
 }
 
 .story-element figcaption {
@@ -213,12 +260,11 @@ figure {
   height: 75%;
   width: 80%;
   background: rgba(112,108,135, 0.8);
-  -webkit-transition: 750ms;
-  -o-transition: 750ms;
-  transition: 750ms;  
+  -webkit-transition: 750ms 300ms;
+  -o-transition: 750ms 300ms;
+  transition: 750ms 300ms;  
   @include media-query(portable) {
-  	position: relative;
-  	display: block;
+  	position: static;
 	background: rgba(112,108,135, 1);
 	width: 100%;
 	-webkit-transition: none;
@@ -226,6 +272,40 @@ figure {
 	transition: none; 
 	height: inherit;
   }
+}
+
+.story-element-orange {
+	color: $darkgrey;
+	.rule {
+		color:lighten($orange, 10%);
+	}
+}
+
+.story-element-purple {
+	.rule {
+		color:darken($purple,15%);
+	}
+}
+
+.story-element-blue {
+	.rule {
+		color:lighten($blue,5%);
+	}
+}
+
+.story-element-orange figcaption {
+	background: rgba(227,183,45, 0.8);
+	@include media-query(portable) {
+		background: rgba(227,183,45, 1);
+	}
+	
+}
+
+.story-element-blue figcaption {
+	background: rgba(139,171,201, 0.8);
+	@include media-query(portable) {
+		background: rgba(139,171,201, 1);
+	}
 }
 
 .story-element[data-effeckt-type~="story-element"] figcaption {
@@ -244,6 +324,20 @@ figure {
 	transform: none;
   }
 }
+
+.story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
+	-webkit-transform: translateX(-120%);
+  -ms-transform: translateX(-120%);
+  -o-transform: translateX(-120%);
+  transform: translateX(-120%);
+  @include media-query(portable) {
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+  }
+}
+
 
 .story-element[data-effeckt-type~="story-element"] img {
   display: block;
@@ -279,9 +373,9 @@ figure {
   padding: 20px;
   margin: 20px 0 20px 20px;
   background: rgba(112,108,135, 0.8);
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: 500ms 300ms;
+  -o-transition: 500ms 300ms;
+  transition: 500ms 300ms;
   @include media-query(palm) {
 	padding: 10px;
   	margin: 4px;
@@ -293,6 +387,26 @@ figure {
   	}
   }
 
+}
+
+.story-element-orange .visible-content {
+	background: rgba(227,183,45, 0.8);
+	@include media-query(portable) {
+		background: rgba(227,183,45, 1);
+	}
+}
+
+.story-element-blue .visible-content {
+	background: rgba(139,171,201, 0.8);
+	@include media-query(portable) {
+		background: rgba(139,171,201, 1);
+	}
+}
+
+.story-element-reversed .visible-content {
+	right: 0;
+	margin: 20px 20px 20px 0;
+	left: auto;
 }
 
 .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
@@ -309,23 +423,44 @@ figure {
   }
 }
 
-.slideIn {
+.story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
+.story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
+	-webkit-transform: translateX(120%);
+  -ms-transform: translateX(120%);
+  -o-transform: translateX(120%);
+  transform: translateX(120%);
+  @include media-query(portable) {
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+  }
+
+}
+
+/* 
+Animation effect that slides elements in as you scroll down the page
+the HTML markup looks like this:
+
+<div class="slide-in">
+	<div class="slide slide-from-left">
+	...
+	</div>
+</div>
+*/
+.slide-in {
   width: 100%;
   clear: both;
-  padding: 2em 0;
+  padding: 0;
   position: relative;
-  min-height: 20em;
-  @include media-query(portable) {
-	min-height: 28em;
-  }
-  @include media-query(palm) {
-	min-height: 26em;
+  min-height: 16em;
+  @include media-query (portable) {
+  	min-height: 25em;
   }
 }
 
-.slideIn-container {
+.slide {
   width: 100%;
-  margin: 0;
   position: absolute;
   opacity: 1;
   -webkit-transition: all .4s ease-in-out;
@@ -334,24 +469,25 @@ figure {
   -ms-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
-.one-third {
+.slide-from-left {
 	left: 0;
 }
-.two-third {
-  left:0;
-}
-.three-third {
-	left: 66%;
+.slide-from-right {
+	left:0;
 }
 .offscreen {
 	opacity: 0;
 }
-.one-third.offscreen {
+.slide-from-left.offscreen {
 	left: -50%;
 }
-.two-third.offscreen {
+.slide-from-right.offscreen {
 	left: 50%;
 }
-.three-third.offscreen {
-	left: 133%;
+
+.margin-quarter {
+	margin-left: 25%;
+	@include media-query (portable) {
+		margin-left: 0;
+	}
 }

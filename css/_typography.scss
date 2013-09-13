@@ -57,10 +57,6 @@ body {
     }
 }
 
-h1, h2{
-    font-family: 'Amatic SC', cursive;
-}
-
 h1 {
     @include media-query(portable) {
         font-size: $h1-size - 4px;
@@ -70,7 +66,6 @@ h1 {
     }
 }
 h2 {
-    font-weight: normal;
     @include media-query(portable) {
         font-size: $h2-size - 4px;
     }
@@ -79,9 +74,7 @@ h2 {
     }
 }
 h3 {
-    font-weight: normal;
-    font-style: italic;
-    font-family: $base-italic-family;
+    line-height: 38px;
     @include media-query(portable) {
         font-size: $h3-size - 4px;
     }
@@ -95,12 +88,31 @@ h4, h5, h6 {
     font-weight: 700;
 }
 
+.subheading {
+    font-weight: normal;
+    font-style: italic;
+    font-family: $base-italic-family;
+}
+
 p {
  	font-weight: 400;
-
  }
 
- em, cite {
+article p:first-child:first-letter { 
+    float: left; 
+    color: $purple; 
+    font-size: 98px; 
+    line-height: 75px; 
+    padding-top: 4px; 
+    padding-right: 8px; 
+    padding-left: 3px;
+    @include media-query(palm) {
+        font-size: 72px; 
+        line-height: 60px; 
+    }
+}
+
+ em, blockquote, dt {
  	font-family: $base-italic-family;
     font-weight: normal;
     font-style: italic;
@@ -124,3 +136,52 @@ p {
     margin-top: 0.6em;
     margin-bottom: 0.6em;
  }
+
+ figure {
+  margin:0;
+  color:white;
+}
+
+blockquote {
+    text-indent: -0.2em;
+    margin-top: 2.4em;
+    padding: 0 2em 0 4.2em;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+blockquote:before {
+    content: "“";
+    color: $purple; 
+    font-size: 80px; 
+    position: absolute; 
+    top: -0.35em; 
+    left: 0.35em;
+}
+
+cite {
+    font-size: 0.8em;
+    margin-top: 0;
+    line-height: 1;
+    font-style: normal;
+}
+
+blockquote ~ cite {
+    display: block;
+    text-align: right;
+    clear: both;
+    margin-bottom: 2.4em;
+}
+
+/* COPY COLOR CHANGING HELPER CLASSES */
+
+.purple {
+    color: $purple;
+}
+
+.blue {
+    color: $blue;
+}
+.orange {
+    color: $orange;
+}

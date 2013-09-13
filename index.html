@@ -22,7 +22,7 @@
       <div class="grid__item  one-whole">
           <a class="btn btn--gamma visuallyhidden--lap-and-up menu-link " href="#menu"><i class="icon-reorder"></i> MENU</a>
            <ul id="menu" class="nav nav--banner nav-effect">
-              <a href="index.html"><span>Home</span><span class="visuallyhidden--portable">To the beginning</span></a>
+              <a class="active" href="index.html"><span>Home</span><span class="visuallyhidden--portable">To the beginning</span></a>
               <a href="story.html"><span>Our Story</span><span class="visuallyhidden--portable">See our journey</span></a>
               <a href="venue.html"><span>Venue</span><span class="visuallyhidden--portable">Where we party</span></a>
               <a href="rsvp.html"><span>RSVP</span><span class="visuallyhidden--portable">Let us know</span></a>
@@ -35,7 +35,9 @@
          <article>
              <p>But you might want to do <em>that tons and tons of times</em> in your CSS, because of how awesomely convient and how much sense it makes while authoring (rather than clump them all at the end which breaks cognitive connections).</p>
              <div class="text--center">
+              <a href="media/home-cute-photos-comp.jpg" class="boxer" title="Caption">
                <img class="text--center" src="media/home-cute-photos-comp.jpg" alt="">
+               </a>
              </div>
              
              <p>Now you <strong>are stuck repeating</strong> yourself a bunch, which is exactly what Sass tries to help us not do. In Sass 3.2 (which is in alpha and has been for a long time) there is a solution. We can write a @mixin which will allow us to "name" media queries. Question</p>
@@ -49,6 +51,7 @@
    </div>
    <script src="js/jquery-1.10.2.min.js"></script>
    <script src="js/app.js"></script>
+   <script src="js/jquery.fs.boxer.js"></script>
 
 </body>
 </html>
