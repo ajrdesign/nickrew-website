@@ -274,6 +274,40 @@ Background image goes below.
   }
 }
 
+.story-element-orange {
+	color: $darkgrey;
+	.rule {
+		color:lighten($orange, 10%);
+	}
+}
+
+.story-element-purple {
+	.rule {
+		color:darken($purple,15%);
+	}
+}
+
+.story-element-blue {
+	.rule {
+		color:lighten($blue,5%);
+	}
+}
+
+.story-element-orange figcaption {
+	background: rgba(227,183,45, 0.8);
+	@include media-query(portable) {
+		background: rgba(227,183,45, 1);
+	}
+	
+}
+
+.story-element-blue figcaption {
+	background: rgba(139,171,201, 0.8);
+	@include media-query(portable) {
+		background: rgba(139,171,201, 1);
+	}
+}
+
 .story-element[data-effeckt-type~="story-element"] figcaption {
   top: 0;
   left: 0;
@@ -353,6 +387,20 @@ Background image goes below.
   	}
   }
 
+}
+
+.story-element-orange .visible-content {
+	background: rgba(227,183,45, 0.8);
+	@include media-query(portable) {
+		background: rgba(227,183,45, 1);
+	}
+}
+
+.story-element-blue .visible-content {
+	background: rgba(139,171,201, 0.8);
+	@include media-query(portable) {
+		background: rgba(139,171,201, 1);
+	}
 }
 
 .story-element-reversed .visible-content {

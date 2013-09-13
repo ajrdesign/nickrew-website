@@ -4193,6 +4193,37 @@ Background image goes below.
       height: inherit; } }
 
 /* line 277, _theme.scss */
+.story-element-orange {
+  color: #3b3b3b; }
+  /* line 279, _theme.scss */
+  .story-element-orange .rule {
+    color: #e5c764; }
+
+/* line 285, _theme.scss */
+.story-element-purple .rule {
+  color: #4d4a5d; }
+
+/* line 291, _theme.scss */
+.story-element-blue .rule {
+  color: #9cb8d1; }
+
+/* line 296, _theme.scss */
+.story-element-orange figcaption {
+  background: rgba(227, 183, 45, 0.8); }
+  @media only screen and (max-width: 1023px) {
+    /* line 296, _theme.scss */
+    .story-element-orange figcaption {
+      background: #e3b72d; } }
+
+/* line 304, _theme.scss */
+.story-element-blue figcaption {
+  background: rgba(139, 171, 201, 0.8); }
+  @media only screen and (max-width: 1023px) {
+    /* line 304, _theme.scss */
+    .story-element-blue figcaption {
+      background: #8babc9; } }
+
+/* line 311, _theme.scss */
 .story-element[data-effeckt-type~="story-element"] figcaption {
   top: 0;
   left: 0;
@@ -4203,33 +4234,33 @@ Background image goes below.
   -o-transform: translateX(120%);
   transform: translateX(120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 277, _theme.scss */
+    /* line 311, _theme.scss */
     .story-element[data-effeckt-type~="story-element"] figcaption {
       -webkit-transform: none;
       -ms-transform: none;
       -o-transform: none;
       transform: none; } }
 
-/* line 294, _theme.scss */
+/* line 328, _theme.scss */
 .story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
   -webkit-transform: translateX(-120%);
   -ms-transform: translateX(-120%);
   -o-transform: translateX(-120%);
   transform: translateX(-120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 294, _theme.scss */
+    /* line 328, _theme.scss */
     .story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
       -webkit-transform: none;
       -ms-transform: none;
       -o-transform: none;
       transform: none; } }
 
-/* line 308, _theme.scss */
+/* line 342, _theme.scss */
 .story-element[data-effeckt-type~="story-element"] img {
   display: block;
   position: relative; }
 
-/* line 315, _theme.scss */
+/* line 349, _theme.scss */
 .story-element[data-effeckt-type~="story-element"]:hover figcaption,
 .story-element[data-effeckt-type~="story-element"]:active figcaption {
   -webkit-transform: translateX(0);
@@ -4237,11 +4268,11 @@ Background image goes below.
   -o-transform: translateX(0);
   transform: translateX(0); }
 
-/* line 322, _theme.scss */
+/* line 356, _theme.scss */
 .hidden-content {
   max-width: 100px; }
 
-/* line 331, _theme.scss */
+/* line 365, _theme.scss */
 .story-element h1,
 .story-element h2,
 .story-element h3,
@@ -4250,7 +4281,7 @@ Background image goes below.
 .story-element h6 {
   margin: 0; }
 
-/* line 335, _theme.scss */
+/* line 369, _theme.scss */
 .visible-content {
   position: absolute;
   top: 0;
@@ -4262,24 +4293,40 @@ Background image goes below.
   -o-transition: 500ms 300ms;
   transition: 500ms 300ms; }
   @media only screen and (max-width: 480px) {
-    /* line 335, _theme.scss */
+    /* line 369, _theme.scss */
     .visible-content {
       padding: 10px;
       margin: 4px; }
-      /* line 348, _theme.scss */
+      /* line 382, _theme.scss */
       .visible-content h4 {
         font-size: 16px; }
-      /* line 351, _theme.scss */
+      /* line 385, _theme.scss */
       .visible-content small {
         font-size: 12px; } }
 
-/* line 358, _theme.scss */
+/* line 392, _theme.scss */
+.story-element-orange .visible-content {
+  background: rgba(227, 183, 45, 0.8); }
+  @media only screen and (max-width: 1023px) {
+    /* line 392, _theme.scss */
+    .story-element-orange .visible-content {
+      background: #e3b72d; } }
+
+/* line 399, _theme.scss */
+.story-element-blue .visible-content {
+  background: rgba(139, 171, 201, 0.8); }
+  @media only screen and (max-width: 1023px) {
+    /* line 399, _theme.scss */
+    .story-element-blue .visible-content {
+      background: #8babc9; } }
+
+/* line 406, _theme.scss */
 .story-element-reversed .visible-content {
   right: 0;
   margin: 20px 20px 20px 0;
   left: auto; }
 
-/* line 365, _theme.scss */
+/* line 413, _theme.scss */
 .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
 .story-element[data-effeckt-type~="story-element"]:active .visible-content {
   -webkit-transform: translateX(-120%);
@@ -4287,7 +4334,7 @@ Background image goes below.
   -o-transform: translateX(-120%);
   transform: translateX(-120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 365, _theme.scss */
+    /* line 413, _theme.scss */
     .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
     .story-element[data-effeckt-type~="story-element"]:active .visible-content {
       -webkit-transform: none;
@@ -4295,7 +4342,7 @@ Background image goes below.
       -o-transform: none;
       transform: none; } }
 
-/* line 379, _theme.scss */
+/* line 427, _theme.scss */
 .story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
 .story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
   -webkit-transform: translateX(120%);
@@ -4303,7 +4350,7 @@ Background image goes below.
   -o-transform: translateX(120%);
   transform: translateX(120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 379, _theme.scss */
+    /* line 427, _theme.scss */
     .story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
     .story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
       -webkit-transform: none;
@@ -4321,7 +4368,7 @@ the HTML markup looks like this:
 	</div>
 </div>
 */
-/* line 403, _theme.scss */
+/* line 451, _theme.scss */
 .slide-in {
   width: 100%;
   clear: both;
@@ -4329,11 +4376,11 @@ the HTML markup looks like this:
   position: relative;
   min-height: 16em; }
   @media only screen and (max-width: 1023px) {
-    /* line 403, _theme.scss */
+    /* line 451, _theme.scss */
     .slide-in {
       min-height: 25em; } }
 
-/* line 414, _theme.scss */
+/* line 462, _theme.scss */
 .slide {
   width: 100%;
   position: absolute;
@@ -4344,31 +4391,31 @@ the HTML markup looks like this:
   -ms-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out; }
 
-/* line 424, _theme.scss */
+/* line 472, _theme.scss */
 .slide-from-left {
   left: 0; }
 
-/* line 427, _theme.scss */
+/* line 475, _theme.scss */
 .slide-from-right {
   left: 0; }
 
-/* line 430, _theme.scss */
+/* line 478, _theme.scss */
 .offscreen {
   opacity: 0; }
 
-/* line 433, _theme.scss */
+/* line 481, _theme.scss */
 .slide-from-left.offscreen {
   left: -50%; }
 
-/* line 436, _theme.scss */
+/* line 484, _theme.scss */
 .slide-from-right.offscreen {
   left: 50%; }
 
-/* line 440, _theme.scss */
+/* line 488, _theme.scss */
 .margin-quarter {
   margin-left: 25%; }
   @media only screen and (max-width: 1023px) {
-    /* line 440, _theme.scss */
+    /* line 488, _theme.scss */
     .margin-quarter {
       margin-left: 0; } }
 
@@ -4570,3 +4617,295 @@ blockquote ~ cite {
 /* line 185, _typography.scss */
 .orange {
   color: #deb738; }
+
+/*
+ * Boxer [Formstone Library]
+ * @author Ben Plum
+ * @version 1.7.2
+ *
+ * Copyright © 2013 Ben Plum <mr@benplum.com>
+ * Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
+ */
+/* line 10, _boxer.scss */
+#boxer, #boxer .boxer-container, #boxer .boxer-content, #boxer-overlay {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none; }
+
+/* line 18, _boxer.scss */
+#boxer-overlay {
+  background: #000;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 105; }
+
+/* line 19, _boxer.scss */
+#boxer {
+  background: white url(../media/boxer/fs-boxer-loading.gif) no-repeat center;
+  box-shadow: 0 0 25px #000;
+  position: absolute;
+  z-index: 105; }
+
+/* line 20, _boxer.scss */
+#boxer.inline {
+  padding: 30px; }
+
+/* line 22, _boxer.scss */
+#boxer .boxer-close {
+  background: white url(../media/boxer/fs-boxer-icons.png) no-repeat -70px 10px;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  position: absolute;
+  padding: 0;
+  right: -8px;
+  top: -8px;
+  width: 30px;
+  text-indent: -99999px;
+  z-index: 106; }
+
+/* line 24, _boxer.scss */
+#boxer .boxer-container {
+  background: #fff;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 105;
+  zoom: 1; }
+
+/* line 25, _boxer.scss */
+#boxer .boxer-content {
+  background: #fff;
+  overflow: hidden;
+  padding: 0;
+  width: 10000px; }
+
+/* line 26, _boxer.scss */
+#boxer .boxer-image {
+  float: left; }
+
+/* line 27, _boxer.scss */
+#boxer .boxer-video {
+  height: 100%;
+  width: 100%; }
+
+/* line 28, _boxer.scss */
+#boxer .boxer-iframe {
+  float: left;
+  height: 100%;
+  overflow: auto;
+  width: 100%; }
+
+/* line 29, _boxer.scss */
+#boxer .boxer-meta {
+  clear: both; }
+
+/* line 31, _boxer.scss */
+#boxer .boxer-arrow {
+  background: white url(../media/boxer/fs-boxer-icons.png) no-repeat 0 0;
+  border-radius: 100%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  text-indent: -99999px;
+  top: 0;
+  width: 40px;
+  -webkit-transition: opacity 0.1s linear;
+  -moz-transition: opacity 0.1s linear;
+  -ms-transition: opacity 0.1s linear;
+  -o-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear; }
+
+/* line 38, _boxer.scss */
+#boxer .boxer-arrow.previous {
+  left: 20px; }
+
+/* line 39, _boxer.scss */
+#boxer .boxer-arrow.next {
+  background-position: -40px 0;
+  right: 20px; }
+
+/* line 41, _boxer.scss */
+#boxer .boxer-position {
+  color: #999;
+  font-size: 11px;
+  margin: 0;
+  padding: 15px 10px 5px; }
+
+/* line 42, _boxer.scss */
+#boxer .boxer-caption p {
+  margin: 0;
+  padding: 15px 10px 10px 10px; }
+
+/* line 43, _boxer.scss */
+#boxer .boxer-caption.gallery p {
+  padding-top: 0; }
+
+/* Mobile */
+/* line 46, _boxer.scss */
+#boxer.mobile {
+  background-color: #000;
+  background-image: url(../media/boxer/fs-boxer-loading-dark.gif);
+  border-radius: 0;
+  height: 100%;
+  left: 0;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+/* line 47, _boxer.scss */
+#boxer.mobile .boxer-close {
+  background-color: #000;
+  background-position: -70px -60px;
+  border-radius: 0;
+  right: 0;
+  top: 0; }
+
+/* line 48, _boxer.scss */
+#boxer.mobile .boxer-container {
+  background-color: #000; }
+
+/* line 49, _boxer.scss */
+#boxer.mobile .boxer-content {
+  background-color: #000;
+  position: relative; }
+
+/* line 50, _boxer.scss */
+#boxer.mobile .boxer-arrow {
+  background-color: transparent;
+  border-radius: 0;
+  margin: -20px 0 0;
+  top: 50%; }
+
+/* line 51, _boxer.scss */
+#boxer.mobile .boxer-arrow.previous {
+  background-position: 0 -40px;
+  float: left;
+  left: 0; }
+
+/* line 52, _boxer.scss */
+#boxer.mobile .boxer-arrow.next {
+  background-position: -40px -40px;
+  float: right;
+  right: 0; }
+
+/* line 53, _boxer.scss */
+#boxer.mobile .boxer-arrow.disabled {
+  opacity: 0.5; }
+
+/* line 55, _boxer.scss */
+#boxer.mobile .boxer-meta {
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  left: 0;
+  padding: 15px 50px 10px;
+  position: absolute;
+  width: 100%; }
+
+/* line 56, _boxer.scss */
+#boxer.mobile .boxer-position {
+  padding: 0; }
+
+/* line 57, _boxer.scss */
+#boxer.mobile .boxer-caption p {
+  color: #eee;
+  padding: 10px 0 0; }
+
+@media screen and (min-width: 980px) {
+  /* line 60, _boxer.scss */
+  #boxer .boxer-close:hover {
+    background-position: -70px -20px; }
+
+  /* line 62, _boxer.scss */
+  #boxer .boxer-arrow {
+    opacity: 0; }
+
+  /* line 63, _boxer.scss */
+  #boxer .boxer-content:hover .boxer-arrow {
+    opacity: 0.75; }
+
+  /* line 64, _boxer.scss */
+  #boxer .boxer-content .boxer-arrow:hover {
+    opacity: 1; }
+
+  /* line 65, _boxer.scss */
+  #boxer .boxer-content:hover .boxer-arrow.disabled {
+    opacity: 0.3;
+    cursor: default !important; }
+
+  /* line 67, _boxer.scss */
+  #boxer.mobile .boxer-arrow {
+    opacity: 1; }
+
+  /* line 68, _boxer.scss */
+  #boxer.mobile .boxer-arrow.disabled {
+    opacity: 0.5; } }
+/* line 1, _gallery.scss */
+.gallery {
+  padding: 0.25em;
+  overflow: hidden;
+  margin-left: 0; }
+  /* line 5, _gallery.scss */
+  .gallery li {
+    width: 20%;
+    float: left;
+    padding: 0.25em;
+    list-style: none; }
+  /* line 11, _gallery.scss */
+  .gallery img {
+    display: block; }
+  /* line 14, _gallery.scss */
+  .gallery li:nth-child(5n+1) {
+    clear: left; }
+  /* line 17, _gallery.scss */
+  .gallery li:nth-child(4n+1) {
+    clear: none; }
+  @media only screen and (max-width: 1023px) {
+    /* line 22, _gallery.scss */
+    .gallery li {
+      width: 33.3333333333333333%; }
+    /* line 25, _gallery.scss */
+    .gallery li:nth-child(3n+1) {
+      clear: left; }
+    /* line 28, _gallery.scss */
+    .gallery li:nth-child(odd) {
+      clear: none; }
+    /* line 31, _gallery.scss */
+    .gallery li:nth-child(5n+1) {
+      clear: none; }
+    /* line 34, _gallery.scss */
+    .gallery li:nth-child(4n+1) {
+      clear: none; } }
+  @media only screen and (max-width: 480px) {
+    /* line 39, _gallery.scss */
+    .gallery li {
+      float: left;
+      width: 50%;
+      padding: 0.25em; }
+    /* line 44, _gallery.scss */
+    .gallery img {
+      display: block; }
+    /* line 47, _gallery.scss */
+    .gallery li:nth-child(5n+1) {
+      clear: none; }
+    /* line 50, _gallery.scss */
+    .gallery li:nth-child(4n+1) {
+      clear: none; }
+    /* line 53, _gallery.scss */
+    .gallery li:nth-child(3n+1) {
+      clear: none; }
+    /* line 56, _gallery.scss */
+    .gallery li:nth-child(odd) {
+      clear: left; } }

@@ -1,6 +1,8 @@
 /* Responsive menu toggling as well as sliding element javascript*/
 
   $(document).ready(function() {
+
+
   $('body').addClass('js');
   var $menu = $('#menu'),
     $menulink = $('.menu-link');
@@ -26,7 +28,10 @@ $menulink.click(function() {
           };
         });
          });
+    $(".boxer").boxer();
+
 });
+
 
 /* Parallax scrolling plugin */
 /*
