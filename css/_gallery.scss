@@ -1,9 +1,36 @@
+/*------------------------------------*\
+    GALLERY.SCSS
+\*------------------------------------*/
+/**
+ * This is where you can modify the gallery element.
+
+ Markup for the gallery element is like this:
+ <ul class="gallery">
+ 	<li>
+ 		<a href="..." class="boxer" rel="gallery"> NOTE: the class "boxer" triggers the lightbox plugin, while the rel= tag creates arrows to cycle through like photos in the lightbox.
+ 			<img src="..." alt="..." />
+ 		</a>
+ 	</li>
+    <li>
+ 		<a href="..." class="boxer" rel="gallery"> 
+ 			<img src="..." alt="..." />
+ 		</a>
+ 	</li>
+ 	<li>
+ 		<a href="..." class="boxer" rel="gallery"> 
+ 			<img src="..." alt="..." />
+ 		</a>
+ 	</li> 
+  </ul>
+
+ */
+
 .gallery {
   		padding: 0.25em;
 		overflow: hidden;
 		margin-left: 0;
 			li {
-		    	width: 20%; 
+		    	width: 25%; 
 		    	float: left;
 				padding: 0.25em;
 				list-style: none;
@@ -11,12 +38,9 @@
 			img {
 				display: block;
 			}
-		  	li:nth-child(5n+1) {
+		  	li:nth-child(4n+1) {
 		  		clear: left;
 		  	}
-		  	li:nth-child(4n+1) {
-				clear: none;
-			}
 		
 		@include media-query(portable) {
 			li {
@@ -61,6 +85,152 @@
 		
 		}
 		
-	
-		
+/* 
+This allows you to use a caption on any image. 
+
+NOTE: Works best with images larger than 250*250px. Anything smaller may need adjustements to the CSS.
+
+Markup:
+
+<div class="img-caption" data-effeckt-type="cover-slide-top">
+  <img src="..." alt="..." />
+  <figcaption class="gradient-purple">
+    <div class="img-caption-figcaption-wrap">
+      <h5>INSERT YOUR HEADER HERE</h5>
+      <small>INSERT ANY DESCRIPTIVE COPY HERE</small>
+      <br>
+      <i class="icon-zoom-in"></i>
+    </div>
+  </figcaption>
+</div>
+
+  NOTE: There are five varieties and changing the <figcaption> class will manipulate them: gradient-black, gradient-grey, gradient-purple, gradient-orange, gradient-blue.
+*/
+
+
+.img-caption {
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+
+.img-caption:nth-child(2n) {
+  margin-right: 0;
+}
+
+.img-caption img {
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.img-caption figcaption {
+  position: absolute;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  width: 100%;
+}
+
+.img-caption-figcaption-wrap {
+  padding: 0.6em;
+  text-align:center;
+}
+
+.img-caption-figcaption-wrap h5 {
+	margin-bottom: 0.2em;
+}
+
+.img-caption-figcaption-wrap i {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.gradient-black, .gradient-purple, .gradient-grey {
+  color:#fff;
+}
+
+.gradient-orange, .gradient-blue {
+  color:#444;
+}
+
+.gradient-black {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,1) 16%, rgba(0,0,0,0.99) 17%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,rgba(0,0,0,1)), color-stop(17%,rgba(0,0,0,0.99)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 16%,rgba(0,0,0,0.99) 17%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,1) 16%,rgba(0,0,0,0.99) 17%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,1) 16%,rgba(0,0,0,0.99) 17%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 16%,rgba(0,0,0,0.99) 17%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-grey {
+  background: -moz-linear-gradient(top,  rgba(59,59,59,1) 16%, rgba(59,59,59,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,rgba(59,59,59,1)), color-stop(100%,rgba(59,59,59,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(59,59,59,1) 16%,rgba(59,59,59,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(59,59,59,1) 16%,rgba(59,59,59,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(59,59,59,1) 16%,rgba(59,59,59,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(59,59,59,1) 16%,rgba(59,59,59,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3b3b', endColorstr='#003b3b3b',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-purple {
+  background: -moz-linear-gradient(top,  rgba(112,108,135,1) 16%, rgba(112,108,135,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,rgba(112,108,135,1)), color-stop(100%,rgba(112,108,135,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(112,108,135,1) 16%,rgba(112,108,135,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(112,108,135,1) 16%,rgba(112,108,135,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(112,108,135,1) 16%,rgba(112,108,135,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(112,108,135,1) 16%,rgba(112,108,135,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#706c87', endColorstr='#00706c87',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-blue {
+  background: -moz-linear-gradient(top,  rgba(139,171,201,1) 16%, rgba(139,171,201,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,rgba(139,171,201,1)), color-stop(100%,rgba(139,171,201,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(139,171,201,1) 16%,rgba(139,171,201,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(139,171,201,1) 16%,rgba(139,171,201,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(139,171,201,1) 16%,rgba(139,171,201,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(139,171,201,1) 16%,rgba(139,171,201,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8babc9', endColorstr='#008babc9',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-orange {
+  background: -moz-linear-gradient(top,  rgba(222,183,56,1) 16%, rgba(222,183,56,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,rgba(222,183,56,1)), color-stop(100%,rgba(222,183,56,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(222,183,56,1) 16%,rgba(222,183,56,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(222,183,56,1) 16%,rgba(222,183,56,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(222,183,56,1) 16%,rgba(222,183,56,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(222,183,56,1) 16%,rgba(222,183,56,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deb738', endColorstr='#00deb738',GradientType=0 ); /* IE6-9 */
+
+}
+
+.img-caption[data-effeckt-type="cover-slide-top"] figcaption {
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.img-caption[data-effeckt-type="cover-slide-top"] img {
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.img-caption[data-effeckt-type="cover-slide-top"]:hover figcaption,
+.img-caption[data-effeckt-type="cover-slide-top"]:active figcaption {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  @include media-query(portable) {
+  	opacity: 0;
+  }
+}	
 		

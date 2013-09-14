@@ -3929,13 +3929,17 @@ label,
   top: 0;
   left: 0;
   z-index: -1; }
+  @media only screen and (max-width: 1023px) {
+    /* line 14, _theme.scss */
+    .background {
+      background: url(../media/background-piggy-back.jpg) right -140px no-repeat; } }
   @media only screen and (max-width: 480px) {
     /* line 14, _theme.scss */
     .background {
       background: url(../media/background-piggy-back-palm.jpg) right top no-repeat;
       position: static; } }
 
-/* line 29, _theme.scss */
+/* line 32, _theme.scss */
 .brand-logo {
   background: rgba(255, 255, 255, 0.8);
   -webkit-border-radius: 50%;
@@ -3947,23 +3951,27 @@ label,
   width: 350px;
   margin: 4rem auto 0;
   text-align: center; }
+  @media only screen and (max-width: 1023px) {
+    /* line 32, _theme.scss */
+    .brand-logo {
+      margin: 0.5rem auto 0; } }
   @media only screen and (max-width: 480px) {
-    /* line 29, _theme.scss */
+    /* line 32, _theme.scss */
     .brand-logo {
       margin: 1rem auto 0;
       height: 160px;
       width: 160px; } }
-  /* line 42, _theme.scss */
+  /* line 48, _theme.scss */
   .brand-logo img {
     width: 175px;
     margin: 40px auto; }
     @media only screen and (max-width: 480px) {
-      /* line 42, _theme.scss */
+      /* line 48, _theme.scss */
       .brand-logo img {
         width: 80px;
         margin: 20px auto; } }
 
-/* line 52, _theme.scss */
+/* line 58, _theme.scss */
 .icon-rounded {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -3974,33 +3982,42 @@ label,
   font-size: 32px;
   line-height: 32px; }
 
-/* line 64, _theme.scss */
+/* line 69, _theme.scss */
+.borders-top-bottom {
+  border-top: 1px solid #d4d8dd;
+  border-bottom: 1px solid #d4d8dd; }
+
+/* line 75, _theme.scss */
 .main-container,
 .nav-top-wrapper {
   background: #fff;
   padding: 1.5rem 1.5rem 0 1.5rem; }
 
-/* line 69, _theme.scss */
+/* line 80, _theme.scss */
 .main-container {
   border: 1px solid #d4d8dd; }
 
-/* line 73, _theme.scss */
+/* line 84, _theme.scss */
 .nav-top-wrapper {
   border-top: 1px solid #d4d8dd;
   border-left: 1px solid #d4d8dd;
   border-right: 1px solid #d4d8dd;
   padding: 0;
   margin: 5rem 0 0 0; }
+  @media only screen and (max-width: 1023px) {
+    /* line 84, _theme.scss */
+    .nav-top-wrapper {
+      margin: 3rem 0 0 0; } }
   @media only screen and (max-width: 480px) {
-    /* line 73, _theme.scss */
+    /* line 84, _theme.scss */
     .nav-top-wrapper {
       margin: 2rem 0 0 0; } }
 
-/* line 84, _theme.scss */
+/* line 98, _theme.scss */
 .nav-effect {
   margin: 0 0 6px; }
   @media only screen and (max-width: 480px) {
-    /* line 84, _theme.scss */
+    /* line 98, _theme.scss */
     .nav-effect {
       height: 0;
       margin: 0;
@@ -4010,11 +4027,11 @@ label,
       transition: height 500ms; } }
 
 @media only screen and (max-width: 480px) {
-  /* line 96, _theme.scss */
+  /* line 110, _theme.scss */
   .nav-effect.active {
     height: inherit; } }
 
-/* line 102, _theme.scss */
+/* line 116, _theme.scss */
 .nav-effect a {
   margin: 0 10px;
   padding: 12px 14px 0;
@@ -4026,11 +4043,11 @@ label,
   white-space: nowrap;
   text-align: center; }
   @media only screen and (max-width: 1023px) {
-    /* line 102, _theme.scss */
+    /* line 116, _theme.scss */
     .nav-effect a {
       margin: 0 0 28px 0; } }
   @media only screen and (max-width: 480px) {
-    /* line 102, _theme.scss */
+    /* line 116, _theme.scss */
     .nav-effect a {
       font-size: 1.5em;
       line-height: 1.5em;
@@ -4041,7 +4058,7 @@ label,
       background: #706c87;
       color: white; } }
 
-/* line 127, _theme.scss */
+/* line 141, _theme.scss */
 .nav-effect a:hover {
   -webkit-box-shadow: inset 0 6px 0 #706c87;
   -moz-box-shadow: inset 0 6px 0 #706c87;
@@ -4050,13 +4067,13 @@ label,
   -moz-transition: box-shadow 0.3s, height 0.3s;
   transition: box-shadow 0.3s, height 0.3s; }
 
-/* line 136, _theme.scss */
+/* line 150, _theme.scss */
 .nav-effect .active {
   -webkit-box-shadow: inset 0 6px 0 #706c87;
   -moz-box-shadow: inset 0 6px 0 #706c87;
   box-shadow: inset 0 6px 0 #706c87; }
 
-/* line 143, _theme.scss */
+/* line 157, _theme.scss */
 .nav-effect a::before,
 .nav-effect a::after {
   position: absolute;
@@ -4071,7 +4088,7 @@ label,
   -moz-transition: opacity 0.3s, height 0.3s;
   transition: opacity 0.3s, height 0.3s; }
 
-/* line 157, _theme.scss */
+/* line 171, _theme.scss */
 .nav-effect a::after {
   top: 100%;
   opacity: 0;
@@ -4082,18 +4099,18 @@ label,
   -moz-transform: translateY(-10px);
   transform: translateY(-10px); }
 
-/* line 168, _theme.scss */
+/* line 182, _theme.scss */
 .nav-effect a span:first-child {
   z-index: 2;
   display: block;
   font-weight: 300;
   margin: 10px 0 -10px 0; }
   @media only screen and (max-width: 480px) {
-    /* line 168, _theme.scss */
+    /* line 182, _theme.scss */
     .nav-effect a span:first-child {
       margin: inherit; } }
 
-/* line 178, _theme.scss */
+/* line 192, _theme.scss */
 .nav-effect a span:last-child {
   z-index: 1;
   display: block;
@@ -4111,12 +4128,12 @@ label,
   -moz-transform: translateY(-100%);
   transform: translateY(-100%); }
 
-/* line 197, _theme.scss */
+/* line 211, _theme.scss */
 .nav-effect a:hover::before,
 .nav-effect a:focus::before {
   height: 6px; }
 
-/* line 204, _theme.scss */
+/* line 218, _theme.scss */
 .nav-effect a:hover span:last-child,
 .nav-effect a:focus span:last-child {
   opacity: 1;
@@ -4148,7 +4165,7 @@ Background image goes below.
   </figcaption>
 </figure>
 */
-/* line 237, _theme.scss */
+/* line 251, _theme.scss */
 .story-element {
   position: relative;
   float: left;
@@ -4157,17 +4174,17 @@ Background image goes below.
   cursor: pointer;
   margin-top: 28px; }
 
-/* line 246, _theme.scss */
+/* line 260, _theme.scss */
 .story-element:nth-child(2n) {
   margin-right: 0; }
 
-/* line 250, _theme.scss */
+/* line 264, _theme.scss */
 .story-element img {
   -webkit-transition: 500ms 300ms;
   -o-transition: 500ms 300ms;
   transition: 500ms 300ms; }
 
-/* line 256, _theme.scss */
+/* line 270, _theme.scss */
 .story-element figcaption {
   position: absolute;
   margin: auto;
@@ -4182,7 +4199,7 @@ Background image goes below.
   -o-transition: 750ms 300ms;
   transition: 750ms 300ms; }
   @media only screen and (max-width: 1023px) {
-    /* line 256, _theme.scss */
+    /* line 270, _theme.scss */
     .story-element figcaption {
       position: static;
       background: #706c87;
@@ -4192,38 +4209,38 @@ Background image goes below.
       transition: none;
       height: inherit; } }
 
-/* line 277, _theme.scss */
+/* line 291, _theme.scss */
 .story-element-orange {
   color: #3b3b3b; }
-  /* line 279, _theme.scss */
+  /* line 293, _theme.scss */
   .story-element-orange .rule {
     color: #e5c764; }
 
-/* line 285, _theme.scss */
+/* line 299, _theme.scss */
 .story-element-purple .rule {
   color: #4d4a5d; }
 
-/* line 291, _theme.scss */
+/* line 305, _theme.scss */
 .story-element-blue .rule {
   color: #9cb8d1; }
 
-/* line 296, _theme.scss */
+/* line 310, _theme.scss */
 .story-element-orange figcaption {
   background: rgba(227, 183, 45, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 296, _theme.scss */
+    /* line 310, _theme.scss */
     .story-element-orange figcaption {
       background: #e3b72d; } }
 
-/* line 304, _theme.scss */
+/* line 318, _theme.scss */
 .story-element-blue figcaption {
   background: rgba(139, 171, 201, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 304, _theme.scss */
+    /* line 318, _theme.scss */
     .story-element-blue figcaption {
       background: #8babc9; } }
 
-/* line 311, _theme.scss */
+/* line 325, _theme.scss */
 .story-element[data-effeckt-type~="story-element"] figcaption {
   top: 0;
   left: 0;
@@ -4234,33 +4251,33 @@ Background image goes below.
   -o-transform: translateX(120%);
   transform: translateX(120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 311, _theme.scss */
+    /* line 325, _theme.scss */
     .story-element[data-effeckt-type~="story-element"] figcaption {
       -webkit-transform: none;
       -ms-transform: none;
       -o-transform: none;
       transform: none; } }
 
-/* line 328, _theme.scss */
+/* line 342, _theme.scss */
 .story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
   -webkit-transform: translateX(-120%);
   -ms-transform: translateX(-120%);
   -o-transform: translateX(-120%);
   transform: translateX(-120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 328, _theme.scss */
+    /* line 342, _theme.scss */
     .story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
       -webkit-transform: none;
       -ms-transform: none;
       -o-transform: none;
       transform: none; } }
 
-/* line 342, _theme.scss */
+/* line 356, _theme.scss */
 .story-element[data-effeckt-type~="story-element"] img {
   display: block;
   position: relative; }
 
-/* line 349, _theme.scss */
+/* line 363, _theme.scss */
 .story-element[data-effeckt-type~="story-element"]:hover figcaption,
 .story-element[data-effeckt-type~="story-element"]:active figcaption {
   -webkit-transform: translateX(0);
@@ -4268,11 +4285,11 @@ Background image goes below.
   -o-transform: translateX(0);
   transform: translateX(0); }
 
-/* line 356, _theme.scss */
+/* line 370, _theme.scss */
 .hidden-content {
   max-width: 100px; }
 
-/* line 365, _theme.scss */
+/* line 379, _theme.scss */
 .story-element h1,
 .story-element h2,
 .story-element h3,
@@ -4281,7 +4298,7 @@ Background image goes below.
 .story-element h6 {
   margin: 0; }
 
-/* line 369, _theme.scss */
+/* line 383, _theme.scss */
 .visible-content {
   position: absolute;
   top: 0;
@@ -4293,40 +4310,40 @@ Background image goes below.
   -o-transition: 500ms 300ms;
   transition: 500ms 300ms; }
   @media only screen and (max-width: 480px) {
-    /* line 369, _theme.scss */
+    /* line 383, _theme.scss */
     .visible-content {
       padding: 10px;
       margin: 4px; }
-      /* line 382, _theme.scss */
+      /* line 396, _theme.scss */
       .visible-content h4 {
         font-size: 16px; }
-      /* line 385, _theme.scss */
+      /* line 399, _theme.scss */
       .visible-content small {
         font-size: 12px; } }
 
-/* line 392, _theme.scss */
+/* line 406, _theme.scss */
 .story-element-orange .visible-content {
   background: rgba(227, 183, 45, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 392, _theme.scss */
+    /* line 406, _theme.scss */
     .story-element-orange .visible-content {
       background: #e3b72d; } }
 
-/* line 399, _theme.scss */
+/* line 413, _theme.scss */
 .story-element-blue .visible-content {
   background: rgba(139, 171, 201, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 399, _theme.scss */
+    /* line 413, _theme.scss */
     .story-element-blue .visible-content {
       background: #8babc9; } }
 
-/* line 406, _theme.scss */
+/* line 420, _theme.scss */
 .story-element-reversed .visible-content {
   right: 0;
   margin: 20px 20px 20px 0;
   left: auto; }
 
-/* line 413, _theme.scss */
+/* line 427, _theme.scss */
 .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
 .story-element[data-effeckt-type~="story-element"]:active .visible-content {
   -webkit-transform: translateX(-120%);
@@ -4334,7 +4351,7 @@ Background image goes below.
   -o-transform: translateX(-120%);
   transform: translateX(-120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 413, _theme.scss */
+    /* line 427, _theme.scss */
     .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
     .story-element[data-effeckt-type~="story-element"]:active .visible-content {
       -webkit-transform: none;
@@ -4342,7 +4359,7 @@ Background image goes below.
       -o-transform: none;
       transform: none; } }
 
-/* line 427, _theme.scss */
+/* line 441, _theme.scss */
 .story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
 .story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
   -webkit-transform: translateX(120%);
@@ -4350,7 +4367,7 @@ Background image goes below.
   -o-transform: translateX(120%);
   transform: translateX(120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 427, _theme.scss */
+    /* line 441, _theme.scss */
     .story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
     .story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
       -webkit-transform: none;
@@ -4368,7 +4385,7 @@ the HTML markup looks like this:
 	</div>
 </div>
 */
-/* line 451, _theme.scss */
+/* line 465, _theme.scss */
 .slide-in {
   width: 100%;
   clear: both;
@@ -4376,11 +4393,11 @@ the HTML markup looks like this:
   position: relative;
   min-height: 16em; }
   @media only screen and (max-width: 1023px) {
-    /* line 451, _theme.scss */
+    /* line 465, _theme.scss */
     .slide-in {
       min-height: 25em; } }
 
-/* line 462, _theme.scss */
+/* line 476, _theme.scss */
 .slide {
   width: 100%;
   position: absolute;
@@ -4391,31 +4408,31 @@ the HTML markup looks like this:
   -ms-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out; }
 
-/* line 472, _theme.scss */
+/* line 486, _theme.scss */
 .slide-from-left {
   left: 0; }
 
-/* line 475, _theme.scss */
+/* line 489, _theme.scss */
 .slide-from-right {
   left: 0; }
 
-/* line 478, _theme.scss */
+/* line 492, _theme.scss */
 .offscreen {
   opacity: 0; }
 
-/* line 481, _theme.scss */
+/* line 495, _theme.scss */
 .slide-from-left.offscreen {
   left: -50%; }
 
-/* line 484, _theme.scss */
+/* line 498, _theme.scss */
 .slide-from-right.offscreen {
   left: 50%; }
 
-/* line 488, _theme.scss */
+/* line 502, _theme.scss */
 .margin-quarter {
   margin-left: 25%; }
   @media only screen and (max-width: 1023px) {
-    /* line 488, _theme.scss */
+    /* line 502, _theme.scss */
     .margin-quarter {
       margin-left: 0; } }
 
@@ -4557,24 +4574,29 @@ strong {
 
 /* line 126, _typography.scss */
 a {
+  color: #a6a3b6;
+  text-decoration: none; }
+
+/* line 131, _typography.scss */
+a:hover {
   color: #706c87; }
 
-/* line 130, _typography.scss */
+/* line 135, _typography.scss */
 ul.clean {
   list-style: none;
   margin: 0; }
 
-/* line 135, _typography.scss */
+/* line 140, _typography.scss */
 .rule {
   margin-top: 0.6em;
   margin-bottom: 0.6em; }
 
-/* line 140, _typography.scss */
+/* line 145, _typography.scss */
 figure {
   margin: 0;
   color: white; }
 
-/* line 145, _typography.scss */
+/* line 150, _typography.scss */
 blockquote {
   text-indent: -0.2em;
   margin-top: 2.4em;
@@ -4582,7 +4604,7 @@ blockquote {
   margin-bottom: 8px;
   position: relative; }
 
-/* line 153, _typography.scss */
+/* line 158, _typography.scss */
 blockquote:before {
   content: "“";
   color: #706c87;
@@ -4591,14 +4613,14 @@ blockquote:before {
   top: -0.35em;
   left: 0.35em; }
 
-/* line 162, _typography.scss */
+/* line 167, _typography.scss */
 cite {
   font-size: 0.8em;
   margin-top: 0;
   line-height: 1;
   font-style: normal; }
 
-/* line 169, _typography.scss */
+/* line 174, _typography.scss */
 blockquote ~ cite {
   display: block;
   text-align: right;
@@ -4606,15 +4628,15 @@ blockquote ~ cite {
   margin-bottom: 2.4em; }
 
 /* COPY COLOR CHANGING HELPER CLASSES */
-/* line 178, _typography.scss */
+/* line 183, _typography.scss */
 .purple {
   color: #706c87; }
 
-/* line 182, _typography.scss */
+/* line 187, _typography.scss */
 .blue {
   color: #8babc9; }
 
-/* line 185, _typography.scss */
+/* line 190, _typography.scss */
 .orange {
   color: #deb738; }
 
@@ -4852,60 +4874,266 @@ blockquote ~ cite {
   /* line 68, _boxer.scss */
   #boxer.mobile .boxer-arrow.disabled {
     opacity: 0.5; } }
-/* line 1, _gallery.scss */
+/*------------------------------------*\
+    GALLERY.SCSS
+\*------------------------------------*/
+/**
+ * This is where you can modify the gallery element.
+
+ Markup for the gallery element is like this:
+ <ul class="gallery">
+ 	<li>
+ 		<a href="..." class="boxer" rel="gallery"> NOTE: the class "boxer" triggers the lightbox plugin, while the rel= tag creates arrows to cycle through like photos in the lightbox.
+ 			<img src="..." alt="..." />
+ 		</a>
+ 	</li>
+    <li>
+ 		<a href="..." class="boxer" rel="gallery"> 
+ 			<img src="..." alt="..." />
+ 		</a>
+ 	</li>
+ 	<li>
+ 		<a href="..." class="boxer" rel="gallery"> 
+ 			<img src="..." alt="..." />
+ 		</a>
+ 	</li> 
+  </ul>
+
+ */
+/* line 28, _gallery.scss */
 .gallery {
   padding: 0.25em;
   overflow: hidden;
   margin-left: 0; }
-  /* line 5, _gallery.scss */
+  /* line 32, _gallery.scss */
   .gallery li {
-    width: 20%;
+    width: 25%;
     float: left;
     padding: 0.25em;
     list-style: none; }
-  /* line 11, _gallery.scss */
+  /* line 38, _gallery.scss */
   .gallery img {
     display: block; }
-  /* line 14, _gallery.scss */
-  .gallery li:nth-child(5n+1) {
-    clear: left; }
-  /* line 17, _gallery.scss */
+  /* line 41, _gallery.scss */
   .gallery li:nth-child(4n+1) {
-    clear: none; }
+    clear: left; }
   @media only screen and (max-width: 1023px) {
-    /* line 22, _gallery.scss */
+    /* line 46, _gallery.scss */
     .gallery li {
       width: 33.3333333333333333%; }
-    /* line 25, _gallery.scss */
+    /* line 49, _gallery.scss */
     .gallery li:nth-child(3n+1) {
       clear: left; }
-    /* line 28, _gallery.scss */
+    /* line 52, _gallery.scss */
     .gallery li:nth-child(odd) {
       clear: none; }
-    /* line 31, _gallery.scss */
+    /* line 55, _gallery.scss */
     .gallery li:nth-child(5n+1) {
       clear: none; }
-    /* line 34, _gallery.scss */
+    /* line 58, _gallery.scss */
     .gallery li:nth-child(4n+1) {
       clear: none; } }
   @media only screen and (max-width: 480px) {
-    /* line 39, _gallery.scss */
+    /* line 63, _gallery.scss */
     .gallery li {
       float: left;
       width: 50%;
       padding: 0.25em; }
-    /* line 44, _gallery.scss */
+    /* line 68, _gallery.scss */
     .gallery img {
       display: block; }
-    /* line 47, _gallery.scss */
+    /* line 71, _gallery.scss */
     .gallery li:nth-child(5n+1) {
       clear: none; }
-    /* line 50, _gallery.scss */
+    /* line 74, _gallery.scss */
     .gallery li:nth-child(4n+1) {
       clear: none; }
-    /* line 53, _gallery.scss */
+    /* line 77, _gallery.scss */
     .gallery li:nth-child(3n+1) {
       clear: none; }
-    /* line 56, _gallery.scss */
+    /* line 80, _gallery.scss */
     .gallery li:nth-child(odd) {
       clear: left; } }
+
+/* 
+This allows you to use a caption on any image. 
+
+NOTE: Works best with images larger than 250*250px. Anything smaller may need adjustements to the CSS.
+
+Markup:
+
+<div class="img-caption" data-effeckt-type="cover-slide-top">
+  <img src="..." alt="..." />
+  <figcaption class="gradient-purple">
+    <div class="img-caption-figcaption-wrap">
+      <h5>INSERT YOUR HEADER HERE</h5>
+      <small>INSERT ANY DESCRIPTIVE COPY HERE</small>
+      <br>
+      <i class="icon-zoom-in"></i>
+    </div>
+  </figcaption>
+</div>
+
+  NOTE: There are five varieties and changing the <figcaption> class will manipulate them: gradient-black, gradient-grey, gradient-purple, gradient-orange, gradient-blue.
+*/
+/* line 111, _gallery.scss */
+.img-caption {
+  position: relative;
+  float: left;
+  overflow: hidden; }
+
+/* line 117, _gallery.scss */
+.img-caption:nth-child(2n) {
+  margin-right: 0; }
+
+/* line 121, _gallery.scss */
+.img-caption img {
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms; }
+
+/* line 127, _gallery.scss */
+.img-caption figcaption {
+  position: absolute;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  width: 100%; }
+
+/* line 135, _gallery.scss */
+.img-caption-figcaption-wrap {
+  padding: 0.6em;
+  text-align: center; }
+
+/* line 140, _gallery.scss */
+.img-caption-figcaption-wrap h5 {
+  margin-bottom: 0.2em; }
+
+/* line 144, _gallery.scss */
+.img-caption-figcaption-wrap i {
+  font-size: 32px;
+  line-height: 48px; }
+
+/* line 149, _gallery.scss */
+.gradient-black, .gradient-purple, .gradient-grey {
+  color: #fff; }
+
+/* line 153, _gallery.scss */
+.gradient-orange, .gradient-blue {
+  color: #444; }
+
+/* line 157, _gallery.scss */
+.gradient-black {
+  background: -moz-linear-gradient(top, black 16%, rgba(0, 0, 0, 0.99) 17%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16%, black), color-stop(17%, rgba(0, 0, 0, 0.99)), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, black 16%, rgba(0, 0, 0, 0.99) 17%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, black 16%, rgba(0, 0, 0, 0.99) 17%, rgba(0, 0, 0, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, black 16%, rgba(0, 0, 0, 0.99) 17%, rgba(0, 0, 0, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #000000 16%, rgba(0, 0, 0, 0.99) 17%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */ }
+
+/* line 167, _gallery.scss */
+.gradient-grey {
+  background: -moz-linear-gradient(top, #3b3b3b 16%, rgba(59, 59, 59, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16%, #3b3b3b), color-stop(100%, rgba(59, 59, 59, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #3b3b3b 16%, rgba(59, 59, 59, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #3b3b3b 16%, rgba(59, 59, 59, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #3b3b3b 16%, rgba(59, 59, 59, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #3b3b3b 16%, rgba(59, 59, 59, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b3b3b', endColorstr='#003b3b3b',GradientType=0 );
+  /* IE6-9 */ }
+
+/* line 177, _gallery.scss */
+.gradient-purple {
+  background: -moz-linear-gradient(top, #706c87 16%, rgba(112, 108, 135, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16%, #706c87), color-stop(100%, rgba(112, 108, 135, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #706c87 16%, rgba(112, 108, 135, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #706c87 16%, rgba(112, 108, 135, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #706c87 16%, rgba(112, 108, 135, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #706c87 16%, rgba(112, 108, 135, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#706c87', endColorstr='#00706c87',GradientType=0 );
+  /* IE6-9 */ }
+
+/* line 187, _gallery.scss */
+.gradient-blue {
+  background: -moz-linear-gradient(top, #8babc9 16%, rgba(139, 171, 201, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16%, #8babc9), color-stop(100%, rgba(139, 171, 201, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #8babc9 16%, rgba(139, 171, 201, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #8babc9 16%, rgba(139, 171, 201, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #8babc9 16%, rgba(139, 171, 201, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #8babc9 16%, rgba(139, 171, 201, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8babc9', endColorstr='#008babc9',GradientType=0 );
+  /* IE6-9 */ }
+
+/* line 197, _gallery.scss */
+.gradient-orange {
+  background: -moz-linear-gradient(top, #deb738 16%, rgba(222, 183, 56, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16%, #deb738), color-stop(100%, rgba(222, 183, 56, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #deb738 16%, rgba(222, 183, 56, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #deb738 16%, rgba(222, 183, 56, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #deb738 16%, rgba(222, 183, 56, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #deb738 16%, rgba(222, 183, 56, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#deb738', endColorstr='#00deb738',GradientType=0 );
+  /* IE6-9 */ }
+
+/* line 208, _gallery.scss */
+.img-caption[data-effeckt-type="cover-slide-top"] figcaption {
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  opacity: 0; }
+
+/* line 219, _gallery.scss */
+.img-caption[data-effeckt-type="cover-slide-top"] img {
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms; }
+
+/* line 226, _gallery.scss */
+.img-caption[data-effeckt-type="cover-slide-top"]:hover figcaption,
+.img-caption[data-effeckt-type="cover-slide-top"]:active figcaption {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1; }
+  @media only screen and (max-width: 1023px) {
+    /* line 226, _gallery.scss */
+    .img-caption[data-effeckt-type="cover-slide-top"]:hover figcaption,
+    .img-caption[data-effeckt-type="cover-slide-top"]:active figcaption {
+      opacity: 0; } }

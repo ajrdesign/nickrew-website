@@ -19,6 +19,9 @@ body {
 	top: 0;
 	left: 0;
 	z-index: -1;
+	@include media-query(portable) {
+		background: url(../media/background-piggy-back.jpg) right -140px no-repeat;
+	}
 	  @include media-query(palm) {
 		background: url(../media/background-piggy-back-palm.jpg) right top no-repeat;
 		position: static;
@@ -33,6 +36,9 @@ body {
 	width: 350px;
 	margin: 4rem auto 0;
 	text-align: center;
+	@include media-query(portable) {
+		margin: 0.5rem auto 0;
+	}
 	@include media-query(palm) {
 		margin: 1rem auto 0;
 		height: 160px;
@@ -60,6 +66,11 @@ body {
  	line-height: 32px;
  }
 
+ .borders-top-bottom {
+ 	border-top: 1px solid $lightgrey;
+ 	border-bottom: 1px solid $lightgrey;
+ }
+
  .main-container,
  .nav-top-wrapper {
  	background: #fff;
@@ -76,6 +87,9 @@ body {
  	border-right: 1px solid $lightgrey;
  	padding: 0;
  	margin: 5rem 0 0 0;
+ 	@include media-query(portable) {
+ 		margin: 3rem 0 0 0;
+ 	}
  	@include media-query(palm) {
  		margin: 2rem 0 0 0;
  	}

@@ -124,7 +124,12 @@ article p:first-child:first-letter {
  }
 
  a {
- 	color: $purple;
+ 	color: lighten($purple, 20%);
+    text-decoration: none;
+ }
+
+ a:hover {
+    color: $purple;
  }
 
  ul.clean {
