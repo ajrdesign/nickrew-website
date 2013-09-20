@@ -74,13 +74,15 @@ $use-greybox:       true;
 /**
  * Place any of your own variables that sit on top of inuit.css here.
  */
-
+ $brand-color: 	#706C87;
  $purple: 		#706C87;
  $orange: 		#DEB738;
  $blue: 		#8BABC9;
  $darkblue: 	#343B41;
  $lightgrey: 	#D4D8DD;
  $darkgrey: 	#3b3b3b;
+
+ $brand-round: 3px;
 
  $h1-size: 		48px;
  $h2-size: 		36px;

@@ -1214,7 +1214,7 @@ img[height] {
  */
 /* line 27, inuit.css/base/_images.scss */
 .img--round {
-  border-radius: 4px; }
+  border-radius: 3px; }
 
 /**
  * Image placement variations.
@@ -2345,7 +2345,7 @@ label,
   /* [7] */
   padding-left: 1em;
   /* [7] */
-  border-radius: 4px;
+  border-radius: 3px;
   /* [8] */ }
 
 /* line 76, inuit.css/objects/_beautons.scss */
@@ -2520,7 +2520,7 @@ label,
 
 /* line 41, inuit.css/objects/_lozenges.scss */
 .loz {
-  border-radius: 4px; }
+  border-radius: 3px; }
 
 /*------------------------------------*\
     $RULES
@@ -3507,7 +3507,7 @@ label,
 /* line 8, inuit.css/generic/_brand.scss */
 .brand {
   font-family: "Helvetica Neue", sans-serif!important;
-  color: #4a8ec2!important; }
+  color: #706c87!important; }
 
 /* line 12, inuit.css/generic/_brand.scss */
 .brand-face {
@@ -3516,7 +3516,7 @@ label,
 /* line 16, inuit.css/generic/_brand.scss */
 .brand-color,
 .brand-colour {
-  color: #4a8ec2!important; }
+  color: #706c87!important; }
 
 /*------------------------------------*\
     $HELPER
@@ -4436,6 +4436,26 @@ the HTML markup looks like this:
     .margin-quarter {
       margin-left: 0; } }
 
+/* line 509, _theme.scss */
+.btn--primary {
+  background: #706c87;
+  color: white;
+  -webkit-transition: background 200ms;
+  -moz-transition: background 200ms;
+  -ms-transition: background 200ms;
+  -o-transition: background 200ms;
+  transition: background 200ms; }
+
+/* line 519, _theme.scss */
+.btn--primary:hover {
+  background: #8b879f; }
+
+/* line 523, _theme.scss */
+footer {
+  background: #b4b2c1;
+  padding: 18px 0;
+  text-align: center; }
+
 /*------------------------------------*\
     RESPONSIVE.SCSS
 \*------------------------------------*/
@@ -4455,6 +4475,31 @@ the HTML markup looks like this:
     /* line 8, _responsive.scss */
     .grid {
       margin: 0 5%; } }
+
+/* Flexible iFrame 
+Place embedded videos or maps into a flexible container to make them responsive.
+
+<div class="flexible-container">
+	... Add embed code here ...
+</div>
+*/
+/* line 29, _responsive.scss */
+.flexible-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+/* line 39, _responsive.scss */
+.flexible-container iframe,
+.flexible-container object,
+.flexible-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 /* 
 ======= IMPORTANT INFORMATION ABOUT THIS FONT =======
@@ -4574,29 +4619,34 @@ strong {
 
 /* line 126, _typography.scss */
 a {
-  color: #a6a3b6;
-  text-decoration: none; }
+  color: #706c87;
+  text-decoration: underline;
+  -webkit-transition: color 200ms;
+  -moz-transition: color 200ms;
+  -ms-transition: color 200ms;
+  -o-transition: color 200ms;
+  transition: color 200ms; }
 
-/* line 131, _typography.scss */
+/* line 136, _typography.scss */
 a:hover {
-  color: #706c87; }
+  color: #a6a3b6; }
 
-/* line 135, _typography.scss */
+/* line 140, _typography.scss */
 ul.clean {
   list-style: none;
   margin: 0; }
 
-/* line 140, _typography.scss */
+/* line 145, _typography.scss */
 .rule {
   margin-top: 0.6em;
   margin-bottom: 0.6em; }
 
-/* line 145, _typography.scss */
+/* line 150, _typography.scss */
 figure {
   margin: 0;
   color: white; }
 
-/* line 150, _typography.scss */
+/* line 155, _typography.scss */
 blockquote {
   text-indent: -0.2em;
   margin-top: 2.4em;
@@ -4604,7 +4654,7 @@ blockquote {
   margin-bottom: 8px;
   position: relative; }
 
-/* line 158, _typography.scss */
+/* line 163, _typography.scss */
 blockquote:before {
   content: "“";
   color: #706c87;
@@ -4613,14 +4663,14 @@ blockquote:before {
   top: -0.35em;
   left: 0.35em; }
 
-/* line 167, _typography.scss */
+/* line 172, _typography.scss */
 cite {
   font-size: 0.8em;
   margin-top: 0;
   line-height: 1;
   font-style: normal; }
 
-/* line 174, _typography.scss */
+/* line 179, _typography.scss */
 blockquote ~ cite {
   display: block;
   text-align: right;
@@ -4628,17 +4678,34 @@ blockquote ~ cite {
   margin-bottom: 2.4em; }
 
 /* COPY COLOR CHANGING HELPER CLASSES */
-/* line 183, _typography.scss */
+/* line 188, _typography.scss */
+.brand-color {
+  color: #706c87; }
+
+/* line 192, _typography.scss */
 .purple {
   color: #706c87; }
 
-/* line 187, _typography.scss */
+/* line 196, _typography.scss */
 .blue {
   color: #8babc9; }
 
-/* line 190, _typography.scss */
+/* line 199, _typography.scss */
 .orange {
   color: #deb738; }
+
+/* line 203, _typography.scss */
+.form-large-type {
+  font-size: 1.1em; }
+
+/* line 207, _typography.scss */
+.form-large-type select, .form-large-type input {
+  display: inline-block;
+  -webkit-appearance: none;
+  padding: 0 4px;
+  margin-bottom: 6px;
+  border-radius: 0;
+  border: 2px solid #706c87; }
 
 /*
  * Boxer [Formstone Library]

@@ -100,7 +100,7 @@ p {
 
 article p:first-child:first-letter { 
     float: left; 
-    color: $purple; 
+    color: $brand-color; 
     font-size: 98px; 
     line-height: 75px; 
     padding-top: 4px; 
@@ -124,12 +124,17 @@ article p:first-child:first-letter {
  }
 
  a {
- 	color: lighten($purple, 20%);
-    text-decoration: none;
+ 	color: $brand-color;
+    text-decoration: underline;
+    -webkit-transition: color 200ms;
+    -moz-transition: color 200ms;
+    -ms-transition: color 200ms;
+    -o-transition: color 200ms;
+    transition: color 200ms;
  }
 
  a:hover {
-    color: $purple;
+    color: lighten($brand-color, 20%);
  }
 
  ul.clean {
@@ -157,7 +162,7 @@ blockquote {
 
 blockquote:before {
     content: "“";
-    color: $purple; 
+    color: $brand-color; 
     font-size: 80px; 
     position: absolute; 
     top: -0.35em; 
@@ -180,6 +185,10 @@ blockquote ~ cite {
 
 /* COPY COLOR CHANGING HELPER CLASSES */
 
+.brand-color {
+    color: $brand-color;
+}
+
 .purple {
     color: $purple;
 }
@@ -189,4 +198,17 @@ blockquote ~ cite {
 }
 .orange {
     color: $orange;
+}
+
+.form-large-type {
+    font-size: 1.1em;
+}
+
+.form-large-type select, .form-large-type input {
+    display: inline-block;
+    -webkit-appearance: none;
+    padding: 0 4px;
+    margin-bottom: 6px;
+    border-radius: 0;
+    border: 2px solid $brand-color;
 }
