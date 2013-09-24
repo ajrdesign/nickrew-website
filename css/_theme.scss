@@ -30,27 +30,29 @@ body {
 }
 
  .brand-logo {
- 	background: rgba(255,255,255, 0.8);
- 	@include border-radius(50%);
-	height: 350px;
-	width: 350px;
-	margin: 4rem auto 0;
+	margin: 1rem auto 0;
 	text-align: center;
+	
+
 	@include media-query(portable) {
 		margin: 0.5rem auto 0;
 	}
 	@include media-query(palm) {
 		margin: 1rem auto 0;
-		height: 160px;
-		width: 160px;
 		}
 
 	img {
-		width: 175px;
+		background: rgba(255,255,255, 0.8);
+		@include border-radius(50%);
+	 	padding: $base-spacing-unit*1.5;
 		margin: 40px auto;
+		@include media-query(portable) {
+			width: 275px;
+		}
 		@include media-query(palm) {
-			width: 80px;
-			margin: 20px auto;
+			padding: $base-spacing-unit;
+			width: 200px;
+			margin:10px auto;
 		}
 	}
  }
@@ -75,6 +77,9 @@ body {
  .nav-top-wrapper {
  	background: #fff;
  	padding: 1.5rem 1.5rem 0 1.5rem;
+ 	@include media-query(palm) {
+ 		padding: 0.75rem 0.75rem 0 0.75rem
+ 	}
  }
 
  .main-container {
@@ -86,12 +91,12 @@ body {
  	border-left: 1px solid $lightgrey;
  	border-right: 1px solid $lightgrey;
  	padding: 0;
- 	margin: 5rem 0 0 0;
+ 	margin: 2rem 0 0 0;
  	@include media-query(portable) {
- 		margin: 3rem 0 0 0;
+ 		margin: 1.5rem 0 0 0;
  	}
  	@include media-query(palm) {
- 		margin: 2rem 0 0 0;
+ 		margin: 1rem 0 0 0;
  	}
  }
 
@@ -307,6 +312,12 @@ Background image goes below.
 	}
 }
 
+.story-element-pink {
+	.rule {
+		color:lighten($pink,5%);
+	}
+}
+
 .story-element-orange figcaption {
 	background: rgba(227,183,45, 0.8);
 	@include media-query(portable) {
@@ -319,6 +330,13 @@ Background image goes below.
 	background: rgba(139,171,201, 0.8);
 	@include media-query(portable) {
 		background: rgba(139,171,201, 1);
+	}
+}
+
+.story-element-pink figcaption {
+	background: rgba(203,70,70, 0.8);
+	@include media-query(portable) {
+		background: rgba(203,70,70, 1);
 	}
 }
 
@@ -417,6 +435,13 @@ Background image goes below.
 	}
 }
 
+.story-element-pink .visible-content {
+	background: rgba(203,70,70, 0.8);
+	@include media-query(portable) {
+		background: rgba(203,70,70, 1);
+	}
+}
+
 .story-element-reversed .visible-content {
 	right: 0;
 	margin: 20px 20px 20px 0;
@@ -494,9 +519,15 @@ the HTML markup looks like this:
 }
 .slide-from-left.offscreen {
 	left: -50%;
+	@include media-query (portable) {
+		left: 0;
+	}
 }
 .slide-from-right.offscreen {
 	left: 50%;
+	@include media-query (portable) {
+		left: 0;
+	}
 }
 
 .margin-quarter {

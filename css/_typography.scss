@@ -75,12 +75,6 @@ h2 {
 }
 h3 {
     line-height: 38px;
-    @include media-query(portable) {
-        font-size: $h3-size - 4px;
-    }
-    @include media-query(palm) {
-        font-size: $h3-size - 8px;
-    }
 }
 
 h4, h5, h6 {
@@ -122,6 +116,11 @@ article p:first-child:first-letter {
  	font-family: $base-bold-family;
  	font-weight: 700;
  }
+ ol, ul, dl {
+    @include media-query(palm) {
+        margin-left: 2rem;
+    }
+ }
 
  a {
  	color: $brand-color;
@@ -158,6 +157,9 @@ blockquote {
     padding: 0 2em 0 4.2em;
     margin-bottom: 8px;
     position: relative;
+    @include media-query(portable) {
+        padding: 0 2em 0 2em;
+    }
 }
 
 blockquote:before {
@@ -167,6 +169,11 @@ blockquote:before {
     position: absolute; 
     top: -0.35em; 
     left: 0.35em;
+    @include media-query(portable) {
+        font-size: 48px;
+        top: 5%; 
+    left: 0;
+    }
 }
 
 cite {
