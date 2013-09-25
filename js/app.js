@@ -17,7 +17,7 @@ $(document).ready(function() {
   $(window).scroll(function() {
     var scrollDistance = $(this).scrollTop();
     $.each(row, function() {
-      var rowScroll = $(this).offset().top - pageHeight*0.6;
+      var rowScroll = $(this).offset().top - pageHeight*0.8;
       if( scrollDistance > rowScroll ) {
         $(this).children('.slide').removeClass('offscreen');
       }
