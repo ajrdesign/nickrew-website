@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Our Story Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Our Story | Wedding HTML Template&rdquo; Documentation by &ldquo;Andrew Richardson&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Our Story&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 9/24/2013<br>
+					By: Andrew Richardson<br>
+					Email: <a href="mailto:ajrgraphicdesign@gmail.com">ajrgraphicdesign@gmail.com</a><br>
+					<a href="http://www.andrewtheamazing.com">Portfolio</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme and congratulations to whoever is getting married! I created this theme because I myself am soon to be married and I didn't feel like any of the current themes really told <strong>our story well</strong>. I wanted to focus on our <strong>relationship</strong> and the story that has developed because of it instead of just the average frilly wedding website with no substance. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/ajrdesign">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is generally a single column grid but it has the flexibility to be column if you need it to be using the simple grid structure set up with the <a href="http://inuitcss.com/">Inuit framework</a>. You can see this grid system in <a href="http://jsfiddle.net/inuitcss/CLYUC/">action here</a>.</p>
+		
+		<img src="assets/images/htmlstructure.jpg" alt="HTML Structure" />
+		
+		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+<pre>	
+a {
+	color: #someColor;
+} 
+</pre>
+
+		<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+
+		<p>I.E.</p>
+
+<pre>	
+.class a {
+	color: #someColor;
+}
+</pre>
+
+		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>There is one CSS file for this theme. This keeps the number of requests low and you page loading as fast as possible. The CSS is heavily documented with explinations of the elements. There are some things that pertain to the <a href="http://sass-lang.com/">SCSS</a> structure which you can ignore if you are just going to be editing the CSS.</p> 
+
+		<p>Generally elements look like this:</p>  
+
+<pre>	/* === Comments about the following classes === */
+
+	classes and properties
+ 
+</pre>
+		<p>The CSS is structured with like classes together so it's easy to find what you are looking for. Below is a table of contents for the CSS:</p>
+<pre>
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * CONTENTS............You’re reading it!
+ * WARNING.............Here be dragons!
+ * NORMALIZE...........normalize.css
+ * RESET...............Set some defaults
+ * CLEARFIX............
+ * SHARED..............Shared declarations
+ *
+ * MAIN................High-level elements like `html`, `body`, etc.
+ * HEADINGS............Double-stranded heading hierarchy
+ * PARAGRAPHS..........
+ * SMALLPRINT..........Smaller text elements like `small`
+ * QUOTES..............
+ * CODE................
+ * LISTS...............
+ * IMAGES..............
+ * TABLES..............
+ * FORMS...............
+ *
+ * GRIDS...............Fluid, proportional and nestable grids
+ * COLUMNS.............CSS3 columns
+ * NAV.................A simple abstraction to put a list in horizontal nav mode
+ * MEDIA...............Media object
+ * MARGINALIA..........Simple marginalia content
+ * ISLAND..............Boxed off content
+ * BLOCK-LIST..........Blocky lists of content
+ * MATRIX..............Gridded lists
+ * SPLIT...............A simple split-in-two object
+ * ICON-TEXT...........Icon and text couplings
+ * BEAUTONS............Use the beautons micro library
+ * LOZENGES............Basic lozenge styles
+ * RULES...............Horizontal rules
+ * STATS...............Simple stats object
+ * GREYBOX.............Wireframing styles
+ *
+ * WIDTHS..............Width classes for use alongside the grid system etc.
+ * PUSH................Push classes for manipulating grids
+ * PULL................Pull classes for manipulating grids
+ * BRAND...............Helper class to apply brand treatment to elements
+ * HELPER..............A series of helper classes to use arbitrarily
+ * DEBUG...............Enable to add visual flags for debugging purposes
+ *
+ * THEME...............Begins to put skin on the elements, if you want to edit the style you should start here.
+ * RESPONSIVE..........How the elements look on smaller devices.
+ * TYPOGRAPY...........Fine tuning of the typography elements.
+ * BOXER...............Lightbox plugin CSS.
+ * GALLERY.............How the gallery looks and functions.
+ */
+</pre>
+		<p>Most of the elements you will want to modify can be found in the THEME section.</p>
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<p>Any images that are placed within the blog section have 5px worth of padding and a light bluish background. If you would like to edit the display of these images, find the following section in the style sheet:</p>
+
+<pre>	#primaryContent #blog img {
+		change styles here:
+	}
+</pre>
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports three Javascript files.</p>
+		
+		<ol>
+			<li>jQuery</li>
+			<li>Custom jQuery - Controls Parallax background, story page functionality and responsive nav.</li>
+			<li><a href="http://www.benplum.com/formstone/boxer/">Boxer - Lightbox plugin</a></li>
+		</ol>
+		  
+		<ol>
+			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+			<li>Most of the animation in this site is carried out from the customs scripts. There are a few functions worth looking over.
+<pre>	[some Javascript goes here...along with an general explanation]
+	[some Javascript goes here...along with an general explanation]
+	[some Javascript goes here...along with an general explanation]
+</pre>
+			</li>
+			<li>In addition to the custom scripts, I implement a few "tried and true" plugins to create the effects. This plugin is packed, so you won't need to manually edit anything in the file. The only necessary thing to know is how to call the method. For example:
+<pre>	[some Javascript goes here...along with an general explanation]</pre>
+			</li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, icons or other files as listed.
+		
+		<ul>
+			<li><a href="http://www.benplum.com/formstone/boxer/">Boxer</a> - A jQuery plugin for overlaying images or content. By Ben Plum</li>
+			<li><a href="http://inuitcss.com/">Inuit CSS</a> by Harry Roberts</li>
+		</ul>
+		
+		<hr>
+		
+		<h2>THANK YOU!</h2>
+
+		<p>If you have any questions please <a href="mailto:ajrgraphicdesign@gmail.com">contact me</a>, I'd be glad to help you solve your problem.</p>
+		
+		<p class="append-bottom alt large"><strong><a href="http://www.andrewtheamazing.com">Andrew Richardson</a></strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
