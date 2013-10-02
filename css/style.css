@@ -1,6 +1,22 @@
 @charset "UTF-8";
 /*------------------------------------*\
-    STYLE.CSS
+    Our Story Theme
+\*------------------------------------*/
+/*!*
+* Thank you for purchasing the Our Story theme! I'm glad you chose to tell
+* your story in a more engaging and dynamic way than most of the wedding 
+* websites out there. To get you started the CSS has been heavily commented
+* to let you know exactly how each object works.
+*
+* This theme is built of the Inuitcss framework which aims to provide a
+* skeleton framework for designers to build upon and is extremely flexible.
+* If you plan on expanding this theme be sure to read up on the features of
+* the Inuitcss framework.
+*
+* This theme was built using SCSS. The files are included if you want to continue
+* using SCSS but just editing the regular CSS file will work just fine as well.
+/*------------------------------------*\
+    STYLE.CSS - IGNORE IF YOU ARE NOT USING SCSS
 \*------------------------------------*/
 /**
  *
@@ -45,7 +61,7 @@
  * Place any of your own variables that sit on top of inuit.css here.
  */
 /*------------------------------------*\
-    INUIT.CSS
+    ABOUT INUIT.CSS
 \*------------------------------------*/
 /*!*
  *
@@ -53,6 +69,7 @@
  *
  */
 /**
+ * WORDS FROM THE AUTHOR OF INUIT CSS (HARRY ROBERTS)
  * inuit.css acts as a base stylesheet which you should extend with your own
  * theme stylesheet.
  *
@@ -100,9 +117,6 @@
 /**
  * CONTENTS............You’re reading it!
  * WARNING.............Here be dragons!
- * IMPORTS.............Begin importing the sections below
- *
- * MIXINS..............Super-simple Sass stuff
  * NORMALIZE...........normalize.css
  * RESET...............Set some defaults
  * CLEARFIX............
@@ -120,23 +134,14 @@
  * FORMS...............
  *
  * GRIDS...............Fluid, proportional and nestable grids
- * FLEXBOX.............Crudely emulate flexbox
  * COLUMNS.............CSS3 columns
  * NAV.................A simple abstraction to put a list in horizontal nav mode
- * OPTIONS.............Grouped nav items
- * PAGINATION..........Very stripped back, basic paginator
- * BREADCRUMB..........Simple breadcrumb trail object
  * MEDIA...............Media object
  * MARGINALIA..........Simple marginalia content
  * ISLAND..............Boxed off content
  * BLOCK-LIST..........Blocky lists of content
  * MATRIX..............Gridded lists
  * SPLIT...............A simple split-in-two object
- * THIS-OR-THIS........Options object
- * LINK-COMPLEX........
- * FLYOUT..............Flyout-on-hover object
- * ARROWS..............CSS arrows
- * SPRITE..............Generic spriting element
  * ICON-TEXT...........Icon and text couplings
  * BEAUTONS............Use the beautons micro library
  * LOZENGES............Basic lozenge styles
@@ -150,6 +155,12 @@
  * BRAND...............Helper class to apply brand treatment to elements
  * HELPER..............A series of helper classes to use arbitrarily
  * DEBUG...............Enable to add visual flags for debugging purposes
+ *
+ * THEME...............Begins to put skin on the elements, if you want to edit the style you should start here.
+ * RESPONSIVE..........How the elements look on smaller devices.
+ * TYPOGRAPY...........Fine tuning of the typography elements.
+ * BOXER...............Lightbox plugin CSS.
+ * GALLERY.............How the gallery looks and functions.
  */
 /*------------------------------------*\
     $WARNING
@@ -3953,7 +3964,7 @@ label,
       margin: 1rem auto 0; } }
   /* line 44, _theme.scss */
   .brand-logo img {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.6);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
