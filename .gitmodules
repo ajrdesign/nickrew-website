@@ -1,3 +1,4 @@
 [submodule "css/inuit.css"]
 	path = css/inuit.css
 	url = git://github.com/csswizardry/inuit.css.git
+	ignore = dirty
