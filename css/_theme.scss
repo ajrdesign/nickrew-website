@@ -359,9 +359,9 @@ Background image goes below.
 
 .story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
 	-webkit-transform: translateX(-120%);
-  -ms-transform: translateX(-120%);
-  -o-transform: translateX(-120%);
-  transform: translateX(-120%);
+	-ms-transform: translateX(-120%);
+	-o-transform: translateX(-120%);
+	transform: translateX(-120%);
   @include media-query(portable) {
 	-webkit-transform: none;
 	-ms-transform: none;
@@ -402,43 +402,25 @@ Background image goes below.
   position: absolute;
   top: 0;
   left:0;
-  padding: 20px;
-  margin: 20px 0 20px 20px;
   background: rgba(112,108,135, 0.8);
-  -webkit-transition: 500ms 300ms;
-  -o-transition: 500ms 300ms;
-  transition: 500ms 300ms;
-  @include media-query(palm) {
-	padding: 10px;
-  	margin: 4px;
-  	h4 {
-  		font-size: 16px;
-  	}
-  	small {
-  		font-size: 12px;
-  	}
-  }
-
 }
 
 .story-element-orange .visible-content {
 	background: rgba(227,183,45, 0.8);
 	@include media-query(portable) {
-		background: rgba(227,183,45, 1);
+		background: rgba(227,183,45, 0.8);
 	}
 }
-
 .story-element-blue .visible-content {
 	background: rgba(139,171,201, 0.8);
 	@include media-query(portable) {
-		background: rgba(139,171,201, 1);
+		background: rgba(139,171,201, 0.8);
 	}
 }
-
 .story-element-pink .visible-content {
 	background: rgba(203,70,70, 0.8);
 	@include media-query(portable) {
-		background: rgba(203,70,70, 1);
+		background: rgba(203,70,70, 0.8);
 	}
 }
 
@@ -446,6 +428,24 @@ Background image goes below.
 	right: 0;
 	margin: 20px 20px 20px 0;
 	left: auto;
+}
+.story-element-reversed .visible-content,
+.visible-content {
+	padding: 20px;
+	margin: 20px 0 20px 20px;
+	-webkit-transition: 500ms 300ms;
+	-o-transition: 500ms 300ms;
+	transition: 500ms 300ms;
+	@include media-query(palm) {
+	padding: 10px;
+  	margin: 4px;
+  	h4 {
+  		font-size: 16px;
+  	}
+  	small {
+  		font-size: 11px;
+  	}
+  }
 }
 
 .story-element[data-effeckt-type~="story-element"]:hover .visible-content,

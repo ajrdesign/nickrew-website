@@ -4332,53 +4332,60 @@ Background image goes below.
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px;
-  margin: 20px 0 20px 20px;
-  background: rgba(112, 108, 135, 0.8);
-  -webkit-transition: 500ms 300ms;
-  -o-transition: 500ms 300ms;
-  transition: 500ms 300ms; }
-  @media only screen and (max-width: 480px) {
-    /* line 401, _theme.scss */
-    .visible-content {
-      padding: 10px;
-      margin: 4px; }
-      /* line 414, _theme.scss */
-      .visible-content h4 {
-        font-size: 16px; }
-      /* line 417, _theme.scss */
-      .visible-content small {
-        font-size: 12px; } }
+  background: rgba(112, 108, 135, 0.8); }
 
-/* line 424, _theme.scss */
+/* line 408, _theme.scss */
 .story-element-orange .visible-content {
   background: rgba(227, 183, 45, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 424, _theme.scss */
+    /* line 408, _theme.scss */
     .story-element-orange .visible-content {
-      background: #e3b72d; } }
+      background: rgba(227, 183, 45, 0.8); } }
 
-/* line 431, _theme.scss */
+/* line 414, _theme.scss */
 .story-element-blue .visible-content {
   background: rgba(139, 171, 201, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 431, _theme.scss */
+    /* line 414, _theme.scss */
     .story-element-blue .visible-content {
-      background: #8babc9; } }
+      background: rgba(139, 171, 201, 0.8); } }
 
-/* line 438, _theme.scss */
+/* line 420, _theme.scss */
 .story-element-pink .visible-content {
   background: rgba(203, 70, 70, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 438, _theme.scss */
+    /* line 420, _theme.scss */
     .story-element-pink .visible-content {
-      background: #cb4646; } }
+      background: rgba(203, 70, 70, 0.8); } }
 
-/* line 445, _theme.scss */
+/* line 427, _theme.scss */
 .story-element-reversed .visible-content {
   right: 0;
   margin: 20px 20px 20px 0;
   left: auto; }
+
+/* line 433, _theme.scss */
+.story-element-reversed .visible-content,
+.visible-content {
+  padding: 20px;
+  margin: 20px 0 20px 20px;
+  -webkit-transition: 500ms 300ms;
+  -o-transition: 500ms 300ms;
+  transition: 500ms 300ms; }
+  @media only screen and (max-width: 480px) {
+    /* line 433, _theme.scss */
+    .story-element-reversed .visible-content,
+    .visible-content {
+      padding: 10px;
+      margin: 4px; }
+      /* line 442, _theme.scss */
+      .story-element-reversed .visible-content h4,
+      .visible-content h4 {
+        font-size: 16px; }
+      /* line 445, _theme.scss */
+      .story-element-reversed .visible-content small,
+      .visible-content small {
+        font-size: 11px; } }
 
 /* line 452, _theme.scss */
 .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
