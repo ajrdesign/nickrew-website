@@ -4003,7 +4003,7 @@ label,
 .main-container,
 .nav-top-wrapper {
   background: #fff;
-  padding: 1.5rem; }
+  padding: 1.5rem 1.5rem 0 1.5rem; }
   @media only screen and (max-width: 480px) {
     /* line 77, _theme.scss */
     .main-container,
@@ -4188,7 +4188,7 @@ Background image goes below.
   float: left;
   overflow: hidden;
   background: #ccc;
-  cursor: help;
+  cursor: pointer;
   margin-top: 28px; }
 
 /* line 265, _theme.scss */
@@ -4634,9 +4634,8 @@ article p:first-child:first-letter {
   float: left;
   color: #706c87;
   font-size: 98px;
-  font-family: "calendas-plus-italic", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
-  line-height: 56px;
-  padding-top: 28px;
+  line-height: 75px;
+  padding-top: 4px;
   padding-right: 8px;
   padding-left: 3px; }
   @media only screen and (max-width: 480px) {
@@ -4645,23 +4644,23 @@ article p:first-child:first-letter {
       font-size: 72px;
       line-height: 60px; } }
 
-/* line 110, _typography.scss */
+/* line 109, _typography.scss */
 em, blockquote, dt {
   font-family: "calendas-plus-italic", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
   font-weight: normal;
   font-style: italic; }
 
-/* line 116, _typography.scss */
+/* line 115, _typography.scss */
 strong {
   font-family: "calendas-plus-bold", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
   font-weight: 700; }
 
 @media only screen and (max-width: 480px) {
-  /* line 120, _typography.scss */
+  /* line 119, _typography.scss */
   ol, ul, dl {
     margin-left: 2rem; } }
 
-/* line 126, _typography.scss */
+/* line 125, _typography.scss */
 a {
   color: #706c87;
   text-decoration: underline;
@@ -4671,26 +4670,26 @@ a {
   -o-transition: color 200ms;
   transition: color 200ms; }
 
-/* line 136, _typography.scss */
+/* line 135, _typography.scss */
 a:hover {
   color: #a6a3b6; }
 
-/* line 140, _typography.scss */
+/* line 139, _typography.scss */
 ul.clean {
   list-style: none;
   margin: 0; }
 
-/* line 145, _typography.scss */
+/* line 144, _typography.scss */
 .rule {
   margin-top: 0.6em;
   margin-bottom: 0.6em; }
 
-/* line 150, _typography.scss */
+/* line 149, _typography.scss */
 figure {
   margin: 0;
   color: white; }
 
-/* line 155, _typography.scss */
+/* line 154, _typography.scss */
 blockquote {
   text-indent: -0.2em;
   margin-top: 2.4em;
@@ -4698,11 +4697,11 @@ blockquote {
   margin-bottom: 8px;
   position: relative; }
   @media only screen and (max-width: 1023px) {
-    /* line 155, _typography.scss */
+    /* line 154, _typography.scss */
     blockquote {
       padding: 0 2em 0 2em; } }
 
-/* line 166, _typography.scss */
+/* line 165, _typography.scss */
 blockquote:before {
   content: "“";
   color: #706c87;
@@ -4711,20 +4710,20 @@ blockquote:before {
   top: -0.35em;
   left: 0.35em; }
   @media only screen and (max-width: 1023px) {
-    /* line 166, _typography.scss */
+    /* line 165, _typography.scss */
     blockquote:before {
       font-size: 48px;
       top: 5%;
       left: 0; } }
 
-/* line 180, _typography.scss */
+/* line 179, _typography.scss */
 cite {
   font-size: 0.8em;
   margin-top: 0;
   line-height: 1;
   font-style: normal; }
 
-/* line 187, _typography.scss */
+/* line 186, _typography.scss */
 blockquote ~ cite {
   display: block;
   text-align: right;
@@ -4732,27 +4731,27 @@ blockquote ~ cite {
   margin-bottom: 2.4em; }
 
 /* COPY COLOR CHANGING HELPER CLASSES */
-/* line 196, _typography.scss */
+/* line 195, _typography.scss */
 .brand-color {
   color: #706c87; }
 
-/* line 200, _typography.scss */
+/* line 199, _typography.scss */
 .purple {
   color: #706c87; }
 
-/* line 204, _typography.scss */
+/* line 203, _typography.scss */
 .blue {
   color: #8babc9; }
 
-/* line 207, _typography.scss */
+/* line 206, _typography.scss */
 .orange {
   color: #deb738; }
 
-/* line 211, _typography.scss */
+/* line 210, _typography.scss */
 .form-large-type {
   font-size: 1.1em; }
 
-/* line 215, _typography.scss */
+/* line 214, _typography.scss */
 .form-large-type select, .form-large-type input {
   display: inline-block;
   -webkit-appearance: none;
@@ -5028,7 +5027,7 @@ blockquote ~ cite {
   margin-left: 0; }
   /* line 32, _gallery.scss */
   .gallery li {
-    width: 32.333333%;
+    width: 24%;
     float: left;
     margin-right: 1%;
     margin-bottom: 1%;
@@ -5037,28 +5036,43 @@ blockquote ~ cite {
   .gallery img {
     display: block; }
   /* line 42, _gallery.scss */
-  .gallery li:nth-child(3n+1) {
+  .gallery li:nth-child(4n+1) {
     clear: left; }
   @media only screen and (max-width: 1023px) {
     /* line 47, _gallery.scss */
     .gallery li {
-      width: 32.33333%; }
+      width: 33.3333333333333333%; }
     /* line 50, _gallery.scss */
     .gallery li:nth-child(3n+1) {
-      clear: left; } }
+      clear: left; }
+    /* line 53, _gallery.scss */
+    .gallery li:nth-child(odd) {
+      clear: none; }
+    /* line 56, _gallery.scss */
+    .gallery li:nth-child(5n+1) {
+      clear: none; }
+    /* line 59, _gallery.scss */
+    .gallery li:nth-child(4n+1) {
+      clear: none; } }
   @media only screen and (max-width: 480px) {
-    /* line 55, _gallery.scss */
+    /* line 64, _gallery.scss */
     .gallery li {
       float: left;
-      width: 49%;
+      width: 50%;
       padding: 0.25em; }
-    /* line 60, _gallery.scss */
+    /* line 69, _gallery.scss */
     .gallery img {
       display: block; }
-    /* line 63, _gallery.scss */
+    /* line 72, _gallery.scss */
+    .gallery li:nth-child(5n+1) {
+      clear: none; }
+    /* line 75, _gallery.scss */
+    .gallery li:nth-child(4n+1) {
+      clear: none; }
+    /* line 78, _gallery.scss */
     .gallery li:nth-child(3n+1) {
       clear: none; }
-    /* line 66, _gallery.scss */
+    /* line 81, _gallery.scss */
     .gallery li:nth-child(odd) {
       clear: left; } }
 
@@ -5083,22 +5097,22 @@ Markup:
 
   NOTE: There are five varieties and changing the <figcaption> class will manipulate them: gradient-black, gradient-grey, gradient-purple, gradient-orange, gradient-blue.
 */
-/* line 97, _gallery.scss */
+/* line 112, _gallery.scss */
 .img-caption {
   position: relative;
   overflow: hidden; }
 
-/* line 102, _gallery.scss */
+/* line 117, _gallery.scss */
 .img-caption:nth-child(2n) {
   margin-right: 0; }
 
-/* line 106, _gallery.scss */
+/* line 121, _gallery.scss */
 .img-caption img {
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms; }
 
-/* line 112, _gallery.scss */
+/* line 127, _gallery.scss */
 .img-caption figcaption {
   position: absolute;
   -webkit-transition: 500ms;
@@ -5106,29 +5120,29 @@ Markup:
   transition: 500ms;
   width: 100%; }
 
-/* line 120, _gallery.scss */
+/* line 135, _gallery.scss */
 .img-caption-figcaption-wrap {
   padding: 0.6em;
   text-align: center; }
 
-/* line 125, _gallery.scss */
+/* line 140, _gallery.scss */
 .img-caption-figcaption-wrap h5 {
   margin-bottom: 0.2em; }
 
-/* line 129, _gallery.scss */
+/* line 144, _gallery.scss */
 .img-caption-figcaption-wrap i {
   font-size: 32px;
   line-height: 48px; }
 
-/* line 134, _gallery.scss */
+/* line 149, _gallery.scss */
 .gradient-black, .gradient-purple, .gradient-grey, .gradient-pink {
   color: #fff; }
 
-/* line 138, _gallery.scss */
+/* line 153, _gallery.scss */
 .gradient-orange, .gradient-blue {
   color: #444; }
 
-/* line 142, _gallery.scss */
+/* line 157, _gallery.scss */
 .gradient-black {
   background: -moz-linear-gradient(top, black 16%, rgba(0, 0, 0, 0.99) 17%, rgba(0, 0, 0, 0) 100%);
   /* FF3.6+ */
@@ -5145,7 +5159,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 152, _gallery.scss */
+/* line 167, _gallery.scss */
 .gradient-grey {
   background: -moz-linear-gradient(top, #3b3b3b 16%, rgba(59, 59, 59, 0) 100%);
   /* FF3.6+ */
@@ -5162,7 +5176,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b3b3b', endColorstr='#003b3b3b',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 162, _gallery.scss */
+/* line 177, _gallery.scss */
 .gradient-purple {
   background: -moz-linear-gradient(top, #706c87 16%, rgba(112, 108, 135, 0) 100%);
   /* FF3.6+ */
@@ -5179,7 +5193,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#706c87', endColorstr='#00706c87',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 172, _gallery.scss */
+/* line 187, _gallery.scss */
 .gradient-blue {
   background: -moz-linear-gradient(top, #8babc9 16%, rgba(139, 171, 201, 0) 100%);
   /* FF3.6+ */
@@ -5196,7 +5210,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8babc9', endColorstr='#008babc9',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 182, _gallery.scss */
+/* line 197, _gallery.scss */
 .gradient-orange {
   background: -moz-linear-gradient(top, #deb738 16%, rgba(222, 183, 56, 0) 100%);
   /* FF3.6+ */
@@ -5213,7 +5227,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#deb738', endColorstr='#00deb738',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 192, _gallery.scss */
+/* line 207, _gallery.scss */
 .gradient-pink {
   background: -moz-linear-gradient(top, #cb4646 0%, rgba(203, 70, 70, 0) 100%);
   /* FF3.6+ */
@@ -5230,7 +5244,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb4646', endColorstr='#00cb4646',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 202, _gallery.scss */
+/* line 217, _gallery.scss */
 .img-caption[data-effeckt-type="cover-slide-top"] figcaption {
   top: 0;
   left: 0;
@@ -5241,13 +5255,13 @@ Markup:
   transform: translateY(-100%);
   opacity: 0; }
 
-/* line 213, _gallery.scss */
+/* line 228, _gallery.scss */
 .img-caption[data-effeckt-type="cover-slide-top"] img {
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms; }
 
-/* line 220, _gallery.scss */
+/* line 235, _gallery.scss */
 .img-caption[data-effeckt-type="cover-slide-top"]:hover figcaption,
 .img-caption[data-effeckt-type="cover-slide-top"]:active figcaption {
   -webkit-transform: translateY(0);
@@ -5256,7 +5270,7 @@ Markup:
   transform: translateY(0);
   opacity: 1; }
   @media only screen and (max-width: 1023px) {
-    /* line 220, _gallery.scss */
+    /* line 235, _gallery.scss */
     .img-caption[data-effeckt-type="cover-slide-top"]:hover figcaption,
     .img-caption[data-effeckt-type="cover-slide-top"]:active figcaption {
       opacity: 0; } }
