@@ -2,16 +2,16 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8322",
   "files" : {
-    "\/media\/logo-our-story.jpg" : {
+    "\/media\/logo-our-story.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/media\/logo-our-story.jpg",
+      "inputAbbreviatedPath" : "\/media\/logo-our-story.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/media\/logo-our-story.jpg",
-      "initialSize" : 23298,
-      "fileType" : 4096
+      "outputAbbreviatedPath" : "\/media\/logo-our-story.png",
+      "initialSize" : 11622,
+      "fileType" : 8192
     },
     "\/media\/story-img-1.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -277,6 +277,15 @@
       "initialSize" : 13043,
       "fileType" : 8192
     },
+    "\/gallery.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/gallery.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/css\/inuit.css\/objects\/_beautons.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -312,15 +321,6 @@
       "outputAbbreviatedPath" : "\/css\/_theme.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/gallery.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/gallery.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/media\/fonts\/calendas_plus_italic-demo.html" : {
       "ignoreWasSetByUser" : 0,
@@ -578,6 +578,17 @@
       "initialSize" : 108849,
       "fileType" : 4096
     },
+    "\/media\/home-cute-photos-comp.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/media\/home-cute-photos-comp.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/media\/home-cute-photos-comp.jpg",
+      "initialSize" : 89862,
+      "fileType" : 4096
+    },
     "\/docs\/assets\/blueprint-css\/src\/ie.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -598,17 +609,6 @@
       "outputAbbreviatedPath" : "\/css\/_responsive.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/media\/home-cute-photos-comp.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/media\/home-cute-photos-comp.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/media\/home-cute-photos-comp.jpg",
-      "initialSize" : 89862,
-      "fileType" : 4096
     },
     "\/css\/inuit.css\/objects\/_greybox.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -855,15 +855,6 @@
       "initialSize" : 777,
       "fileType" : 8192
     },
-    "\/docs\/assets\/blueprint-css\/plugins\/rtl\/screen.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/docs\/assets\/blueprint-css\/plugins\/rtl\/screen.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/media\/gallery-img-3.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -874,6 +865,15 @@
       "outputAbbreviatedPath" : "\/media\/gallery-img-3.jpg",
       "initialSize" : 41742,
       "fileType" : 4096
+    },
+    "\/docs\/assets\/blueprint-css\/plugins\/rtl\/screen.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/docs\/assets\/blueprint-css\/plugins\/rtl\/screen.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/docs\/assets\/blueprint-css\/plugins\/buttons\/icons\/tick.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1081,18 +1081,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/css\/inuit.css\/objects\/_link-complex.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/inuit.css\/objects\/_link-complex.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_link-complex.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/css\/style.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1115,6 +1103,18 @@
       "outputAbbreviatedPath" : "\/media\/gallery-img-2.jpg",
       "initialSize" : 238730,
       "fileType" : 4096
+    },
+    "\/css\/inuit.css\/objects\/_link-complex.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/inuit.css\/objects\/_link-complex.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_link-complex.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/css\/inuit.css\/objects\/_flyout.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -1211,7 +1211,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/config.rb",
-      "outputAbbreviatedPath" : "\/config.rb",
+      "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 32768
     },
     "\/css\/inuit.css\/objects\/_media.scss" : {
@@ -1353,16 +1353,16 @@
       "initialSize" : 455,
       "fileType" : 8192
     },
-    "\/media\/logo-our-story.png" : {
+    "\/media\/logo-our-story.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/media\/logo-our-story.png",
+      "inputAbbreviatedPath" : "\/media\/logo-our-story.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/media\/logo-our-story.png",
-      "initialSize" : 11622,
-      "fileType" : 8192
+      "outputAbbreviatedPath" : "\/media\/logo-our-story.jpg",
+      "initialSize" : 23298,
+      "fileType" : 4096
     }
   },
   "manualImportLinks" : [
