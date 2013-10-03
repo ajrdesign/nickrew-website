@@ -3518,7 +3518,7 @@ label,
 /* line 8, inuit.css/generic/_brand.scss */
 .brand {
   font-family: "Helvetica Neue", sans-serif!important;
-  color: #deb738!important; }
+  color: #706c87!important; }
 
 /* line 12, inuit.css/generic/_brand.scss */
 .brand-face {
@@ -3527,7 +3527,7 @@ label,
 /* line 16, inuit.css/generic/_brand.scss */
 .brand-color,
 .brand-colour {
-  color: #deb738!important; }
+  color: #706c87!important; }
 
 /*------------------------------------*\
     $HELPER
@@ -3988,8 +3988,8 @@ label,
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background: #f0dfa5;
-  color: #deb738;
+  background: #b4b2c1;
+  color: #706c87;
   padding: 10px 16px;
   font-size: 32px;
   line-height: 32px; }
@@ -4072,23 +4072,23 @@ label,
       padding: 2px 0;
       display: block;
       width: inherit;
-      background: #deb738;
+      background: #706c87;
       color: white; } }
 
 /* line 146, _theme.scss */
 .nav-effect a:hover {
-  -webkit-box-shadow: inset 0 6px 0 #deb738;
-  -moz-box-shadow: inset 0 6px 0 #deb738;
-  box-shadow: inset 0 6px 0 #deb738;
+  -webkit-box-shadow: inset 0 6px 0 #706c87;
+  -moz-box-shadow: inset 0 6px 0 #706c87;
+  box-shadow: inset 0 6px 0 #706c87;
   -webkit-transition: box-shadow 0.3s, height 0.3s;
   -moz-transition: box-shadow 0.3s, height 0.3s;
   transition: box-shadow 0.3s, height 0.3s; }
 
 /* line 155, _theme.scss */
 .nav-effect .active {
-  -webkit-box-shadow: inset 0 6px 0 #deb738;
-  -moz-box-shadow: inset 0 6px 0 #deb738;
-  box-shadow: inset 0 6px 0 #deb738; }
+  -webkit-box-shadow: inset 0 6px 0 #706c87;
+  -moz-box-shadow: inset 0 6px 0 #706c87;
+  box-shadow: inset 0 6px 0 #706c87; }
 
 /* line 162, _theme.scss */
 .nav-effect a::before,
@@ -4483,7 +4483,7 @@ the HTML markup looks like this:
 
 /* line 540, _theme.scss */
 .btn--primary {
-  background: #deb738;
+  background: #706c87;
   color: white;
   -webkit-transition: background 200ms;
   -moz-transition: background 200ms;
@@ -4493,11 +4493,11 @@ the HTML markup looks like this:
 
 /* line 550, _theme.scss */
 .btn--primary:hover {
-  background: #e5c764; }
+  background: #8b879f; }
 
 /* line 554, _theme.scss */
 footer {
-  background: #f0dfa5;
+  background: #b4b2c1;
   padding: 18px 0;
   text-align: center; }
 
@@ -4632,7 +4632,7 @@ p {
 /* line 95, _typography.scss */
 article p:first-child:first-letter {
   float: left;
-  color: #deb738;
+  color: #706c87;
   font-size: 98px;
   line-height: 75px;
   padding-top: 4px;
@@ -4662,7 +4662,7 @@ strong {
 
 /* line 125, _typography.scss */
 a {
-  color: #deb738;
+  color: #706c87;
   text-decoration: underline;
   -webkit-transition: color 200ms;
   -moz-transition: color 200ms;
@@ -4672,7 +4672,7 @@ a {
 
 /* line 135, _typography.scss */
 a:hover {
-  color: #edd78f; }
+  color: #a6a3b6; }
 
 /* line 139, _typography.scss */
 ul.clean {
@@ -4704,7 +4704,7 @@ blockquote {
 /* line 165, _typography.scss */
 blockquote:before {
   content: "“";
-  color: #deb738;
+  color: #706c87;
   font-size: 80px;
   position: absolute;
   top: -0.35em;
@@ -4733,7 +4733,7 @@ blockquote ~ cite {
 /* COPY COLOR CHANGING HELPER CLASSES */
 /* line 195, _typography.scss */
 .brand-color {
-  color: #deb738; }
+  color: #706c87; }
 
 /* line 199, _typography.scss */
 .purple {
@@ -4758,7 +4758,7 @@ blockquote ~ cite {
   padding: 0 4px;
   margin-bottom: 6px;
   border-radius: 0;
-  border: 2px solid #deb738; }
+  border: 2px solid #706c87; }
 
 /*
  * Boxer [Formstone Library]
@@ -5027,7 +5027,7 @@ blockquote ~ cite {
   margin-left: 0; }
   /* line 32, _gallery.scss */
   .gallery li {
-    width: 24%;
+    width: 32.333%;
     float: left;
     margin-right: 1%;
     margin-bottom: 1%;
@@ -5036,43 +5036,21 @@ blockquote ~ cite {
   .gallery img {
     display: block; }
   /* line 42, _gallery.scss */
-  .gallery li:nth-child(4n+1) {
-    clear: left; }
-  @media only screen and (max-width: 1023px) {
+  .gallery li:nth-child(3n) {
+    clear: right; }
+  @media only screen and (max-width: 480px) {
     /* line 47, _gallery.scss */
     .gallery li {
-      width: 33.3333333333333333%; }
-    /* line 50, _gallery.scss */
-    .gallery li:nth-child(3n+1) {
-      clear: left; }
-    /* line 53, _gallery.scss */
-    .gallery li:nth-child(odd) {
-      clear: none; }
-    /* line 56, _gallery.scss */
-    .gallery li:nth-child(5n+1) {
-      clear: none; }
-    /* line 59, _gallery.scss */
-    .gallery li:nth-child(4n+1) {
-      clear: none; } }
-  @media only screen and (max-width: 480px) {
-    /* line 64, _gallery.scss */
-    .gallery li {
       float: left;
-      width: 50%;
+      width: 49%;
       padding: 0.25em; }
-    /* line 69, _gallery.scss */
+    /* line 52, _gallery.scss */
     .gallery img {
       display: block; }
-    /* line 72, _gallery.scss */
-    .gallery li:nth-child(5n+1) {
+    /* line 55, _gallery.scss */
+    .gallery li:nth-child(3n) {
       clear: none; }
-    /* line 75, _gallery.scss */
-    .gallery li:nth-child(4n+1) {
-      clear: none; }
-    /* line 78, _gallery.scss */
-    .gallery li:nth-child(3n+1) {
-      clear: none; }
-    /* line 81, _gallery.scss */
+    /* line 58, _gallery.scss */
     .gallery li:nth-child(odd) {
       clear: left; } }
 
@@ -5097,22 +5075,22 @@ Markup:
 
   NOTE: There are five varieties and changing the <figcaption> class will manipulate them: gradient-black, gradient-grey, gradient-purple, gradient-orange, gradient-blue.
 */
-/* line 112, _gallery.scss */
+/* line 89, _gallery.scss */
 .img-caption {
   position: relative;
   overflow: hidden; }
 
-/* line 117, _gallery.scss */
+/* line 94, _gallery.scss */
 .img-caption:nth-child(2n) {
   margin-right: 0; }
 
-/* line 121, _gallery.scss */
+/* line 98, _gallery.scss */
 .img-caption img {
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms; }
 
-/* line 127, _gallery.scss */
+/* line 104, _gallery.scss */
 .img-caption figcaption {
   position: absolute;
   -webkit-transition: 500ms;
@@ -5120,29 +5098,29 @@ Markup:
   transition: 500ms;
   width: 100%; }
 
-/* line 135, _gallery.scss */
+/* line 112, _gallery.scss */
 .img-caption-figcaption-wrap {
   padding: 0.6em;
   text-align: center; }
 
-/* line 140, _gallery.scss */
+/* line 117, _gallery.scss */
 .img-caption-figcaption-wrap h5 {
   margin-bottom: 0.2em; }
 
-/* line 144, _gallery.scss */
+/* line 121, _gallery.scss */
 .img-caption-figcaption-wrap i {
   font-size: 32px;
   line-height: 48px; }
 
-/* line 149, _gallery.scss */
+/* line 126, _gallery.scss */
 .gradient-black, .gradient-purple, .gradient-grey, .gradient-pink {
   color: #fff; }
 
-/* line 153, _gallery.scss */
+/* line 130, _gallery.scss */
 .gradient-orange, .gradient-blue {
   color: #444; }
 
-/* line 157, _gallery.scss */
+/* line 134, _gallery.scss */
 .gradient-black {
   background: -moz-linear-gradient(top, black 16%, rgba(0, 0, 0, 0.99) 17%, rgba(0, 0, 0, 0) 100%);
   /* FF3.6+ */
@@ -5159,7 +5137,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 167, _gallery.scss */
+/* line 144, _gallery.scss */
 .gradient-grey {
   background: -moz-linear-gradient(top, #3b3b3b 16%, rgba(59, 59, 59, 0) 100%);
   /* FF3.6+ */
@@ -5176,7 +5154,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b3b3b', endColorstr='#003b3b3b',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 177, _gallery.scss */
+/* line 154, _gallery.scss */
 .gradient-purple {
   background: -moz-linear-gradient(top, #706c87 16%, rgba(112, 108, 135, 0) 100%);
   /* FF3.6+ */
@@ -5193,7 +5171,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#706c87', endColorstr='#00706c87',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 187, _gallery.scss */
+/* line 164, _gallery.scss */
 .gradient-blue {
   background: -moz-linear-gradient(top, #8babc9 16%, rgba(139, 171, 201, 0) 100%);
   /* FF3.6+ */
@@ -5210,7 +5188,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8babc9', endColorstr='#008babc9',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 197, _gallery.scss */
+/* line 174, _gallery.scss */
 .gradient-orange {
   background: -moz-linear-gradient(top, #deb738 16%, rgba(222, 183, 56, 0) 100%);
   /* FF3.6+ */
@@ -5227,7 +5205,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#deb738', endColorstr='#00deb738',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 207, _gallery.scss */
+/* line 184, _gallery.scss */
 .gradient-pink {
   background: -moz-linear-gradient(top, #cb4646 0%, rgba(203, 70, 70, 0) 100%);
   /* FF3.6+ */
@@ -5244,7 +5222,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb4646', endColorstr='#00cb4646',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 217, _gallery.scss */
+/* line 194, _gallery.scss */
 .img-caption[data-effeckt-type="cover-slide-top"] figcaption {
   top: 0;
   left: 0;
@@ -5255,13 +5233,13 @@ Markup:
   transform: translateY(-100%);
   opacity: 0; }
 
-/* line 228, _gallery.scss */
+/* line 205, _gallery.scss */
 .img-caption[data-effeckt-type="cover-slide-top"] img {
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms; }
 
-/* line 235, _gallery.scss */
+/* line 212, _gallery.scss */
 .img-caption[data-effeckt-type="cover-slide-top"]:hover figcaption,
 .img-caption[data-effeckt-type="cover-slide-top"]:active figcaption {
   -webkit-transform: translateY(0);
@@ -5270,7 +5248,7 @@ Markup:
   transform: translateY(0);
   opacity: 1; }
   @media only screen and (max-width: 1023px) {
-    /* line 235, _gallery.scss */
+    /* line 212, _gallery.scss */
     .img-caption[data-effeckt-type="cover-slide-top"]:hover figcaption,
     .img-caption[data-effeckt-type="cover-slide-top"]:active figcaption {
       opacity: 0; } }
