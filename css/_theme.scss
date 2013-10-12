@@ -30,29 +30,27 @@ body {
 }
 
  .brand-logo {
-	margin: 1rem auto 0;
+ 	background: rgba(255,255,255, 0.8);
+ 	@include border-radius(50%);
+	height: 350px;
+	width: 350px;
+	margin: 4rem auto 0;
 	text-align: center;
-	
-
 	@include media-query(portable) {
 		margin: 0.5rem auto 0;
 	}
 	@include media-query(palm) {
 		margin: 1rem auto 0;
+		height: 160px;
+		width: 160px;
 		}
 
 	img {
-		background: rgba(255,255,255, 0.6);
-		@include border-radius(50%);
-	 	padding: $base-spacing-unit*1.5;
+		width: 175px;
 		margin: 40px auto;
-		@include media-query(portable) {
-			width: 275px;
-		}
 		@include media-query(palm) {
-			padding: $base-spacing-unit;
-			width: 200px;
-			margin:10px auto;
+			width: 80px;
+			margin: 20px auto;
 		}
 	}
  }
@@ -402,6 +400,7 @@ Background image goes below.
   position: absolute;
   top: 0;
   left:0;
+  margin: 20px 0 20px 20px;
   background: rgba(112,108,135, 0.8);
 }
 
@@ -432,7 +431,6 @@ Background image goes below.
 .story-element-reversed .visible-content,
 .visible-content {
 	padding: 20px;
-	margin: 20px 0 20px 20px;
 	-webkit-transition: 500ms 300ms;
 	-o-transition: 500ms 300ms;
 	transition: 500ms 300ms;

@@ -928,7 +928,7 @@ ul, ol, dd {
 \*------------------------------------*/
 /* line 4, inuit.css/base/_main.scss */
 html {
-  font: 1.125em/1.55556 "calendas-plus", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+  font: 1.125em/1.55556 "Crimson Text", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
   overflow-y: scroll;
   min-height: 100%; }
 
@@ -3952,7 +3952,15 @@ label,
 
 /* line 32, _theme.scss */
 .brand-logo {
-  margin: 1rem auto 0;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  margin: 4rem auto 0;
   text-align: center; }
   @media only screen and (max-width: 1023px) {
     /* line 32, _theme.scss */
@@ -3961,29 +3969,20 @@ label,
   @media only screen and (max-width: 480px) {
     /* line 32, _theme.scss */
     .brand-logo {
-      margin: 1rem auto 0; } }
-  /* line 44, _theme.scss */
+      margin: 1rem auto 0;
+      height: 160px;
+      width: 160px; } }
+  /* line 48, _theme.scss */
   .brand-logo img {
-    background: rgba(255, 255, 255, 0.6);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    padding: 42px;
+    width: 175px;
     margin: 40px auto; }
-    @media only screen and (max-width: 1023px) {
-      /* line 44, _theme.scss */
-      .brand-logo img {
-        width: 275px; } }
     @media only screen and (max-width: 480px) {
-      /* line 44, _theme.scss */
+      /* line 48, _theme.scss */
       .brand-logo img {
-        padding: 28px;
-        width: 200px;
-        margin: 10px auto; } }
+        width: 80px;
+        margin: 20px auto; } }
 
-/* line 60, _theme.scss */
+/* line 58, _theme.scss */
 .icon-rounded {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -3994,27 +3993,27 @@ label,
   font-size: 32px;
   line-height: 32px; }
 
-/* line 71, _theme.scss */
+/* line 69, _theme.scss */
 .borders-top-bottom {
   border-top: 1px solid #d4d8dd;
   border-bottom: 1px solid #d4d8dd; }
 
-/* line 77, _theme.scss */
+/* line 75, _theme.scss */
 .main-container,
 .nav-top-wrapper {
   background: #fff;
   padding: 1.5rem 1.5rem 0 1.5rem; }
   @media only screen and (max-width: 480px) {
-    /* line 77, _theme.scss */
+    /* line 75, _theme.scss */
     .main-container,
     .nav-top-wrapper {
       padding: 0.75rem 0.75rem 0 0.75rem; } }
 
-/* line 85, _theme.scss */
+/* line 83, _theme.scss */
 .main-container {
   border: 1px solid #d4d8dd; }
 
-/* line 89, _theme.scss */
+/* line 87, _theme.scss */
 .nav-top-wrapper {
   border-top: 1px solid #d4d8dd;
   border-left: 1px solid #d4d8dd;
@@ -4022,19 +4021,19 @@ label,
   padding: 0;
   margin: 2rem 0 0 0; }
   @media only screen and (max-width: 1023px) {
-    /* line 89, _theme.scss */
+    /* line 87, _theme.scss */
     .nav-top-wrapper {
       margin: 1.5rem 0 0 0; } }
   @media only screen and (max-width: 480px) {
-    /* line 89, _theme.scss */
+    /* line 87, _theme.scss */
     .nav-top-wrapper {
       margin: 1rem 0 0 0; } }
 
-/* line 103, _theme.scss */
+/* line 101, _theme.scss */
 .nav-effect {
   margin: 0 0 6px; }
   @media only screen and (max-width: 480px) {
-    /* line 103, _theme.scss */
+    /* line 101, _theme.scss */
     .nav-effect {
       height: 0;
       margin: 0;
@@ -4044,11 +4043,11 @@ label,
       transition: height 500ms; } }
 
 @media only screen and (max-width: 480px) {
-  /* line 115, _theme.scss */
+  /* line 113, _theme.scss */
   .nav-effect.active {
     height: inherit; } }
 
-/* line 121, _theme.scss */
+/* line 119, _theme.scss */
 .nav-effect a {
   margin: 0 10px;
   padding: 12px 14px 0;
@@ -4060,11 +4059,11 @@ label,
   white-space: nowrap;
   text-align: center; }
   @media only screen and (max-width: 1023px) {
-    /* line 121, _theme.scss */
+    /* line 119, _theme.scss */
     .nav-effect a {
       margin: 0 0 28px 0; } }
   @media only screen and (max-width: 480px) {
-    /* line 121, _theme.scss */
+    /* line 119, _theme.scss */
     .nav-effect a {
       font-size: 1.5em;
       line-height: 1.5em;
@@ -4075,7 +4074,7 @@ label,
       background: #706c87;
       color: white; } }
 
-/* line 146, _theme.scss */
+/* line 144, _theme.scss */
 .nav-effect a:hover {
   -webkit-box-shadow: inset 0 6px 0 #706c87;
   -moz-box-shadow: inset 0 6px 0 #706c87;
@@ -4084,13 +4083,13 @@ label,
   -moz-transition: box-shadow 0.3s, height 0.3s;
   transition: box-shadow 0.3s, height 0.3s; }
 
-/* line 155, _theme.scss */
+/* line 153, _theme.scss */
 .nav-effect .active {
   -webkit-box-shadow: inset 0 6px 0 #706c87;
   -moz-box-shadow: inset 0 6px 0 #706c87;
   box-shadow: inset 0 6px 0 #706c87; }
 
-/* line 162, _theme.scss */
+/* line 160, _theme.scss */
 .nav-effect a::before,
 .nav-effect a::after {
   position: absolute;
@@ -4105,7 +4104,7 @@ label,
   -moz-transition: opacity 0.3s, height 0.3s;
   transition: opacity 0.3s, height 0.3s; }
 
-/* line 176, _theme.scss */
+/* line 174, _theme.scss */
 .nav-effect a::after {
   top: 100%;
   opacity: 0;
@@ -4116,18 +4115,18 @@ label,
   -moz-transform: translateY(-10px);
   transform: translateY(-10px); }
 
-/* line 187, _theme.scss */
+/* line 185, _theme.scss */
 .nav-effect a span:first-child {
   z-index: 2;
   display: block;
   font-weight: 300;
   margin: 10px 0 -10px 0; }
   @media only screen and (max-width: 480px) {
-    /* line 187, _theme.scss */
+    /* line 185, _theme.scss */
     .nav-effect a span:first-child {
       margin: inherit; } }
 
-/* line 197, _theme.scss */
+/* line 195, _theme.scss */
 .nav-effect a span:last-child {
   z-index: 1;
   display: block;
@@ -4135,7 +4134,7 @@ label,
   text-shadow: none;
   text-transform: none;
   font-size: 0.45em;
-  font-family: "calendas-plus", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+  font-family: "Crimson Text", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
   color: #343b41;
   opacity: 0;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -4145,12 +4144,12 @@ label,
   -moz-transform: translateY(-100%);
   transform: translateY(-100%); }
 
-/* line 216, _theme.scss */
+/* line 214, _theme.scss */
 .nav-effect a:hover::before,
 .nav-effect a:focus::before {
   height: 6px; }
 
-/* line 223, _theme.scss */
+/* line 221, _theme.scss */
 .nav-effect a:hover span:last-child,
 .nav-effect a:focus span:last-child {
   opacity: 1;
@@ -4182,7 +4181,7 @@ Background image goes below.
   </figcaption>
 </figure>
 */
-/* line 256, _theme.scss */
+/* line 254, _theme.scss */
 .story-element {
   position: relative;
   float: left;
@@ -4191,17 +4190,17 @@ Background image goes below.
   cursor: pointer;
   margin-top: 28px; }
 
-/* line 265, _theme.scss */
+/* line 263, _theme.scss */
 .story-element:nth-child(2n) {
   margin-right: 0; }
 
-/* line 269, _theme.scss */
+/* line 267, _theme.scss */
 .story-element img {
   -webkit-transition: 500ms 300ms;
   -o-transition: 500ms 300ms;
   transition: 500ms 300ms; }
 
-/* line 275, _theme.scss */
+/* line 273, _theme.scss */
 .story-element figcaption {
   position: absolute;
   margin: auto;
@@ -4216,7 +4215,7 @@ Background image goes below.
   -o-transition: 750ms 300ms;
   transition: 750ms 300ms; }
   @media only screen and (max-width: 1023px) {
-    /* line 275, _theme.scss */
+    /* line 273, _theme.scss */
     .story-element figcaption {
       position: static;
       background: #706c87;
@@ -4226,50 +4225,50 @@ Background image goes below.
       transition: none;
       height: inherit; } }
 
-/* line 296, _theme.scss */
+/* line 294, _theme.scss */
 .story-element-orange {
   color: #3b3b3b; }
-  /* line 298, _theme.scss */
+  /* line 296, _theme.scss */
   .story-element-orange .rule {
-    color: #e5c764; }
+    color: #ebb730; }
 
-/* line 304, _theme.scss */
+/* line 302, _theme.scss */
 .story-element-purple .rule {
   color: #4d4a5d; }
 
-/* line 310, _theme.scss */
+/* line 308, _theme.scss */
 .story-element-blue .rule {
   color: #9cb8d1; }
 
-/* line 316, _theme.scss */
+/* line 314, _theme.scss */
 .story-element-pink .rule {
   color: #d15a5a; }
 
-/* line 321, _theme.scss */
+/* line 319, _theme.scss */
 .story-element-orange figcaption {
   background: rgba(227, 183, 45, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 321, _theme.scss */
+    /* line 319, _theme.scss */
     .story-element-orange figcaption {
       background: #e3b72d; } }
 
-/* line 329, _theme.scss */
+/* line 327, _theme.scss */
 .story-element-blue figcaption {
   background: rgba(139, 171, 201, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 329, _theme.scss */
+    /* line 327, _theme.scss */
     .story-element-blue figcaption {
       background: #8babc9; } }
 
-/* line 336, _theme.scss */
+/* line 334, _theme.scss */
 .story-element-pink figcaption {
   background: rgba(203, 70, 70, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 336, _theme.scss */
+    /* line 334, _theme.scss */
     .story-element-pink figcaption {
       background: #cb4646; } }
 
-/* line 343, _theme.scss */
+/* line 341, _theme.scss */
 .story-element[data-effeckt-type~="story-element"] figcaption {
   top: 0;
   left: 0;
@@ -4280,33 +4279,33 @@ Background image goes below.
   -o-transform: translateX(120%);
   transform: translateX(120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 343, _theme.scss */
+    /* line 341, _theme.scss */
     .story-element[data-effeckt-type~="story-element"] figcaption {
       -webkit-transform: none;
       -ms-transform: none;
       -o-transform: none;
       transform: none; } }
 
-/* line 360, _theme.scss */
+/* line 358, _theme.scss */
 .story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
   -webkit-transform: translateX(-120%);
   -ms-transform: translateX(-120%);
   -o-transform: translateX(-120%);
   transform: translateX(-120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 360, _theme.scss */
+    /* line 358, _theme.scss */
     .story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
       -webkit-transform: none;
       -ms-transform: none;
       -o-transform: none;
       transform: none; } }
 
-/* line 374, _theme.scss */
+/* line 372, _theme.scss */
 .story-element[data-effeckt-type~="story-element"] img {
   display: block;
   position: relative; }
 
-/* line 381, _theme.scss */
+/* line 379, _theme.scss */
 .story-element[data-effeckt-type~="story-element"]:hover figcaption,
 .story-element[data-effeckt-type~="story-element"]:active figcaption {
   -webkit-transform: translateX(0);
@@ -4314,11 +4313,11 @@ Background image goes below.
   -o-transform: translateX(0);
   transform: translateX(0); }
 
-/* line 388, _theme.scss */
+/* line 386, _theme.scss */
 .hidden-content {
   max-width: 100px; }
 
-/* line 397, _theme.scss */
+/* line 395, _theme.scss */
 .story-element h1,
 .story-element h2,
 .story-element h3,
@@ -4327,67 +4326,67 @@ Background image goes below.
 .story-element h6 {
   margin: 0; }
 
-/* line 401, _theme.scss */
+/* line 399, _theme.scss */
 .visible-content {
   position: absolute;
   top: 0;
   left: 0;
+  margin: 20px 0 20px 20px;
   background: rgba(112, 108, 135, 0.8); }
 
-/* line 408, _theme.scss */
+/* line 407, _theme.scss */
 .story-element-orange .visible-content {
   background: rgba(227, 183, 45, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 408, _theme.scss */
+    /* line 407, _theme.scss */
     .story-element-orange .visible-content {
       background: rgba(227, 183, 45, 0.8); } }
 
-/* line 414, _theme.scss */
+/* line 413, _theme.scss */
 .story-element-blue .visible-content {
   background: rgba(139, 171, 201, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 414, _theme.scss */
+    /* line 413, _theme.scss */
     .story-element-blue .visible-content {
       background: rgba(139, 171, 201, 0.8); } }
 
-/* line 420, _theme.scss */
+/* line 419, _theme.scss */
 .story-element-pink .visible-content {
   background: rgba(203, 70, 70, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 420, _theme.scss */
+    /* line 419, _theme.scss */
     .story-element-pink .visible-content {
       background: rgba(203, 70, 70, 0.8); } }
 
-/* line 427, _theme.scss */
+/* line 426, _theme.scss */
 .story-element-reversed .visible-content {
   right: 0;
   margin: 20px 20px 20px 0;
   left: auto; }
 
-/* line 433, _theme.scss */
+/* line 432, _theme.scss */
 .story-element-reversed .visible-content,
 .visible-content {
   padding: 20px;
-  margin: 20px 0 20px 20px;
   -webkit-transition: 500ms 300ms;
   -o-transition: 500ms 300ms;
   transition: 500ms 300ms; }
   @media only screen and (max-width: 480px) {
-    /* line 433, _theme.scss */
+    /* line 432, _theme.scss */
     .story-element-reversed .visible-content,
     .visible-content {
       padding: 10px;
       margin: 4px; }
-      /* line 442, _theme.scss */
+      /* line 440, _theme.scss */
       .story-element-reversed .visible-content h4,
       .visible-content h4 {
         font-size: 16px; }
-      /* line 445, _theme.scss */
+      /* line 443, _theme.scss */
       .story-element-reversed .visible-content small,
       .visible-content small {
         font-size: 11px; } }
 
-/* line 452, _theme.scss */
+/* line 450, _theme.scss */
 .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
 .story-element[data-effeckt-type~="story-element"]:active .visible-content {
   -webkit-transform: translateX(-120%);
@@ -4395,7 +4394,7 @@ Background image goes below.
   -o-transform: translateX(-120%);
   transform: translateX(-120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 452, _theme.scss */
+    /* line 450, _theme.scss */
     .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
     .story-element[data-effeckt-type~="story-element"]:active .visible-content {
       -webkit-transform: none;
@@ -4403,7 +4402,7 @@ Background image goes below.
       -o-transform: none;
       transform: none; } }
 
-/* line 466, _theme.scss */
+/* line 464, _theme.scss */
 .story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
 .story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
   -webkit-transform: translateX(120%);
@@ -4411,7 +4410,7 @@ Background image goes below.
   -o-transform: translateX(120%);
   transform: translateX(120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 466, _theme.scss */
+    /* line 464, _theme.scss */
     .story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
     .story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
       -webkit-transform: none;
@@ -4429,7 +4428,7 @@ the HTML markup looks like this:
 	</div>
 </div>
 */
-/* line 490, _theme.scss */
+/* line 488, _theme.scss */
 .slide-in {
   width: 100%;
   clear: both;
@@ -4437,11 +4436,11 @@ the HTML markup looks like this:
   position: relative;
   min-height: 16em; }
   @media only screen and (max-width: 1023px) {
-    /* line 490, _theme.scss */
+    /* line 488, _theme.scss */
     .slide-in {
       min-height: 25em; } }
 
-/* line 501, _theme.scss */
+/* line 499, _theme.scss */
 .slide {
   width: 100%;
   position: absolute;
@@ -4452,43 +4451,43 @@ the HTML markup looks like this:
   -ms-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out; }
 
-/* line 511, _theme.scss */
+/* line 509, _theme.scss */
 .slide-from-left {
   left: 0; }
 
-/* line 514, _theme.scss */
+/* line 512, _theme.scss */
 .slide-from-right {
   left: 0; }
 
-/* line 517, _theme.scss */
+/* line 515, _theme.scss */
 .offscreen {
   opacity: 0; }
 
-/* line 520, _theme.scss */
+/* line 518, _theme.scss */
 .slide-from-left.offscreen {
   left: -50%; }
   @media only screen and (max-width: 1023px) {
-    /* line 520, _theme.scss */
+    /* line 518, _theme.scss */
     .slide-from-left.offscreen {
       left: 0; } }
 
-/* line 526, _theme.scss */
+/* line 524, _theme.scss */
 .slide-from-right.offscreen {
   left: 50%; }
   @media only screen and (max-width: 1023px) {
-    /* line 526, _theme.scss */
+    /* line 524, _theme.scss */
     .slide-from-right.offscreen {
       left: 0; } }
 
-/* line 533, _theme.scss */
+/* line 531, _theme.scss */
 .margin-quarter {
   margin-left: 25%; }
   @media only screen and (max-width: 1023px) {
-    /* line 533, _theme.scss */
+    /* line 531, _theme.scss */
     .margin-quarter {
       margin-left: 0; } }
 
-/* line 540, _theme.scss */
+/* line 538, _theme.scss */
 .btn--primary {
   background: #706c87;
   color: white;
@@ -4498,11 +4497,11 @@ the HTML markup looks like this:
   -o-transition: background 200ms;
   transition: background 200ms; }
 
-/* line 550, _theme.scss */
+/* line 548, _theme.scss */
 .btn--primary:hover {
   background: #8b879f; }
 
-/* line 554, _theme.scss */
+/* line 552, _theme.scss */
 footer {
   background: #b4b2c1;
   padding: 18px 0;
@@ -4555,88 +4554,61 @@ Place embedded videos or maps into a flexible container to make them responsive.
   height: 100%; }
 
 /* 
-======= IMPORTANT INFORMATION ABOUT THIS FONT =======
-Calendas Plus is the beautiful font used for this theme. If you would 
-like to use this font you can buy it for a measly $3 here:
-http://www.calendasplus.com/ 
-*/
-@font-face {
-  font-family: 'calendas-plus-bold';
-  src: url("../media/fonts/calendas_plus_bold-webfont.eot");
-  src: url("../media/fonts/calendas_plus_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../media/fonts/calendas_plus_bold-webfont.woff") format("woff"), url("../media/fonts/calendas_plus_bold-webfont.ttf") format("truetype"), url("../media/fonts/calendas_plus_bold-webfont.svg#calendas_plusbold") format("svg");
-  font-weight: 700;
-  font-style: bold; }
-
-@font-face {
-  font-family: 'calendas-plus-italic';
-  src: url("../media/fonts/calendas_plus_italic-webfont.eot");
-  src: url("../media/fonts/calendas_plus_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../media/fonts/calendas_plus_italic-webfont.woff") format("woff"), url("../media/fonts/calendas_plus_italic-webfont.ttf") format("truetype"), url("../media/fonts/calendas_plus_italic-webfont.svg#calendas_plusitalic") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'calendas-plus';
-  src: url("../media/fonts/calendas_plus-webfont.eot");
-  src: url("../media/fonts/calendas_plus-webfont.eot?#iefix") format("embedded-opentype"), url("../media/fonts/calendas_plus-webfont.woff") format("woff"), url("../media/fonts/calendas_plus-webfont.ttf") format("truetype"), url("../media/fonts/calendas_plus-webfont.svg#calendas_plusregular") format("svg");
-  font-weight: 400;
-  font-style: normal; }
-
-/* 
 ======= TYPOGRAPHY STYLES =======
 Tightly tuned typography, adjusted for maximum readability across all devices and platforms.
 */
-/* line 48, _typography.scss */
+/* line 6, _typography.scss */
 body {
   color: #3b3b3b; }
   @media only screen and (max-width: 1023px) {
-    /* line 48, _typography.scss */
+    /* line 6, _typography.scss */
     body {
       font-size: 16px;
       line-height: 24px; } }
   @media only screen and (max-width: 480px) {
-    /* line 48, _typography.scss */
+    /* line 6, _typography.scss */
     body {
       font-size: 15px;
       line-height: 22px; } }
 
 @media only screen and (max-width: 1023px) {
-  /* line 60, _typography.scss */
+  /* line 18, _typography.scss */
   h1 {
     font-size: 44px; } }
 @media only screen and (max-width: 480px) {
-  /* line 60, _typography.scss */
+  /* line 18, _typography.scss */
   h1 {
     font-size: 40px; } }
 
 @media only screen and (max-width: 1023px) {
-  /* line 68, _typography.scss */
+  /* line 26, _typography.scss */
   h2 {
     font-size: 32px; } }
 @media only screen and (max-width: 480px) {
-  /* line 68, _typography.scss */
+  /* line 26, _typography.scss */
   h2 {
     font-size: 28px; } }
 
-/* line 76, _typography.scss */
+/* line 34, _typography.scss */
 h3 {
   line-height: 38px; }
 
-/* line 80, _typography.scss */
+/* line 38, _typography.scss */
 h4, h5, h6 {
-  font-family: "calendas-plus-bold", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+  font-family: "Crimson Text", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
   font-weight: 700; }
 
-/* line 85, _typography.scss */
+/* line 43, _typography.scss */
 .subheading {
   font-weight: normal;
   font-style: italic;
-  font-family: "calendas-plus-italic", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif; }
+  font-family: "Crimson Text", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif; }
 
-/* line 91, _typography.scss */
+/* line 49, _typography.scss */
 p {
   font-weight: 400; }
 
-/* line 95, _typography.scss */
+/* line 53, _typography.scss */
 article p:first-child:first-letter {
   float: left;
   color: #706c87;
@@ -4646,28 +4618,28 @@ article p:first-child:first-letter {
   padding-right: 8px;
   padding-left: 3px; }
   @media only screen and (max-width: 480px) {
-    /* line 95, _typography.scss */
+    /* line 53, _typography.scss */
     article p:first-child:first-letter {
       font-size: 72px;
       line-height: 60px; } }
 
-/* line 109, _typography.scss */
+/* line 67, _typography.scss */
 em, blockquote, dt {
-  font-family: "calendas-plus-italic", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+  font-family: "Crimson Text", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
   font-weight: normal;
   font-style: italic; }
 
-/* line 115, _typography.scss */
+/* line 73, _typography.scss */
 strong {
-  font-family: "calendas-plus-bold", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+  font-family: "Crimson Text", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
   font-weight: 700; }
 
 @media only screen and (max-width: 480px) {
-  /* line 119, _typography.scss */
+  /* line 77, _typography.scss */
   ol, ul, dl {
     margin-left: 2rem; } }
 
-/* line 125, _typography.scss */
+/* line 83, _typography.scss */
 a {
   color: #706c87;
   text-decoration: underline;
@@ -4677,26 +4649,26 @@ a {
   -o-transition: color 200ms;
   transition: color 200ms; }
 
-/* line 135, _typography.scss */
+/* line 93, _typography.scss */
 a:hover {
   color: #a6a3b6; }
 
-/* line 139, _typography.scss */
+/* line 97, _typography.scss */
 ul.clean {
   list-style: none;
   margin: 0; }
 
-/* line 144, _typography.scss */
+/* line 102, _typography.scss */
 .rule {
   margin-top: 0.6em;
   margin-bottom: 0.6em; }
 
-/* line 149, _typography.scss */
+/* line 107, _typography.scss */
 figure {
   margin: 0;
   color: white; }
 
-/* line 154, _typography.scss */
+/* line 112, _typography.scss */
 blockquote {
   text-indent: -0.2em;
   margin-top: 2.4em;
@@ -4704,11 +4676,11 @@ blockquote {
   margin-bottom: 8px;
   position: relative; }
   @media only screen and (max-width: 1023px) {
-    /* line 154, _typography.scss */
+    /* line 112, _typography.scss */
     blockquote {
       padding: 0 2em 0 2em; } }
 
-/* line 165, _typography.scss */
+/* line 123, _typography.scss */
 blockquote:before {
   content: "“";
   color: #706c87;
@@ -4717,20 +4689,20 @@ blockquote:before {
   top: -0.35em;
   left: 0.35em; }
   @media only screen and (max-width: 1023px) {
-    /* line 165, _typography.scss */
+    /* line 123, _typography.scss */
     blockquote:before {
       font-size: 48px;
       top: 5%;
       left: 0; } }
 
-/* line 179, _typography.scss */
+/* line 137, _typography.scss */
 cite {
   font-size: 0.8em;
   margin-top: 0;
   line-height: 1;
   font-style: normal; }
 
-/* line 186, _typography.scss */
+/* line 144, _typography.scss */
 blockquote ~ cite {
   display: block;
   text-align: right;
@@ -4738,27 +4710,27 @@ blockquote ~ cite {
   margin-bottom: 2.4em; }
 
 /* COPY COLOR CHANGING HELPER CLASSES */
-/* line 195, _typography.scss */
+/* line 153, _typography.scss */
 .brand-color {
   color: #706c87; }
 
-/* line 199, _typography.scss */
+/* line 157, _typography.scss */
 .purple {
   color: #706c87; }
 
-/* line 203, _typography.scss */
+/* line 161, _typography.scss */
 .blue {
   color: #8babc9; }
 
-/* line 206, _typography.scss */
+/* line 164, _typography.scss */
 .orange {
-  color: #deb738; }
+  color: #d49e14; }
 
-/* line 210, _typography.scss */
+/* line 168, _typography.scss */
 .form-large-type {
   font-size: 1.1em; }
 
-/* line 214, _typography.scss */
+/* line 172, _typography.scss */
 .form-large-type select, .form-large-type input {
   display: inline-block;
   -webkit-appearance: none;
