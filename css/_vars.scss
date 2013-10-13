@@ -46,10 +46,6 @@ $use-rules:         true;
 $use-stats:         true;
 $use-greybox:       true;
 
-
-
-
-
 /*------------------------------------*\
     $OVERRIDES
 \*------------------------------------*/
@@ -57,11 +53,11 @@ $use-greybox:       true;
  * Place any variables that should override inuit.css’ defaults here.
  */
 
- $base-font-family: 'Crimson Text', "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+$base-font-family: 'calendas-plus', "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
  $base-font-size: 	18px;
  $base-line-height: 28px;
- $base-italic-family: 'Crimson Text', "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
- $base-bold-family: 'Crimson Text', "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+ $base-italic-family: 'calendas-plus-italic', "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+ $base-bold-family: 'calendas-plus-bold', "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
 
 
 /*------------------------------------*\

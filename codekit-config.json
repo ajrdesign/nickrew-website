@@ -187,6 +187,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/js\/jquery.fs.boxer.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/jquery.fs.boxer.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/jquery.fs.boxer-ck.js",
+      "fileType" : 64
+    },
     "\/css\/inuit.css\/generic\/_pull.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -198,17 +209,6 @@
       "outputAbbreviatedPath" : "\/css\/_pull.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/js\/jquery.fs.boxer.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/jquery.fs.boxer.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/jquery.fs.boxer-ck.js",
-      "fileType" : 64
     },
     "\/js\/jquery-1.10.2.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -393,6 +393,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/media\/gallery-img-5-thumb.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/media\/gallery-img-5-thumb.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/media\/gallery-img-5-thumb.jpg",
+      "initialSize" : 17408,
+      "fileType" : 4096
+    },
     "\/css\/inuit.css\/generic\/_shared.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -404,17 +415,6 @@
       "outputAbbreviatedPath" : "\/css\/_shared.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/media\/gallery-img-5-thumb.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/media\/gallery-img-5-thumb.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/media\/gallery-img-5-thumb.jpg",
-      "initialSize" : 17408,
-      "fileType" : 4096
     },
     "\/css\/_theme.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -428,12 +428,12 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/venue.html" : {
+    "\/event.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/venue.html",
+      "inputAbbreviatedPath" : "\/event.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -527,18 +527,6 @@
       "initialSize" : 89862,
       "fileType" : 4096
     },
-    "\/css\/inuit.css\/objects\/_sprite.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/inuit.css\/objects\/_sprite.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_sprite.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/css\/inuit.css\/base\/_lists.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -548,6 +536,18 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/_lists.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/css\/inuit.css\/objects\/_sprite.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/inuit.css\/objects\/_sprite.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_sprite.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -562,16 +562,16 @@
       "outputAbbreviatedPath" : "\/js\/app-ck.js",
       "fileType" : 64
     },
-    "\/media\/gallery-img-4-thumb.jpg" : {
+    "\/media\/logo-our-story.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/media\/gallery-img-4-thumb.jpg",
+      "inputAbbreviatedPath" : "\/media\/logo-our-story.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/media\/gallery-img-4-thumb.jpg",
-      "initialSize" : 33862,
-      "fileType" : 4096
+      "outputAbbreviatedPath" : "\/media\/logo-our-story.png",
+      "initialSize" : 11622,
+      "fileType" : 8192
     },
     "\/js\/list-scroll.js" : {
       "ignoreWasSetByUser" : 0,
@@ -584,17 +584,6 @@
       "outputAbbreviatedPath" : "\/js\/list-scroll-ck.js",
       "fileType" : 64
     },
-    "\/media\/logo-our-story.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/media\/logo-our-story.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/media\/logo-our-story.png",
-      "initialSize" : 11622,
-      "fileType" : 8192
-    },
     "\/media\/logo-our-story-orange@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -606,6 +595,17 @@
       "initialSize" : 42624,
       "fileType" : 8192
     },
+    "\/media\/gallery-img-4-thumb.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/media\/gallery-img-4-thumb.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/media\/gallery-img-4-thumb.jpg",
+      "initialSize" : 33862,
+      "fileType" : 4096
+    },
     "\/media\/story-img-3.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -616,6 +616,18 @@
       "outputAbbreviatedPath" : "\/media\/story-img-3.jpg",
       "initialSize" : 46710,
       "fileType" : 4096
+    },
+    "\/css\/inuit.css\/objects\/_split.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/inuit.css\/objects\/_split.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_split.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/css\/inuit.css\/generic\/_reset.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -649,18 +661,6 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/_tables.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/css\/inuit.css\/objects\/_split.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/inuit.css\/objects\/_split.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_split.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -778,15 +778,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/css\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/style.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/css\/inuit.css\/objects\/_greybox.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -798,6 +789,15 @@
       "outputAbbreviatedPath" : "\/css\/_greybox.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/css\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/style.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/css\/inuit.css\/objects\/_this-or-this.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -988,6 +988,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/media\/gallery-img-2-thumb.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/media\/gallery-img-2-thumb.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/media\/gallery-img-2-thumb.jpg",
+      "initialSize" : 38795,
+      "fileType" : 4096
+    },
     "\/css\/_gallery.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -999,17 +1010,6 @@
       "outputAbbreviatedPath" : "\/css\/_gallery.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/media\/gallery-img-2-thumb.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/media\/gallery-img-2-thumb.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/media\/gallery-img-2-thumb.jpg",
-      "initialSize" : 38795,
-      "fileType" : 4096
     },
     "\/css\/screen.scss" : {
       "ignoreWasSetByUser" : 0,
