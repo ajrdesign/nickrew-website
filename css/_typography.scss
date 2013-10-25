@@ -56,6 +56,10 @@ body {
     }
 }
 
+.lead {
+    line-height: 1.5em;
+}
+
 h1 {
     @include media-query(portable) {
         font-size: $h1-size - 4px;

@@ -62,6 +62,46 @@
 			}
 		
 		}
+
+.gallery-wed-party {
+  padding: 0;
+      li {
+          width: 31%;
+        margin-right: $base-spacing-unit;
+        margin-bottom: $base-spacing-unit;
+        }
+        li:nth-child(3n) {
+          margin-right: 0;
+        }
+    @include media-query(portable) {
+        li {
+        margin-right: $base-spacing-unit/2;
+        margin-bottom: $base-spacing-unit/2;
+      }
+    }
+    
+    @include media-query(palm) {
+      li {
+        width: 49%;
+        padding: 0;
+        margin-right: $base-spacing-unit/4;
+        margin-bottom: $base-spacing-unit/4;
+      }
+      img {
+        display: block;
+      }
+      li:nth-child(3n) {
+          clear: none;
+
+        }
+      li:nth-child(2n) {
+        clear: right;
+        margin-right: 0;
+      }
+
+      }
+    
+    }
 		
 /* 
 This allows you to use a caption on any image. 
