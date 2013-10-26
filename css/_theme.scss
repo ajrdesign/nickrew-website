@@ -78,7 +78,6 @@ body {
  		padding: $base-spacing-unit/4 $base-spacing-unit/4 0 $base-spacing-unit/4
  	}
  }
-
  .main-container {
  	border: 1px solid $lightgrey;
  }
@@ -97,6 +96,7 @@ body {
  	}
  	@include media-query(palm) {
  		margin: 1rem 0 0 0;
+ 		padding-left: $base-spacing-unit;
  	}
  }
 .nav-sub-wrapper {

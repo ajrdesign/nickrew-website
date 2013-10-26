@@ -82,22 +82,15 @@
     
     @include media-query(palm) {
       li {
-        width: 49%;
+        width: 100%;
         padding: 0;
         margin-right: $base-spacing-unit/4;
         margin-bottom: $base-spacing-unit/4;
-      }
-      img {
-        display: block;
       }
       li:nth-child(3n) {
           clear: none;
 
         }
-      li:nth-child(2n) {
-        clear: right;
-        margin-right: 0;
-      }
 
       }
     
@@ -139,6 +132,7 @@ Markup:
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
+  width: 100%;
 }
 
 .img-caption figcaption {
@@ -147,6 +141,9 @@ Markup:
   -o-transition: 500ms;
   transition: 500ms;
   width: 100%;
+  @include media-query(palm) {
+    position: static;
+  }
 }
 
 .img-caption-figcaption-wrap {
@@ -240,6 +237,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb4646', end
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
   opacity: 0;
+  @include media-query(portable) {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    position: static;
+    background: $brand-color;
+    display: table;
+  }
 }
 
 .img-caption[data-effeckt-type="cover-slide-top"] img {
@@ -255,8 +262,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb4646', end
   -o-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
-  @include media-query(portable) {
-  	opacity: 0;
-  }
 }	
 		

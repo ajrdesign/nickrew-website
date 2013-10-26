@@ -4014,11 +4014,11 @@ label,
     .nav-top-wrapper {
       padding: 7px 7px 0 7px; } }
 
-/* line 82, _theme.scss */
+/* line 81, _theme.scss */
 .main-container {
   border: 1px solid #d4d8dd; }
 
-/* line 86, _theme.scss */
+/* line 85, _theme.scss */
 .nav-top-wrapper,
 .nav-sub-wrapper {
   background: #fff;
@@ -4026,18 +4026,19 @@ label,
   border-left: 1px solid #d4d8dd;
   border-right: 1px solid #d4d8dd; }
 
-/* line 92, _theme.scss */
+/* line 91, _theme.scss */
 .nav-top-wrapper {
   padding: 0;
   margin: 4rem 0 0 0; }
   @media only screen and (max-width: 1023px) {
-    /* line 92, _theme.scss */
+    /* line 91, _theme.scss */
     .nav-top-wrapper {
       margin: 1.5rem 0 0 0; } }
   @media only screen and (max-width: 480px) {
-    /* line 92, _theme.scss */
+    /* line 91, _theme.scss */
     .nav-top-wrapper {
-      margin: 1rem 0 0 0; } }
+      margin: 1rem 0 0 0;
+      padding-left: 28px; } }
 
 /* line 102, _theme.scss */
 .nav-sub-wrapper {
@@ -4717,23 +4718,23 @@ article p:first-child:first-letter {
       font-size: 72px;
       line-height: 60px; } }
 
-/* line 112, _typography.scss */
+/* line 111, _typography.scss */
 em, blockquote, dt {
   font-family: "calendas-plus-italic", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
   font-weight: normal;
   font-style: italic; }
 
-/* line 118, _typography.scss */
+/* line 116, _typography.scss */
 strong {
   font-family: "calendas-plus-bold", "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
   font-weight: 700; }
 
 @media only screen and (max-width: 480px) {
-  /* line 122, _typography.scss */
+  /* line 120, _typography.scss */
   ol, ul, dl {
     margin-left: 2rem; } }
 
-/* line 128, _typography.scss */
+/* line 125, _typography.scss */
 a {
   color: #706c87;
   text-decoration: underline;
@@ -4741,28 +4742,33 @@ a {
   -moz-transition: color 200ms;
   -ms-transition: color 200ms;
   -o-transition: color 200ms;
-  transition: color 200ms; }
+  transition: color 200ms;
+  text-decoration: none; }
 
-/* line 138, _typography.scss */
+/* line 135, _typography.scss */
+p a {
+  text-decoration: underline; }
+
+/* line 136, _typography.scss */
 a:hover {
   color: #a6a3b6; }
 
-/* line 142, _typography.scss */
+/* line 140, _typography.scss */
 ul.clean {
   list-style: none;
   margin: 0; }
 
-/* line 147, _typography.scss */
+/* line 145, _typography.scss */
 .rule {
   margin-top: 0.6em;
   margin-bottom: 0.6em; }
 
-/* line 152, _typography.scss */
+/* line 150, _typography.scss */
 figure {
   margin: 0;
   color: white; }
 
-/* line 157, _typography.scss */
+/* line 155, _typography.scss */
 blockquote {
   text-indent: -0.2em;
   margin-top: 2.4em;
@@ -4770,11 +4776,11 @@ blockquote {
   margin-bottom: 8px;
   position: relative; }
   @media only screen and (max-width: 1023px) {
-    /* line 157, _typography.scss */
+    /* line 155, _typography.scss */
     blockquote {
       padding: 0 2em 0 2em; } }
 
-/* line 168, _typography.scss */
+/* line 166, _typography.scss */
 blockquote:before {
   content: "“";
   color: #706c87;
@@ -4783,20 +4789,20 @@ blockquote:before {
   top: -0.35em;
   left: 0.35em; }
   @media only screen and (max-width: 1023px) {
-    /* line 168, _typography.scss */
+    /* line 166, _typography.scss */
     blockquote:before {
       font-size: 48px;
       top: 5%;
       left: 0; } }
 
-/* line 182, _typography.scss */
+/* line 180, _typography.scss */
 cite {
   font-size: 0.8em;
   margin-top: 0;
   line-height: 1;
   font-style: normal; }
 
-/* line 189, _typography.scss */
+/* line 187, _typography.scss */
 blockquote ~ cite {
   display: block;
   text-align: right;
@@ -4804,27 +4810,27 @@ blockquote ~ cite {
   margin-bottom: 2.4em; }
 
 /* COPY COLOR CHANGING HELPER CLASSES */
-/* line 198, _typography.scss */
+/* line 196, _typography.scss */
 .brand-color {
   color: #706c87; }
 
-/* line 202, _typography.scss */
+/* line 200, _typography.scss */
 .purple {
   color: #706c87; }
 
-/* line 206, _typography.scss */
+/* line 204, _typography.scss */
 .blue {
   color: #8babc9; }
 
-/* line 209, _typography.scss */
+/* line 207, _typography.scss */
 .orange {
   color: #d49e14; }
 
-/* line 213, _typography.scss */
+/* line 211, _typography.scss */
 .form-large-type {
   font-size: 1.1em; }
 
-/* line 217, _typography.scss */
+/* line 215, _typography.scss */
 .form-large-type select, .form-large-type input {
   display: inline-block;
   -webkit-appearance: none;
@@ -5146,20 +5152,13 @@ blockquote ~ cite {
   @media only screen and (max-width: 480px) {
     /* line 84, _gallery.scss */
     .gallery-wed-party li {
-      width: 49%;
+      width: 100%;
       padding: 0;
       margin-right: 7px;
       margin-bottom: 7px; }
     /* line 90, _gallery.scss */
-    .gallery-wed-party img {
-      display: block; }
-    /* line 93, _gallery.scss */
     .gallery-wed-party li:nth-child(3n) {
-      clear: none; }
-    /* line 97, _gallery.scss */
-    .gallery-wed-party li:nth-child(2n) {
-      clear: right;
-      margin-right: 0; } }
+      clear: none; } }
 
 /* 
 This allows you to use a caption on any image. 
@@ -5182,52 +5181,57 @@ Markup:
 
   NOTE: There are five varieties and changing the <figcaption> class will manipulate them: gradient-black, gradient-grey, gradient-purple, gradient-orange, gradient-blue.
 */
-/* line 129, _gallery.scss */
+/* line 122, _gallery.scss */
 .img-caption {
   position: relative;
   overflow: hidden; }
 
-/* line 134, _gallery.scss */
+/* line 127, _gallery.scss */
 .img-caption:nth-child(2n) {
   margin-right: 0; }
 
-/* line 138, _gallery.scss */
+/* line 131, _gallery.scss */
 .img-caption img {
   -webkit-transition: 500ms;
   -o-transition: 500ms;
-  transition: 500ms; }
+  transition: 500ms;
+  width: 100%; }
 
-/* line 144, _gallery.scss */
+/* line 138, _gallery.scss */
 .img-caption figcaption {
   position: absolute;
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
   width: 100%; }
+  @media only screen and (max-width: 480px) {
+    /* line 138, _gallery.scss */
+    .img-caption figcaption {
+      position: static; } }
 
-/* line 152, _gallery.scss */
+/* line 149, _gallery.scss */
 .img-caption-figcaption-wrap {
   padding: 0.6em;
   text-align: center; }
 
-/* line 157, _gallery.scss */
+/* line 154, _gallery.scss */
 .img-caption-figcaption-wrap h5 {
   margin-bottom: 0.2em; }
 
-/* line 161, _gallery.scss */
+/* line 158, _gallery.scss */
 .img-caption-figcaption-wrap i {
   font-size: 32px;
   line-height: 48px; }
 
-/* line 166, _gallery.scss */
+/* line 163, _gallery.scss */
 .gradient-black, .gradient-purple, .gradient-grey, .gradient-pink {
   color: #fff; }
 
-/* line 170, _gallery.scss */
+/* line 167, _gallery.scss */
 .gradient-orange, .gradient-blue {
   color: #444; }
 
-/* line 174, _gallery.scss */
+/* line 171, _gallery.scss */
 .gradient-black {
   background: -moz-linear-gradient(top, black 16%, rgba(0, 0, 0, 0.99) 17%, rgba(0, 0, 0, 0) 100%);
   /* FF3.6+ */
@@ -5244,7 +5248,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 184, _gallery.scss */
+/* line 181, _gallery.scss */
 .gradient-grey {
   background: -moz-linear-gradient(top, #3b3b3b 16%, rgba(59, 59, 59, 0) 100%);
   /* FF3.6+ */
@@ -5261,7 +5265,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b3b3b', endColorstr='#003b3b3b',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 194, _gallery.scss */
+/* line 191, _gallery.scss */
 .gradient-purple {
   background: -moz-linear-gradient(top, #706c87 16%, rgba(112, 108, 135, 0) 100%);
   /* FF3.6+ */
@@ -5278,7 +5282,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#706c87', endColorstr='#00706c87',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 204, _gallery.scss */
+/* line 201, _gallery.scss */
 .gradient-blue {
   background: -moz-linear-gradient(top, #8babc9 16%, rgba(139, 171, 201, 0) 100%);
   /* FF3.6+ */
@@ -5295,7 +5299,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8babc9', endColorstr='#008babc9',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 214, _gallery.scss */
+/* line 211, _gallery.scss */
 .gradient-orange {
   background: -moz-linear-gradient(top, #deb738 16%, rgba(222, 183, 56, 0) 100%);
   /* FF3.6+ */
@@ -5312,7 +5316,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#deb738', endColorstr='#00deb738',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 224, _gallery.scss */
+/* line 221, _gallery.scss */
 .gradient-pink {
   background: -moz-linear-gradient(top, #cb4646 0%, rgba(203, 70, 70, 0) 100%);
   /* FF3.6+ */
@@ -5329,7 +5333,7 @@ Markup:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb4646', endColorstr='#00cb4646',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 234, _gallery.scss */
+/* line 231, _gallery.scss */
 .img-caption[data-effeckt-type="cover-slide-top"] figcaption {
   top: 0;
   left: 0;
@@ -5339,14 +5343,25 @@ Markup:
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
   opacity: 0; }
+  @media only screen and (max-width: 1023px) {
+    /* line 231, _gallery.scss */
+    .img-caption[data-effeckt-type="cover-slide-top"] figcaption {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+      position: static;
+      background: #706c87;
+      display: table; } }
 
-/* line 245, _gallery.scss */
+/* line 252, _gallery.scss */
 .img-caption[data-effeckt-type="cover-slide-top"] img {
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms; }
 
-/* line 252, _gallery.scss */
+/* line 259, _gallery.scss */
 .img-caption[data-effeckt-type="cover-slide-top"]:hover figcaption,
 .img-caption[data-effeckt-type="cover-slide-top"]:active figcaption {
   -webkit-transform: translateY(0);
@@ -5354,8 +5369,3 @@ Markup:
   -o-transform: translateY(0);
   transform: translateY(0);
   opacity: 1; }
-  @media only screen and (max-width: 1023px) {
-    /* line 252, _gallery.scss */
-    .img-caption[data-effeckt-type="cover-slide-top"]:hover figcaption,
-    .img-caption[data-effeckt-type="cover-slide-top"]:active figcaption {
-      opacity: 0; } }
