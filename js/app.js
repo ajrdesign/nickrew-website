@@ -23,7 +23,6 @@ $(document).ready(function() {
       }
     });
   });
-  $(".boxer").boxer();
 
 });
 
