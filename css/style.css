@@ -4278,6 +4278,7 @@ Background image goes below.
     /* line 303, _theme.scss */
     .story-element figcaption {
       position: static;
+      display: block;
       background: #706c87;
       width: 100%;
       -webkit-transition: none;
@@ -4285,50 +4286,50 @@ Background image goes below.
       transition: none;
       height: inherit; } }
 
-/* line 324, _theme.scss */
+/* line 325, _theme.scss */
 .story-element-orange {
   color: #3b3b3b; }
-  /* line 326, _theme.scss */
+  /* line 327, _theme.scss */
   .story-element-orange .rule {
     color: #ebb730; }
 
-/* line 332, _theme.scss */
+/* line 333, _theme.scss */
 .story-element-purple .rule {
   color: #4d4a5d; }
 
-/* line 338, _theme.scss */
+/* line 339, _theme.scss */
 .story-element-blue .rule {
   color: #9cb8d1; }
 
-/* line 344, _theme.scss */
+/* line 345, _theme.scss */
 .story-element-pink .rule {
   color: #d15a5a; }
 
-/* line 349, _theme.scss */
+/* line 350, _theme.scss */
 .story-element-orange figcaption {
   background: rgba(227, 183, 45, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 349, _theme.scss */
+    /* line 350, _theme.scss */
     .story-element-orange figcaption {
       background: #e3b72d; } }
 
-/* line 357, _theme.scss */
+/* line 358, _theme.scss */
 .story-element-blue figcaption {
   background: rgba(139, 171, 201, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 357, _theme.scss */
+    /* line 358, _theme.scss */
     .story-element-blue figcaption {
       background: #8babc9; } }
 
-/* line 364, _theme.scss */
+/* line 365, _theme.scss */
 .story-element-pink figcaption {
   background: rgba(203, 70, 70, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 364, _theme.scss */
+    /* line 365, _theme.scss */
     .story-element-pink figcaption {
       background: #cb4646; } }
 
-/* line 371, _theme.scss */
+/* line 372, _theme.scss */
 .story-element[data-effeckt-type~="story-element"] figcaption {
   top: 0;
   left: 0;
@@ -4339,33 +4340,33 @@ Background image goes below.
   -o-transform: translateX(120%);
   transform: translateX(120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 371, _theme.scss */
+    /* line 372, _theme.scss */
     .story-element[data-effeckt-type~="story-element"] figcaption {
       -webkit-transform: none;
       -ms-transform: none;
       -o-transform: none;
       transform: none; } }
 
-/* line 388, _theme.scss */
+/* line 389, _theme.scss */
 .story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
   -webkit-transform: translateX(-120%);
   -ms-transform: translateX(-120%);
   -o-transform: translateX(-120%);
   transform: translateX(-120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 388, _theme.scss */
+    /* line 389, _theme.scss */
     .story-element[data-effeckt-type~="story-element"].story-element-reversed figcaption {
       -webkit-transform: none;
       -ms-transform: none;
       -o-transform: none;
       transform: none; } }
 
-/* line 402, _theme.scss */
+/* line 403, _theme.scss */
 .story-element[data-effeckt-type~="story-element"] img {
   display: block;
   position: relative; }
 
-/* line 409, _theme.scss */
+/* line 410, _theme.scss */
 .story-element[data-effeckt-type~="story-element"]:hover figcaption,
 .story-element[data-effeckt-type~="story-element"]:active figcaption {
   -webkit-transform: translateX(0);
@@ -4373,15 +4374,15 @@ Background image goes below.
   -o-transform: translateX(0);
   transform: translateX(0); }
 
-/* line 416, _theme.scss */
+/* line 417, _theme.scss */
 .hidden-content {
   max-width: 100px; }
 
-/* line 420, _theme.scss */
+/* line 421, _theme.scss */
 .hidden-content p {
   font-size: 0.9em; }
 
-/* line 429, _theme.scss */
+/* line 430, _theme.scss */
 .story-element h1,
 .story-element h2,
 .story-element h3,
@@ -4390,7 +4391,7 @@ Background image goes below.
 .story-element h6 {
   margin: 0; }
 
-/* line 433, _theme.scss */
+/* line 434, _theme.scss */
 .visible-content {
   position: absolute;
   top: 0;
@@ -4398,37 +4399,37 @@ Background image goes below.
   margin: 20px 0 20px 20px;
   background: rgba(112, 108, 135, 0.8); }
 
-/* line 441, _theme.scss */
+/* line 442, _theme.scss */
 .story-element-orange .visible-content {
   background: rgba(227, 183, 45, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 441, _theme.scss */
+    /* line 442, _theme.scss */
     .story-element-orange .visible-content {
       background: rgba(227, 183, 45, 0.8); } }
 
-/* line 447, _theme.scss */
+/* line 448, _theme.scss */
 .story-element-blue .visible-content {
   background: rgba(139, 171, 201, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 447, _theme.scss */
+    /* line 448, _theme.scss */
     .story-element-blue .visible-content {
       background: rgba(139, 171, 201, 0.8); } }
 
-/* line 453, _theme.scss */
+/* line 454, _theme.scss */
 .story-element-pink .visible-content {
   background: rgba(203, 70, 70, 0.8); }
   @media only screen and (max-width: 1023px) {
-    /* line 453, _theme.scss */
+    /* line 454, _theme.scss */
     .story-element-pink .visible-content {
       background: rgba(203, 70, 70, 0.8); } }
 
-/* line 460, _theme.scss */
+/* line 461, _theme.scss */
 .story-element-reversed .visible-content {
   right: 0;
   margin: 20px 20px 20px 0;
   left: auto; }
 
-/* line 466, _theme.scss */
+/* line 467, _theme.scss */
 .story-element-reversed .visible-content,
 .visible-content {
   padding: 20px;
@@ -4436,21 +4437,21 @@ Background image goes below.
   -o-transition: 500ms 300ms;
   transition: 500ms 300ms; }
   @media only screen and (max-width: 480px) {
-    /* line 466, _theme.scss */
+    /* line 467, _theme.scss */
     .story-element-reversed .visible-content,
     .visible-content {
       padding: 10px;
       margin: 4px; }
-      /* line 474, _theme.scss */
+      /* line 475, _theme.scss */
       .story-element-reversed .visible-content h4,
       .visible-content h4 {
         font-size: 16px; }
-      /* line 477, _theme.scss */
+      /* line 478, _theme.scss */
       .story-element-reversed .visible-content small,
       .visible-content small {
         font-size: 11px; } }
 
-/* line 484, _theme.scss */
+/* line 485, _theme.scss */
 .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
 .story-element[data-effeckt-type~="story-element"]:active .visible-content {
   -webkit-transform: translateX(-120%);
@@ -4458,7 +4459,7 @@ Background image goes below.
   -o-transform: translateX(-120%);
   transform: translateX(-120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 484, _theme.scss */
+    /* line 485, _theme.scss */
     .story-element[data-effeckt-type~="story-element"]:hover .visible-content,
     .story-element[data-effeckt-type~="story-element"]:active .visible-content {
       -webkit-transform: none;
@@ -4466,7 +4467,7 @@ Background image goes below.
       -o-transform: none;
       transform: none; } }
 
-/* line 498, _theme.scss */
+/* line 499, _theme.scss */
 .story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
 .story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
   -webkit-transform: translateX(120%);
@@ -4474,7 +4475,7 @@ Background image goes below.
   -o-transform: translateX(120%);
   transform: translateX(120%); }
   @media only screen and (max-width: 1023px) {
-    /* line 498, _theme.scss */
+    /* line 499, _theme.scss */
     .story-element[data-effeckt-type~="story-element"].story-element-reversed:hover .visible-content,
     .story-element[data-effeckt-type~="story-element"].story-element-reversed:active .visible-content {
       -webkit-transform: none;
@@ -4492,7 +4493,7 @@ the HTML markup looks like this:
 	</div>
 </div>
 */
-/* line 522, _theme.scss */
+/* line 523, _theme.scss */
 .slide-in {
   width: 100%;
   clear: both;
@@ -4500,11 +4501,11 @@ the HTML markup looks like this:
   position: relative;
   min-height: 16em; }
   @media only screen and (max-width: 1023px) {
-    /* line 522, _theme.scss */
+    /* line 523, _theme.scss */
     .slide-in {
       min-height: 25em; } }
 
-/* line 533, _theme.scss */
+/* line 534, _theme.scss */
 .slide {
   width: 100%;
   position: absolute;
@@ -4514,44 +4515,50 @@ the HTML markup looks like this:
   -o-transition: all .4s ease-in-out;
   -ms-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out; }
+  @media only screen and (max-width: 1023px) {
+    /* line 534, _theme.scss */
+    .slide {
+      position: static;
+      display: block;
+      height: auto; } }
 
-/* line 543, _theme.scss */
+/* line 549, _theme.scss */
 .slide-from-left {
   left: 0; }
 
-/* line 546, _theme.scss */
+/* line 552, _theme.scss */
 .slide-from-right {
   left: 0; }
 
-/* line 549, _theme.scss */
+/* line 555, _theme.scss */
 .offscreen {
   opacity: 0; }
 
-/* line 552, _theme.scss */
+/* line 558, _theme.scss */
 .slide-from-left.offscreen {
   left: -50%; }
   @media only screen and (max-width: 1023px) {
-    /* line 552, _theme.scss */
+    /* line 558, _theme.scss */
     .slide-from-left.offscreen {
       left: 0; } }
 
-/* line 558, _theme.scss */
+/* line 564, _theme.scss */
 .slide-from-right.offscreen {
   left: 50%; }
   @media only screen and (max-width: 1023px) {
-    /* line 558, _theme.scss */
+    /* line 564, _theme.scss */
     .slide-from-right.offscreen {
       left: 0; } }
 
-/* line 565, _theme.scss */
+/* line 571, _theme.scss */
 .margin-quarter {
-  margin-left: 25%; }
+  margin-left: 23%; }
   @media only screen and (max-width: 1023px) {
-    /* line 565, _theme.scss */
+    /* line 571, _theme.scss */
     .margin-quarter {
       margin-left: 0; } }
 
-/* line 572, _theme.scss */
+/* line 578, _theme.scss */
 .btn--primary {
   background: #706c87;
   color: white;
@@ -4561,11 +4568,11 @@ the HTML markup looks like this:
   -o-transition: background 200ms;
   transition: background 200ms; }
 
-/* line 582, _theme.scss */
+/* line 588, _theme.scss */
 .btn--primary:hover {
   background: #8b879f; }
 
-/* line 586, _theme.scss */
+/* line 592, _theme.scss */
 footer {
   background: #b4b2c1;
   padding: 18px 0;

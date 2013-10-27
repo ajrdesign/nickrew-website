@@ -312,6 +312,7 @@ Background image goes below.
   transition: 750ms 300ms;  
   @include media-query(portable) {
   	position: static;
+  	display: block;
 	background: rgba(112,108,135, 1);
 	width: 100%;
 	-webkit-transition: none;
@@ -539,6 +540,11 @@ the HTML markup looks like this:
   -o-transition: all .4s ease-in-out;
   -ms-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+  @include media-query (portable) {
+  	position: static;
+  	display: block;
+  	height: auto;
+  }
 }
 .slide-from-left {
 	left: 0;
@@ -563,7 +569,7 @@ the HTML markup looks like this:
 }
 
 .margin-quarter {
-	margin-left: 25%;
+	margin-left: 23%;
 	@include media-query (portable) {
 		margin-left: 0;
 	}
